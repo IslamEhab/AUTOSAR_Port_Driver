@@ -2,10 +2,10 @@
  *
  * Module:      Port
  *
- * File Name:   Port_PBcfg.c
+ * File Name:   Port_Lcfg.c
  *
- * Description: Source file for Port Post Build configurations
- *              on TM4C123GH6PM Microcontroller
+ * Description: Link time (Post Build) Configuration Source file for
+ * 				STM32F429 Microcontroller - Port Driver
  *
  *              This file contains an array of structures used to initialize
  *              Port module with configured values using tools
@@ -16,9 +16,28 @@
  *
  * Author:      Islam Ehab
  *
- * Date:        10/12/2020
+ * Date:        13/12/2020
  *
  ******************************************************************************/
+/*******************************************************************************
+ *
+ * @file        Port_Lcfg.c
+ *
+ * @brief       Link time (Post Build) Configuration Source file for
+ * 				STM32F429 Microcontroller - Port Driver
+ *
+ *              This file contains an array of structures used to initialize
+ *              Port module with configured values using tools
+ *
+ * @note        Unused pins initialized with initial value
+ *
+ * @version     1.0.0
+ *
+ * @author      Islam Ehab
+ *
+ * @date        13/12/2020
+ *
+ *******************************************************************************/
 
 #include "Port.h"
 /*
@@ -32,8 +51,8 @@
  * AUTOSAR Version 4.0.3
  */
 #define PORT_PBCFG_AR_RELEASE_MAJOR_VERSION     (4U)
-#define PORT_PBCFG_AR_RELEASE_MINOR_VERSION     (0U)
-#define PORT_PBCFG_AR_RELEASE_PATCH_VERSION     (3U)
+#define PORT_PBCFG_AR_RELEASE_MINOR_VERSION     (3U)
+#define PORT_PBCFG_AR_RELEASE_PATCH_VERSION     (1U)
 
 /* AUTOSAR Version checking between PORT_PBcfg.c and PORT.h files */
 #if ((PORT_PBCFG_AR_RELEASE_MAJOR_VERSION != PORT_AR_RELEASE_MAJOR_VERSION)\

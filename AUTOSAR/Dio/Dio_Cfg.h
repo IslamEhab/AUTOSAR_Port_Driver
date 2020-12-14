@@ -7,6 +7,8 @@
  * Description: Link Time (Pre-Compile) Configuration Header file
  * 				for STM32F429 Microcontroller - Dio Driver
  *
+ * Version      1.0.0
+ *
  * Author: 		Islam Ehab
  *
  * Date:		12/12/2020

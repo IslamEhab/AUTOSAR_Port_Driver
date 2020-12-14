@@ -5,7 +5,7 @@
  * File Name:   Port_Cfg.h
  *
  * Description: Pre-Compile Configuration Header file for
- *              TM4C123GH6PM Microcontroller
+ *              STM32F4 Microcontroller Family
  *
  * Note:        Post Build defines added here also
  *              Ex: LED_PORT_NUM, SW_PORT_NUM, etc.
@@ -14,10 +14,26 @@
  *
  * Author:      Islam Ehab
  *
- * Date:        10/12/2020
- *
+ * Date:        13/12/2020
  ******************************************************************************/
 
+
+/*******************************************************************************
+ *
+ * @file        Port
+ *
+ * @brief       Link Time (Pre-Compile) Configuration Header file for
+ *              STM32F4 Microcontroller Family - Port Driver
+ *
+ * @note:       Post Build defines added here also
+ *              Ex: LED_PORT_NUM, SW_PORT_NUM, etc.
+ *
+ * @version     1.0.0
+ *
+ * @author      Islam Ehab
+ *
+ * @date        13/12/2020
+ *******************************************************************************/
 
 #ifndef PORT_CFG_H_
 #define PORT_CFG_H_
@@ -29,8 +45,8 @@
 
 /* AUTOSAR Version 4.0.3 */
 #define PORT_CFG_AR_RELEASE_MAJOR_VERSION       (4U)
-#define PORT_CFG_AR_RELEASE_MINOR_VERSION       (0U)
-#define PORT_CFG_AR_RELEASE_PATCH_VERSION       (3U)
+#define PORT_CFG_AR_RELEASE_MINOR_VERSION       (3U)
+#define PORT_CFG_AR_RELEASE_PATCH_VERSION       (1U)
 
 /* Pre-compile option for DET Enable/ Disable */
 #define PORT_DEV_ERROR_DETECT                   (STD_ON)
