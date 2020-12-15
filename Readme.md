@@ -5,8 +5,8 @@
 ![Image of AUTOSAR](https://automotiveembeddedsite.files.wordpress.com/2016/12/autosar_layered_architecture_details.jpg?w=840)
 
 In AUTOSAR, ordinary GPIO Driver is divided into 2 drivers:
-- ** Dio Driver ** which responsible of writing/reading digital 0 or 1.
-- ** Port Driver ** which responsible of setting all HW pins configurations (General Purpose DIO or alternative function, Analog or digital, input or output, etc.)
+- **Dio Driver**  which responsible of writing/reading digital 0 or 1.
+- **Port Driver** which responsible of setting all HW pins configurations (General Purpose DIO or alternative function, Analog or digital, input or output, etc.)
 
 From the picture you can relate that Port & Dio are HW dependant, so that for every HW you need to build a new Dio & Port drivers
 
@@ -18,8 +18,7 @@ This projects implements both Dio and Port Drivers for STM32F429 and STM32F407 u
 - How to use these APIs, structures and enums 
 
 
-** Note: This driver needs: **
-=======
+**Note: This driver needs:**
 
 1. Testing on STM32F429 & STM32F407
 1. Write Test cases for Both HW to ensure that Port & Dio works properly
