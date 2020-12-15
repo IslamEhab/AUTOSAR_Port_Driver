@@ -1,5 +1,5 @@
 # Project Initiation
-## This Project is DIO AUTOSAR Driver Version 4.3.1
+## This Project is Port AUTOSAR Driver Version 4.3.1
 ## This driver should be compatible with STM32F429 & STM32F407 HW Kits 
 Note: This driver needs:
 1. Testing on STM32F429 & STM32F407
