@@ -23,7 +23,7 @@
 #ifndef DIO_REGS_H
 #define DIO_REGS_H
 
-#include "Std_Types.h"
+#include <STD_TYPES_OLD.h>
 
 
 /***********************************************************************************

@@ -70,156 +70,41 @@
 
 /* PB structure used with PORT_Init API */
 const Port_ConfigType Port_Configuration = {
-                                            /* In this application, 2 Pins (PF4 & PF1) only used */
+                                            /* In this application, 3 Pins (PG13, PG14 & PA0) only used */
 
-                                            /* Configure PF2 as output for LED */
-                                             PortConf_LED1_PIN_NUM, PortConf_LED1_PORT_NUM, PORT_PIN_OUT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_HIGH, SLEW_RATE_DISABLE,
+                                            /* Configure PG13 as output for LED */
+                                             PortConf_LED1_PIN_NUM, PortConf_LED1_PORT_NUM, PORT_PIN_OUT, DIO_PIN, INTERNAL_RESISTOR_OFF,
+                                             PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, MEDIUM_SPEED, OUTPUT_TYPE_PUSH_PULL,
 
-                                            /* Configure PF4 as input for SW1 */
-                                              PortConf_SW1_PIN_NUM, PortConf_SW1_PORT_NUM, PORT_PIN_IN,
-                                              DIO_PIN, PULL_UP, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
+											/* Configure PG14 as output for LED */
+											 PortConf_LED2_PIN_NUM, PortConf_LED2_PORT_NUM, PORT_PIN_OUT, DIO_PIN, INTERNAL_RESISTOR_OFF,
+											 PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, MEDIUM_SPEED, OUTPUT_TYPE_PUSH_PULL,
+
+                                            /* Configure PA0 as input for SW1 */
+                                              PortConf_SW1_PIN_NUM, PortConf_SW1_PORT_NUM, PORT_PIN_IN, DIO_PIN, PULL_UP,
+                                              PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, NO_SPEED ,OUTPUT_TYPE_OFF,
+
+
+											/***************************************** All incoming pins are used for testing ************************************/
+											  PortConf_USART1_TX_PIN_NUM, PortConf_USART1_PORT_NUM, PORT_PIN_OUT, PORT_A_PIN_9_AF7_USART1_TX, INTERNAL_RESISTOR_OFF,
+											  PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, VERY_HIGH_SPEED, OUTPUT_TYPE_PUSH_PULL,
+
+											  PortConf_USART1_RX_PIN_NUM, PortConf_USART1_PORT_NUM, PORT_PIN_OUT, PORT_A_PIN_10_AF7_USART1_RX, INTERNAL_RESISTOR_OFF,
+											  PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, VERY_HIGH_SPEED, OUTPUT_TYPE_PUSH_PULL,
+
+											  PortConf_UART4_TX_PIN_NUM, PortConf_UART4_PORT_NUM, PORT_PIN_OUT, PORT_C_PIN_10_AF8_UART4_TX, INTERNAL_RESISTOR_OFF,
+											  PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, VERY_HIGH_SPEED, OUTPUT_TYPE_PUSH_PULL,
+
+											  PortConf_UART4_RX_PIN_NUM, PortConf_UART4_PORT_NUM, PORT_PIN_OUT, PORT_C_PIN_11_AF8_UART4_RX, INTERNAL_RESISTOR_OFF,
+											  PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, VERY_HIGH_SPEED, OUTPUT_TYPE_PUSH_PULL,
+
+
 
                                             /**************************** All incoming pins are unused. They set on default mode (OFF) ***************************/
-
-                                            /*-------------------------------------------------- PORT F Pins ----------------------------------------------------*/
-
-                                             /*  Note: Pins From PF5 till PF7 are not physically available on TivaC Development Kit , so they did not appear here */
-
-                                                          /*  Note: PF2 and PF4 are used for The application, they defined at the first of array */
-                                              PORT_F_PIN_0, PORTF, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_F_PIN_1, PORTF, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_F_PIN_3, PORTF, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-                                           /*-------------------------------------------------------------------------------------------------------------------*/ 
-                                              
-                                            /*-------------------------------------------------- PORT A Pins ----------------------------------------------------*/
-                                              PORT_A_PIN_0, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_1, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_2, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_3, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_4, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_5, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_6, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_A_PIN_7, PORTA, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-                                             /*-------------------------------------------------------------------------------------------------------------------*/
-
-                                             /*-------------------------------------------------- PORT B Pins ----------------------------------------------------*/
-                                              PORT_B_PIN_0, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_1, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_2, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_3, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_4, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_5, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_6, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_B_PIN_7, PORTB, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                             /*-------------------------------------------------------------------------------------------------------------------*/
-
-                                             /*-------------------------------------------------- PORT C Pins ----------------------------------------------------*/
-
-                                                                  /* Note: PortC from PC0 -> PC3 are used as JTAG Pins so they did not appear here */
-
-                                              PORT_C_PIN_4, PORTC, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_C_PIN_5, PORTC, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_C_PIN_6, PORTC, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_C_PIN_7, PORTC, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                            /*-------------------------------------------------------------------------------------------------------------------*/
-
-                                            /*-------------------------------------------------- PORT D Pins ----------------------------------------------------*/
-                                              PORT_D_PIN_0, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_1, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_2, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_3, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_4, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_5, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_6, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_D_PIN_7, PORTD, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                             /*-------------------------------------------------------------------------------------------------------------------*/
-
-                                             /*-------------------------------------------------- PORT E Pins ----------------------------------------------------*/
-
-                                                      /* Note: PE6 and PE7 are not physically available on TivaC Development Kit , so they did not appear here */
-
-                                              PORT_E_PIN_0, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_E_PIN_1, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_E_PIN_2, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_E_PIN_3, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_E_PIN_4, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                              PORT_E_PIN_5, PORTE, PORT_PIN_DEFAULT,
-                                              DIO_PIN, OFF, PIN_DIRECTION_CHANGEABILITY_OFF, PIN_MODE_CHANGEABILITY_OFF, INITIAL_VALUE_LOW, SLEW_RATE_DISABLE,
-
-                                             /*-------------------------------------------------------------------------------------------------------------------*/
-
-
+											/*
+											 * Note: There should be another elements in the structure to holds the initial values of the unused Pins, but due to
+											 * Memory & Time limitation they won't be implemented
+											*/
                                            };
 
 

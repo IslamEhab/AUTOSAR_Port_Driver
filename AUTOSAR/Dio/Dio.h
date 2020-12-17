@@ -159,139 +159,139 @@
 typedef enum{
 
 /*********************** PORT A Pin Numbering ***********************/
-    PORT_A_PIN_0                = 0, 			 //!< PORT_A_PIN_0
-    PORT_A_PIN_1                = 1,			 //!< PORT_A_PIN_1
-    PORT_A_PIN_2                = 2,			 //!< PORT_A_PIN_2
-    PORT_A_PIN_3                = 3,			 //!< PORT_A_PIN_3
-    PORT_A_PIN_4                = 4, 			 //!< PORT_A_PIN_4
-    PORT_A_PIN_5                = 5, 		 	 //!< PORT_A_PIN_5
-    PORT_A_PIN_6                = 6, 		 	 //!< PORT_A_PIN_6
-    PORT_A_PIN_7                = 7, 		     //!< PORT_A_PIN_7
-    PORT_A_PIN_8				= 8,           	 //!< PORT_A_PIN_8
-	PORT_A_PIN_9				= 9,             //!< PORT_A_PIN_9
-	PORT_A_PIN_10				= 10,            //!< PORT_A_PIN_10
-	PORT_A_PIN_11				= 11,            //!< PORT_A_PIN_11
-	PORT_A_PIN_12				= 12,            //!< PORT_A_PIN_12
-	PORT_A_PIN_13				= 13,            //!< PORT_A_PIN_13
-	PORT_A_PIN_14				= 14,            //!< PORT_A_PIN_14
-	PORT_A_PIN_15				= 15,            //!< PORT_A_PIN_15
+    DIO_PORT_A_PIN_0                = 0, 			 //!< PORT_A_PIN_0
+    DIO_PORT_A_PIN_1                = 1,			 //!< PORT_A_PIN_1
+    DIO_PORT_A_PIN_2                = 2,			 //!< DIO_PORT_A_PIN_2
+    DIO_PORT_A_PIN_3                = 3,			 //!< DIO_PORT_A_PIN_3
+    DIO_PORT_A_PIN_4                = 4, 			 //!< DIO_PORT_A_PIN_4
+    DIO_PORT_A_PIN_5                = 5, 		 	 //!< DIO_PORT_A_PIN_5
+    DIO_PORT_A_PIN_6                = 6, 		 	 //!< DIO_PORT_A_PIN_6
+    DIO_PORT_A_PIN_7                = 7, 		     //!< DIO_PORT_A_PIN_7
+    DIO_PORT_A_PIN_8				= 8,           	 //!< DIO_PORT_A_PIN_8
+	DIO_PORT_A_PIN_9				= 9,             //!< DIO_PORT_A_PIN_9
+	DIO_PORT_A_PIN_10				= 10,            //!< DIO_PORT_A_PIN_10
+	DIO_PORT_A_PIN_11				= 11,            //!< DIO_PORT_A_PIN_11
+	DIO_PORT_A_PIN_12				= 12,            //!< DIO_PORT_A_PIN_12
+	DIO_PORT_A_PIN_13				= 13,            //!< DIO_PORT_A_PIN_13
+	DIO_PORT_A_PIN_14				= 14,            //!< DIO_PORT_A_PIN_14
+	DIO_PORT_A_PIN_15				= 15,            //!< DIO_PORT_A_PIN_15
 /********************************************************************/
 
 /*********************** PORT B Pin Numbering ***********************/
-    PORT_B_PIN_0                = 0,			 //!< PORT_B_PIN_0
-    PORT_B_PIN_1                = 1,			 //!< PORT_B_PIN_1
-    PORT_B_PIN_2                = 2,			 //!< PORT_B_PIN_2
-    PORT_B_PIN_3                = 3,			 //!< PORT_B_PIN_3
-    PORT_B_PIN_4                = 4,			 //!< PORT_B_PIN_4
-    PORT_B_PIN_5                = 5,			 //!< PORT_B_PIN_5
-    PORT_B_PIN_6                = 6,			 //!< PORT_B_PIN_6
-    PORT_B_PIN_7                = 7,			 //!< PORT_B_PIN_7
-    PORT_B_PIN_8				= 8,             //!< PORT_B_PIN_8
-	PORT_B_PIN_9				= 9,             //!< PORT_B_PIN_9
-	PORT_B_PIN_10				= 10,            //!< PORT_B_PIN_10
-	PORT_B_PIN_11				= 11,            //!< PORT_B_PIN_11
-	PORT_B_PIN_12				= 12,            //!< PORT_B_PIN_12
-	PORT_B_PIN_13				= 13,            //!< PORT_B_PIN_13
-	PORT_B_PIN_14				= 14,            //!< PORT_B_PIN_14
-	PORT_B_PIN_15				= 15,            //!< PORT_B_PIN_15
+    DIO_PORT_B_PIN_0                = 0,			 //!< DIO_PORT_B_PIN_0
+    DIO_PORT_B_PIN_1                = 1,			 //!< DIO_PORT_B_PIN_1
+    DIO_PORT_B_PIN_2                = 2,			 //!< DIO_PORT_B_PIN_2
+    DIO_PORT_B_PIN_3                = 3,			 //!< DIO_PORT_B_PIN_3
+    DIO_PORT_B_PIN_4                = 4,			 //!< DIO_PORT_B_PIN_4
+    DIO_PORT_B_PIN_5                = 5,			 //!< DIO_PORT_B_PIN_5
+    DIO_PORT_B_PIN_6                = 6,			 //!< DIO_PORT_B_PIN_6
+    DIO_PORT_B_PIN_7                = 7,			 //!< DIO_PORT_B_PIN_7
+    DIO_PORT_B_PIN_8				= 8,             //!< DIO_PORT_B_PIN_8
+	DIO_PORT_B_PIN_9				= 9,             //!< DIO_PORT_B_PIN_9
+	DIO_PORT_B_PIN_10				= 10,            //!< DIO_PORT_B_PIN_10
+	DIO_PORT_B_PIN_11				= 11,            //!< DIO_PORT_B_PIN_11
+	DIO_PORT_B_PIN_12				= 12,            //!< DIO_PORT_B_PIN_12
+	DIO_PORT_B_PIN_13				= 13,            //!< DIO_PORT_B_PIN_13
+	DIO_PORT_B_PIN_14				= 14,            //!< DIO_PORT_B_PIN_14
+	DIO_PORT_B_PIN_15				= 15,            //!< DIO_PORT_B_PIN_15
 /********************************************************************/
 
 /*********************** PORT C Pin Numbering ***********************/
-    PORT_C_PIN_0                = 0, 			 //!< PORT_B_PIN_0
-    PORT_C_PIN_1                = 1,			 //!< PORT_B_PIN_1
-    PORT_C_PIN_2                = 2,			 //!< PORT_B_PIN_2
-    PORT_C_PIN_3                = 3,			 //!< PORT_B_PIN_3
-    PORT_C_PIN_4                = 4,			 //!< PORT_B_PIN_4
-    PORT_C_PIN_5                = 5,			 //!< PORT_B_PIN_5
-    PORT_C_PIN_6                = 6,			 //!< PORT_B_PIN_6
-    PORT_C_PIN_7                = 7,			 //!< PORT_B_PIN_7
-    PORT_C_PIN_8				= 8,             //!< PORT_C_PIN_8
-	PORT_C_PIN_9				= 9,             //!< PORT_C_PIN_9
-	PORT_C_PIN_10				= 10,            //!< PORT_C_PIN_10
-	PORT_C_PIN_11				= 11,            //!< PORT_C_PIN_11
-	PORT_C_PIN_12				= 12,            //!< PORT_C_PIN_12
-	PORT_C_PIN_13				= 13,            //!< PORT_C_PIN_13
-	PORT_C_PIN_14				= 14,            //!< PORT_C_PIN_14
-	PORT_C_PIN_15				= 15,            //!< PORT_C_PIN_15
+    DIO_PORT_C_PIN_0                = 0, 			 //!< DIO_PORT_B_PIN_0
+    DIO_PORT_C_PIN_1                = 1,			 //!< DIO_PORT_B_PIN_1
+    DIO_PORT_C_PIN_2                = 2,			 //!< DIO_PORT_B_PIN_2
+    DIO_PORT_C_PIN_3                = 3,			 //!< DIO_PORT_B_PIN_3
+    DIO_PORT_C_PIN_4                = 4,			 //!< DIO_PORT_B_PIN_4
+    DIO_PORT_C_PIN_5                = 5,			 //!< DIO_PORT_B_PIN_5
+    DIO_PORT_C_PIN_6                = 6,			 //!< DIO_PORT_B_PIN_6
+    DIO_PORT_C_PIN_7                = 7,			 //!< DIO_PORT_B_PIN_7
+    DIO_PORT_C_PIN_8				= 8,             //!< DIO_PORT_C_PIN_8
+	DIO_PORT_C_PIN_9				= 9,             //!< DIO_PORT_C_PIN_9
+	DIO_PORT_C_PIN_10				= 10,            //!< DIO_PORT_C_PIN_10
+	DIO_PORT_C_PIN_11				= 11,            //!< DIO_PORT_C_PIN_11
+	DIO_PORT_C_PIN_12				= 12,            //!< DIO_PORT_C_PIN_12
+	DIO_PORT_C_PIN_13				= 13,            //!< DIO_PORT_C_PIN_13
+	DIO_PORT_C_PIN_14				= 14,            //!< DIO_PORT_C_PIN_14
+	DIO_PORT_C_PIN_15				= 15,            //!< DIO_PORT_C_PIN_15
 /********************************************************************/
 
 /*********************** PORT D Pin Numbering ***********************/
-    PORT_D_PIN_0                = 0,			 //!< PORT_D_PIN_0
-    PORT_D_PIN_1                = 1,			 //!< PORT_D_PIN_1
-    PORT_D_PIN_2                = 2,  			 //!< PORT_D_PIN_2
-    PORT_D_PIN_3                = 3,			 //!< PORT_D_PIN_3
-    PORT_D_PIN_4                = 4,			 //!< PORT_D_PIN_4
-    PORT_D_PIN_5                = 5,			 //!< PORT_D_PIN_5
-    PORT_D_PIN_6                = 6,			 //!< PORT_D_PIN_6
-    PORT_D_PIN_7                = 7,			 //!< PORT_D_PIN_7
-    PORT_D_PIN_8				= 8,             //!< PORT_D_PIN_8
-	PORT_D_PIN_9				= 9,             //!< PORT_D_PIN_9
-	PORT_D_PIN_10				= 10,            //!< PORT_D_PIN_10
-	PORT_D_PIN_11				= 11,            //!< PORT_D_PIN_11
-	PORT_D_PIN_12				= 12,            //!< PORT_D_PIN_12
-	PORT_D_PIN_13				= 13,            //!< PORT_D_PIN_13
-	PORT_D_PIN_14				= 14,            //!< PORT_D_PIN_14
-	PORT_D_PIN_15				= 15,            //!< PORT_D_PIN_15
+    DIO_PORT_D_PIN_0                = 0,			 //!< DIO_PORT_D_PIN_0
+    DIO_PORT_D_PIN_1                = 1,			 //!< DIO_PORT_D_PIN_1
+    DIO_PORT_D_PIN_2                = 2,  			 //!< DIO_PORT_D_PIN_2
+    DIO_PORT_D_PIN_3                = 3,			 //!< DIO_PORT_D_PIN_3
+    DIO_PORT_D_PIN_4                = 4,			 //!< DIO_PORT_D_PIN_4
+    DIO_PORT_D_PIN_5                = 5,			 //!< DIO_PORT_D_PIN_5
+    DIO_PORT_D_PIN_6                = 6,			 //!< DIO_PORT_D_PIN_6
+    DIO_PORT_D_PIN_7                = 7,			 //!< DIO_PORT_D_PIN_7
+    DIO_PORT_D_PIN_8				= 8,             //!< DIO_PORT_D_PIN_8
+	DIO_PORT_D_PIN_9				= 9,             //!< DIO_PORT_D_PIN_9
+	DIO_PORT_D_PIN_10				= 10,            //!< DIO_PORT_D_PIN_10
+	DIO_PORT_D_PIN_11				= 11,            //!< DIO_PORT_D_PIN_11
+	DIO_PORT_D_PIN_12				= 12,            //!< DIO_PORT_D_PIN_12
+	DIO_PORT_D_PIN_13				= 13,            //!< DIO_PORT_D_PIN_13
+	DIO_PORT_D_PIN_14				= 14,            //!< DIO_PORT_D_PIN_14
+	DIO_PORT_D_PIN_15				= 15,            //!< DIO_PORT_D_PIN_15
 /********************************************************************/
 
 /*********************** PORT E Pin Numbering ***********************/
 
-    PORT_E_PIN_0                = 0,			 //!< PORT_E_PIN_0
-    PORT_E_PIN_1                = 1,			 //!< PORT_E_PIN_1
-    PORT_E_PIN_2                = 2,			 //!< PORT_E_PIN_2
-    PORT_E_PIN_3                = 3,			 //!< PORT_E_PIN_3
-    PORT_E_PIN_4                = 4,			 //!< PORT_E_PIN_4
-    PORT_E_PIN_5                = 5,			 //!< PORT_E_PIN_5
-    PORT_E_PIN_6                = 6,			 //!< PORT_E_PIN_6
-    PORT_E_PIN_7                = 7,			 //!< PORT_E_PIN_7
-    PORT_E_PIN_8				= 8,             //!< PORT_E_PIN_8
-	PORT_E_PIN_9				= 9,             //!< PORT_E_PIN_9
-	PORT_E_PIN_10				= 10,            //!< PORT_E_PIN_10
-	PORT_E_PIN_11				= 11,            //!< PORT_E_PIN_11
-	PORT_E_PIN_12				= 12,            //!< PORT_E_PIN_12
-	PORT_E_PIN_13				= 13,            //!< PORT_E_PIN_13
-	PORT_E_PIN_14				= 14,            //!< PORT_E_PIN_14
-	PORT_E_PIN_15				= 15,            //!< PORT_E_PIN_15
+    DIO_PORT_E_PIN_0                = 0,			 //!< DIO_PORT_E_PIN_0
+    DIO_PORT_E_PIN_1                = 1,			 //!< DIO_PORT_E_PIN_1
+    DIO_PORT_E_PIN_2                = 2,			 //!< DIO_PORT_E_PIN_2
+    DIO_PORT_E_PIN_3                = 3,			 //!< DIO_PORT_E_PIN_3
+    DIO_PORT_E_PIN_4                = 4,			 //!< DIO_PORT_E_PIN_4
+    DIO_PORT_E_PIN_5                = 5,			 //!< DIO_PORT_E_PIN_5
+    DIO_PORT_E_PIN_6                = 6,			 //!< DIO_PORT_E_PIN_6
+    DIO_PORT_E_PIN_7                = 7,			 //!< DIO_PORT_E_PIN_7
+    DIO_PORT_E_PIN_8				= 8,             //!< DIO_PORT_E_PIN_8
+	DIO_PORT_E_PIN_9				= 9,             //!< DIO_PORT_E_PIN_9
+	DIO_PORT_E_PIN_10				= 10,            //!< DIO_PORT_E_PIN_10
+	DIO_PORT_E_PIN_11				= 11,            //!< DIO_PORT_E_PIN_11
+	DIO_PORT_E_PIN_12				= 12,            //!< DIO_PORT_E_PIN_12
+	DIO_PORT_E_PIN_13				= 13,            //!< DIO_PORT_E_PIN_13
+	DIO_PORT_E_PIN_14				= 14,            //!< DIO_PORT_E_PIN_14
+	DIO_PORT_E_PIN_15				= 15,            //!< DIO_PORT_E_PIN_15
 /********************************************************************/
 
 /*********************** PORT F Pin Numbering ***********************/
 
-    PORT_F_PIN_0                = 0,			 //!< PORT_F_PIN_0
-    PORT_F_PIN_1                = 1,			 //!< PORT_F_PIN_1
-    PORT_F_PIN_2                = 2,			 //!< PORT_F_PIN_2
-    PORT_F_PIN_3                = 3, 			 //!< PORT_F_PIN_3
-    PORT_F_PIN_4                = 4,			 //!< PORT_F_PIN_4
-	PORT_F_PIN_5                = 5,   			 //!< PORT_F_PIN_5
-    PORT_F_PIN_6                = 6,			 //!< PORT_F_PIN_6
-    PORT_F_PIN_7                = 7,			 //!< PORT_F_PIN_7
-    PORT_F_PIN_8				= 8,             //!< PORT_F_PIN_8
-	PORT_F_PIN_9				= 9,             //!< PORT_F_PIN_9
-	PORT_F_PIN_10				= 10,            //!< PORT_F_PIN_10
-	PORT_F_PIN_11				= 11,            //!< PORT_F_PIN_11
-	PORT_F_PIN_12				= 12,            //!< PORT_F_PIN_12
-	PORT_F_PIN_13				= 13,            //!< PORT_F_PIN_13
-	PORT_F_PIN_14				= 14,            //!< PORT_F_PIN_14
-	PORT_F_PIN_15				= 15,            //!< PORT_F_PIN_15
+    DIO_PORT_F_PIN_0                = 0,			 //!< DIO_PORT_F_PIN_0
+    DIO_PORT_F_PIN_1                = 1,			 //!< DIO_PORT_F_PIN_1
+    DIO_PORT_F_PIN_2                = 2,			 //!< DIO_PORT_F_PIN_2
+    DIO_PORT_F_PIN_3                = 3, 			 //!< DIO_PORT_F_PIN_3
+    DIO_PORT_F_PIN_4                = 4,			 //!< DIO_PORT_F_PIN_4
+	DIO_PORT_F_PIN_5                = 5,   			 //!< DIO_PORT_F_PIN_5
+    DIO_PORT_F_PIN_6                = 6,			 //!< DIO_PORT_F_PIN_6
+    DIO_PORT_F_PIN_7                = 7,			 //!< DIO_PORT_F_PIN_7
+    DIO_PORT_F_PIN_8				= 8,             //!< DIO_PORT_F_PIN_8
+	DIO_PORT_F_PIN_9				= 9,             //!< DIO_PORT_F_PIN_9
+	DIO_PORT_F_PIN_10				= 10,            //!< DIO_PORT_F_PIN_10
+	DIO_PORT_F_PIN_11				= 11,            //!< DIO_PORT_F_PIN_11
+	DIO_PORT_F_PIN_12				= 12,            //!< DIO_PORT_F_PIN_12
+	DIO_PORT_F_PIN_13				= 13,            //!< DIO_PORT_F_PIN_13
+	DIO_PORT_F_PIN_14				= 14,            //!< DIO_PORT_F_PIN_14
+	DIO_PORT_F_PIN_15				= 15,            //!< DIO_PORT_F_PIN_15
 /********************************************************************/
 
 /*********************** PORT G Pin Numbering ***********************/
 
-	PORT_G_PIN_0                = 0,   			 //!< PORT_G_PIN_0
-	PORT_G_PIN_1                = 1,	         //!< PORT_G_PIN_1
-	PORT_G_PIN_2                = 2,   			 //!< PORT_G_PIN_2
-	PORT_G_PIN_3                = 3, 		     //!< PORT_G_PIN_3
-	PORT_G_PIN_4                = 4,   			 //!< PORT_G_PIN_4
-	PORT_G_PIN_5                = 5,   			 //!< PORT_G_PIN_5
-	PORT_G_PIN_6                = 6,   			 //!< PORT_G_PIN_6
-	PORT_G_PIN_7                = 7,   			 //!< PORT_G_PIN_7
-	PORT_G_PIN_8				= 8,             //!< PORT_G_PIN_8
-	PORT_G_PIN_9				= 9,             //!< PORT_G_PIN_9
-	PORT_G_PIN_10				= 10,            //!< PORT_G_PIN_10
-	PORT_G_PIN_11				= 11,            //!< PORT_G_PIN_11
-	PORT_G_PIN_12				= 12,            //!< PORT_G_PIN_12
-	PORT_G_PIN_13				= 13,            //!< PORT_G_PIN_13
-	PORT_G_PIN_14				= 14,            //!< PORT_G_PIN_14
-	PORT_G_PIN_15				= 15,            //!< PORT_G_PIN_15
+	DIO_PORT_G_PIN_0                = 0,   			 //!< DIO_PORT_G_PIN_0
+	DIO_PORT_G_PIN_1                = 1,	         //!< DIO_PORT_G_PIN_1
+	DIO_PORT_G_PIN_2                = 2,   			 //!< DIO_PORT_G_PIN_2
+	DIO_PORT_G_PIN_3                = 3, 		     //!< DIO_PORT_G_PIN_3
+	DIO_PORT_G_PIN_4                = 4,   			 //!< DIO_PORT_G_PIN_4
+	DIO_PORT_G_PIN_5                = 5,   			 //!< DIO_PORT_G_PIN_5
+	DIO_PORT_G_PIN_6                = 6,   			 //!< DIO_PORT_G_PIN_6
+	DIO_PORT_G_PIN_7                = 7,   			 //!< DIO_PORT_G_PIN_7
+	DIO_PORT_G_PIN_8				= 8,             //!< DIO_PORT_G_PIN_8
+	DIO_PORT_G_PIN_9				= 9,             //!< DIO_PORT_G_PIN_9
+	DIO_PORT_G_PIN_10				= 10,            //!< DIO_PORT_G_PIN_10
+	DIO_PORT_G_PIN_11				= 11,            //!< DIO_PORT_G_PIN_11
+	DIO_PORT_G_PIN_12				= 12,            //!< DIO_PORT_G_PIN_12
+	DIO_PORT_G_PIN_13				= 13,            //!< DIO_PORT_G_PIN_13
+	DIO_PORT_G_PIN_14				= 14,            //!< DIO_PORT_G_PIN_14
+	DIO_PORT_G_PIN_15				= 15,            //!< DIO_PORT_G_PIN_15
 /********************************************************************/
 
 /*********************** PORT H Pin Numbering ***********************/
@@ -300,8 +300,8 @@ typedef enum{
  * Note: Port H has only PH0 & PH1 and they mostly used as
  * OSC_IN & OSC_OUT Pins
 */
-	PORT_H_PIN_0                = 0,   			 //!< PORT_H_PIN_0
-	PORT_H_PIN_1                = 1   			 //!< PORT_H_PIN_1
+	DIO_PORT_H_PIN_0                = 0,   			 //!< DIO_PORT_H_PIN_0
+	DIO_PORT_H_PIN_1                = 1   			 //!< DIO_PORT_H_PIN_1
 /********************************************************************/
 
 }Dio_PinNumEnum;
@@ -310,121 +310,121 @@ typedef enum{
 typedef enum{
 
 /*********************** PORT A Pin Numbering ***********************/
-    PORT_A_PIN_0                = 0, 			 //!< PORT_A_PIN_0
-    PORT_A_PIN_1                = 1,			 //!< PORT_A_PIN_1
-    PORT_A_PIN_2                = 2,			 //!< PORT_A_PIN_2
-    PORT_A_PIN_3                = 3,			 //!< PORT_A_PIN_3
-    PORT_A_PIN_4                = 4, 			 //!< PORT_A_PIN_4
-    PORT_A_PIN_5                = 5, 		 	 //!< PORT_A_PIN_5
-    PORT_A_PIN_6                = 6, 		 	 //!< PORT_A_PIN_6
-    PORT_A_PIN_7                = 7, 		     //!< PORT_A_PIN_7
-    PORT_A_PIN_8				= 8,           	 //!< PORT_A_PIN_8
-	PORT_A_PIN_9				= 9,             //!< PORT_A_PIN_9
-	PORT_A_PIN_10				= 10,            //!< PORT_A_PIN_10
-	PORT_A_PIN_11				= 11,            //!< PORT_A_PIN_11
-	PORT_A_PIN_12				= 12,            //!< PORT_A_PIN_12
-	PORT_A_PIN_13				= 13,            //!< PORT_A_PIN_13
-	PORT_A_PIN_14				= 14,            //!< PORT_A_PIN_14
-	PORT_A_PIN_15				= 15,            //!< PORT_A_PIN_15
+    DIO_PORT_A_PIN_0                = 0, 			 //!< DIO_PORT_A_PIN_0
+    DIO_PORT_A_PIN_1                = 1,			 //!< DIO_PORT_A_PIN_1
+    DIO_PORT_A_PIN_2                = 2,			 //!< DIO_PORT_A_PIN_2
+    DIO_PORT_A_PIN_3                = 3,			 //!< DIO_PORT_A_PIN_3
+    DIO_PORT_A_PIN_4                = 4, 			 //!< DIO_PORT_A_PIN_4
+    DIO_PORT_A_PIN_5                = 5, 		 	 //!< DIO_PORT_A_PIN_5
+    DIO_PORT_A_PIN_6                = 6, 		 	 //!< DIO_PORT_A_PIN_6
+    DIO_PORT_A_PIN_7                = 7, 		     //!< DIO_PORT_A_PIN_7
+    DIO_PORT_A_PIN_8				= 8,           	 //!< DIO_PORT_A_PIN_8
+	DIO_PORT_A_PIN_9				= 9,             //!< DIO_PORT_A_PIN_9
+	DIO_PORT_A_PIN_10				= 10,            //!< DIO_PORT_A_PIN_10
+	DIO_PORT_A_PIN_11				= 11,            //!< DIO_PORT_A_PIN_11
+	DIO_PORT_A_PIN_12				= 12,            //!< DIO_PORT_A_PIN_12
+	DIO_PORT_A_PIN_13				= 13,            //!< DIO_PORT_A_PIN_13
+	DIO_PORT_A_PIN_14				= 14,            //!< DIO_PORT_A_PIN_14
+	DIO_PORT_A_PIN_15				= 15,            //!< DIO_PORT_A_PIN_15
 /********************************************************************/
 
 /*********************** PORT B Pin Numbering ***********************/
-    PORT_B_PIN_0                = 0,			 //!< PORT_B_PIN_0
-    PORT_B_PIN_1                = 1,			 //!< PORT_B_PIN_1
-    PORT_B_PIN_2                = 2,			 //!< PORT_B_PIN_2
-    PORT_B_PIN_3                = 3,			 //!< PORT_B_PIN_3
-    PORT_B_PIN_4                = 4,			 //!< PORT_B_PIN_4
-    PORT_B_PIN_5                = 5,			 //!< PORT_B_PIN_5
-    PORT_B_PIN_6                = 6,			 //!< PORT_B_PIN_6
-    PORT_B_PIN_7                = 7,			 //!< PORT_B_PIN_7
-    PORT_B_PIN_8				= 8,             //!< PORT_B_PIN_8
-	PORT_B_PIN_9				= 9,             //!< PORT_B_PIN_9
-	PORT_B_PIN_10				= 10,            //!< PORT_B_PIN_10
-	PORT_B_PIN_11				= 11,            //!< PORT_B_PIN_11
-	PORT_B_PIN_12				= 12,            //!< PORT_B_PIN_12
-	PORT_B_PIN_13				= 13,            //!< PORT_B_PIN_13
-	PORT_B_PIN_14				= 14,            //!< PORT_B_PIN_14
-	PORT_B_PIN_15				= 15,            //!< PORT_B_PIN_15
+    DIO_PORT_B_PIN_0                = 0,			 //!< DIO_PORT_B_PIN_0
+    DIO_PORT_B_PIN_1                = 1,			 //!< DIO_PORT_B_PIN_1
+    DIO_PORT_B_PIN_2                = 2,			 //!< DIO_PORT_B_PIN_2
+    DIO_PORT_B_PIN_3                = 3,			 //!< DIO_PORT_B_PIN_3
+    DIO_PORT_B_PIN_4                = 4,			 //!< DIO_PORT_B_PIN_4
+    DIO_PORT_B_PIN_5                = 5,			 //!< DIO_PORT_B_PIN_5
+    DIO_PORT_B_PIN_6                = 6,			 //!< DIO_PORT_B_PIN_6
+    DIO_PORT_B_PIN_7                = 7,			 //!< DIO_PORT_B_PIN_7
+    DIO_PORT_B_PIN_8				= 8,             //!< DIO_PORT_B_PIN_8
+	DIO_PORT_B_PIN_9				= 9,             //!< DIO_PORT_B_PIN_9
+	DIO_PORT_B_PIN_10				= 10,            //!< DIO_PORT_B_PIN_10
+	DIO_PORT_B_PIN_11				= 11,            //!< DIO_PORT_B_PIN_11
+	DIO_PORT_B_PIN_12				= 12,            //!< DIO_PORT_B_PIN_12
+	DIO_PORT_B_PIN_13				= 13,            //!< DIO_PORT_B_PIN_13
+	DIO_PORT_B_PIN_14				= 14,            //!< DIO_PORT_B_PIN_14
+	DIO_PORT_B_PIN_15				= 15,            //!< DIO_PORT_B_PIN_15
 /********************************************************************/
 
 /*********************** PORT C Pin Numbering ***********************/
-    PORT_C_PIN_0                = 0, 			 //!< PORT_B_PIN_0
-    PORT_C_PIN_1                = 1,			 //!< PORT_B_PIN_1
-    PORT_C_PIN_2                = 2,			 //!< PORT_B_PIN_2
-    PORT_C_PIN_3                = 3,			 //!< PORT_B_PIN_3
-    PORT_C_PIN_4                = 4,			 //!< PORT_B_PIN_4
-    PORT_C_PIN_5                = 5,			 //!< PORT_B_PIN_5
-    PORT_C_PIN_6                = 6,			 //!< PORT_B_PIN_6
-    PORT_C_PIN_7                = 7,			 //!< PORT_B_PIN_7
-    PORT_C_PIN_8				= 8,             //!< PORT_C_PIN_8
-	PORT_C_PIN_9				= 9,             //!< PORT_C_PIN_9
-	PORT_C_PIN_10				= 10,            //!< PORT_C_PIN_10
-	PORT_C_PIN_11				= 11,            //!< PORT_C_PIN_11
-	PORT_C_PIN_12				= 12,            //!< PORT_C_PIN_12
-	PORT_C_PIN_13				= 13,            //!< PORT_C_PIN_13
-	PORT_C_PIN_14				= 14,            //!< PORT_C_PIN_14
-	PORT_C_PIN_15				= 15,            //!< PORT_C_PIN_15
+    DIO_PORT_C_PIN_0                = 0, 			 //!< DIO_PORT_B_PIN_0
+    DIO_PORT_C_PIN_1                = 1,			 //!< DIO_PORT_B_PIN_1
+    DIO_PORT_C_PIN_2                = 2,			 //!< DIO_PORT_B_PIN_2
+    DIO_PORT_C_PIN_3                = 3,			 //!< DIO_PORT_B_PIN_3
+    DIO_PORT_C_PIN_4                = 4,			 //!< DIO_PORT_B_PIN_4
+    DIO_PORT_C_PIN_5                = 5,			 //!< DIO_PORT_B_PIN_5
+    DIO_PORT_C_PIN_6                = 6,			 //!< DIO_PORT_B_PIN_6
+    DIO_PORT_C_PIN_7                = 7,			 //!< DIO_PORT_B_PIN_7
+    DIO_PORT_C_PIN_8				= 8,             //!< DIO_PORT_C_PIN_8
+	DIO_PORT_C_PIN_9				= 9,             //!< DIO_PORT_C_PIN_9
+	DIO_PORT_C_PIN_10				= 10,            //!< DIO_PORT_C_PIN_10
+	DIO_PORT_C_PIN_11				= 11,            //!< DIO_PORT_C_PIN_11
+	DIO_PORT_C_PIN_12				= 12,            //!< DIO_PORT_C_PIN_12
+	DIO_PORT_C_PIN_13				= 13,            //!< DIO_PORT_C_PIN_13
+	DIO_PORT_C_PIN_14				= 14,            //!< DIO_PORT_C_PIN_14
+	DIO_PORT_C_PIN_15				= 15,            //!< DIO_PORT_C_PIN_15
 /********************************************************************/
 
 /*********************** PORT D Pin Numbering ***********************/
-    PORT_D_PIN_0                = 0,			 //!< PORT_D_PIN_0
-    PORT_D_PIN_1                = 1,			 //!< PORT_D_PIN_1
-    PORT_D_PIN_2                = 2,  			 //!< PORT_D_PIN_2
-    PORT_D_PIN_3                = 3,			 //!< PORT_D_PIN_3
-    PORT_D_PIN_4                = 4,			 //!< PORT_D_PIN_4
-    PORT_D_PIN_5                = 5,			 //!< PORT_D_PIN_5
-    PORT_D_PIN_6                = 6,			 //!< PORT_D_PIN_6
-    PORT_D_PIN_7                = 7,			 //!< PORT_D_PIN_7
-    PORT_D_PIN_8				= 8,             //!< PORT_D_PIN_8
-	PORT_D_PIN_9				= 9,             //!< PORT_D_PIN_9
-	PORT_D_PIN_10				= 10,            //!< PORT_D_PIN_10
-	PORT_D_PIN_11				= 11,            //!< PORT_D_PIN_11
-	PORT_D_PIN_12				= 12,            //!< PORT_D_PIN_12
-	PORT_D_PIN_13				= 13,            //!< PORT_D_PIN_13
-	PORT_D_PIN_14				= 14,            //!< PORT_D_PIN_14
-	PORT_D_PIN_15				= 15,            //!< PORT_D_PIN_15
+    DIO_PORT_D_PIN_0                = 0,			 //!< DIO_PORT_D_PIN_0
+    DIO_PORT_D_PIN_1                = 1,			 //!< DIO_PORT_D_PIN_1
+    DIO_PORT_D_PIN_2                = 2,  			 //!< DIO_PORT_D_PIN_2
+    DIO_PORT_D_PIN_3                = 3,			 //!< DIO_PORT_D_PIN_3
+    DIO_PORT_D_PIN_4                = 4,			 //!< DIO_PORT_D_PIN_4
+    DIO_PORT_D_PIN_5                = 5,			 //!< DIO_PORT_D_PIN_5
+    DIO_PORT_D_PIN_6                = 6,			 //!< DIO_PORT_D_PIN_6
+    DIO_PORT_D_PIN_7                = 7,			 //!< DIO_PORT_D_PIN_7
+    DIO_PORT_D_PIN_8				= 8,             //!< DIO_PORT_D_PIN_8
+	DIO_PORT_D_PIN_9				= 9,             //!< DIO_PORT_D_PIN_9
+	DIO_PORT_D_PIN_10				= 10,            //!< DIO_PORT_D_PIN_10
+	DIO_PORT_D_PIN_11				= 11,            //!< DIO_PORT_D_PIN_11
+	DIO_PORT_D_PIN_12				= 12,            //!< DIO_PORT_D_PIN_12
+	DIO_PORT_D_PIN_13				= 13,            //!< DIO_PORT_D_PIN_13
+	DIO_PORT_D_PIN_14				= 14,            //!< DIO_PORT_D_PIN_14
+	DIO_PORT_D_PIN_15				= 15,            //!< DIO_PORT_D_PIN_15
 /********************************************************************/
 
 /*********************** PORT E Pin Numbering ***********************/
 
-    PORT_E_PIN_0                = 0,			 //!< PORT_E_PIN_0
-    PORT_E_PIN_1                = 1,			 //!< PORT_E_PIN_1
-    PORT_E_PIN_2                = 2,			 //!< PORT_E_PIN_2
-    PORT_E_PIN_3                = 3,			 //!< PORT_E_PIN_3
-    PORT_E_PIN_4                = 4,			 //!< PORT_E_PIN_4
-    PORT_E_PIN_5                = 5,			 //!< PORT_E_PIN_5
-    PORT_E_PIN_6                = 6,			 //!< PORT_E_PIN_6
-    PORT_E_PIN_7                = 7,			 //!< PORT_E_PIN_7
-    PORT_E_PIN_8				= 8,             //!< PORT_E_PIN_8
-	PORT_E_PIN_9				= 9,             //!< PORT_E_PIN_9
-	PORT_E_PIN_10				= 10,            //!< PORT_E_PIN_10
-	PORT_E_PIN_11				= 11,            //!< PORT_E_PIN_11
-	PORT_E_PIN_12				= 12,            //!< PORT_E_PIN_12
-	PORT_E_PIN_13				= 13,            //!< PORT_E_PIN_13
-	PORT_E_PIN_14				= 14,            //!< PORT_E_PIN_14
-	PORT_E_PIN_15				= 15,            //!< PORT_E_PIN_15
+    DIO_PORT_E_PIN_0                = 0,			 //!< DIO_PORT_E_PIN_0
+    DIO_PORT_E_PIN_1                = 1,			 //!< DIO_PORT_E_PIN_1
+    DIO_PORT_E_PIN_2                = 2,			 //!< DIO_PORT_E_PIN_2
+    DIO_PORT_E_PIN_3                = 3,			 //!< DIO_PORT_E_PIN_3
+    DIO_PORT_E_PIN_4                = 4,			 //!< DIO_PORT_E_PIN_4
+    DIO_PORT_E_PIN_5                = 5,			 //!< DIO_PORT_E_PIN_5
+    DIO_PORT_E_PIN_6                = 6,			 //!< DIO_PORT_E_PIN_6
+    DIO_PORT_E_PIN_7                = 7,			 //!< DIO_PORT_E_PIN_7
+    DIO_PORT_E_PIN_8				= 8,             //!< DIO_PORT_E_PIN_8
+	DIO_PORT_E_PIN_9				= 9,             //!< DIO_PORT_E_PIN_9
+	DIO_PORT_E_PIN_10				= 10,            //!< DIO_PORT_E_PIN_10
+	DIO_PORT_E_PIN_11				= 11,            //!< DIO_PORT_E_PIN_11
+	DIO_PORT_E_PIN_12				= 12,            //!< DIO_PORT_E_PIN_12
+	DIO_PORT_E_PIN_13				= 13,            //!< DIO_PORT_E_PIN_13
+	DIO_PORT_E_PIN_14				= 14,            //!< DIO_PORT_E_PIN_14
+	DIO_PORT_E_PIN_15				= 15,            //!< DIO_PORT_E_PIN_15
 /********************************************************************/
 
 /** Note: in STM32F407, There is no availability for PORTF & PORTG **/
 
 /*********************** PORT H Pin Numbering ***********************/
 
-	PORT_H_PIN_0                = 0,   			 //!< PORT_H_PIN_0
-	PORT_H_PIN_1                = 1,   			 //!< PORT_H_PIN_1
-	PORT_H_PIN_2                = 2,   			 //!< PORT_H_PIN_2
-	PORT_H_PIN_3                = 3,   			 //!< PORT_H_PIN_3
-	PORT_H_PIN_4                = 4,   			 //!< PORT_H_PIN_4
-	PORT_H_PIN_5                = 5,   			 //!< PORT_H_PIN_5
-	PORT_H_PIN_6                = 6,   			 //!< PORT_H_PIN_6
-	PORT_H_PIN_7                = 7,		     //!< PORT_H_PIN_7
-	PORT_H_PIN_8				= 8,             //!< PORT_H_PIN_8
-	PORT_H_PIN_9				= 9,             //!< PORT_H_PIN_9
-	PORT_H_PIN_10				= 10,            //!< PORT_H_PIN_10
-	PORT_H_PIN_11				= 11,            //!< PORT_H_PIN_11
-	PORT_H_PIN_12				= 12,            //!< PORT_H_PIN_12
-	PORT_H_PIN_13				= 13,            //!< PORT_H_PIN_13
-	PORT_H_PIN_14				= 14,            //!< PORT_H_PIN_14
-	PORT_H_PIN_15				= 15             //!< PORT_H_PIN_15
+	DIO_PORT_H_PIN_0                = 0,   			 //!< DIO_PORT_H_PIN_0
+	DIO_PORT_H_PIN_1                = 1,   			 //!< DIO_PORT_H_PIN_1
+	DIO_PORT_H_PIN_2                = 2,   			 //!< DIO_PORT_H_PIN_2
+	DIO_PORT_H_PIN_3                = 3,   			 //!< DIO_PORT_H_PIN_3
+	DIO_PORT_H_PIN_4                = 4,   			 //!< DIO_PORT_H_PIN_4
+	DIO_PORT_H_PIN_5                = 5,   			 //!< DIO_PORT_H_PIN_5
+	DIO_PORT_H_PIN_6                = 6,   			 //!< DIO_PORT_H_PIN_6
+	DIO_PORT_H_PIN_7                = 7,		     //!< DIO_PORT_H_PIN_7
+	DIO_PORT_H_PIN_8				= 8,             //!< DIO_PORT_H_PIN_8
+	DIO_PORT_H_PIN_9				= 9,             //!< DIO_PORT_H_PIN_9
+	DIO_PORT_H_PIN_10				= 10,            //!< DIO_PORT_H_PIN_10
+	DIO_PORT_H_PIN_11				= 11,            //!< DIO_PORT_H_PIN_11
+	DIO_PORT_H_PIN_12				= 12,            //!< DIO_PORT_H_PIN_12
+	DIO_PORT_H_PIN_13				= 13,            //!< DIO_PORT_H_PIN_13
+	DIO_PORT_H_PIN_14				= 14,            //!< DIO_PORT_H_PIN_14
+	DIO_PORT_H_PIN_15				= 15             //!< DIO_PORT_H_PIN_15
 /********************************************************************/
 
 
@@ -442,14 +442,14 @@ typedef enum{
 #ifdef STM32F429
 typedef enum{
 
-    PORTA,//!< PORTA
-    PORTB,//!< PORTB
-    PORTC,//!< PORTC
-    PORTD,//!< PORTD
-    PORTE,//!< PORTE
-    PORTF,//!< PORTF
-    PORTG,//!< PORTG
-	PORTH //!< PORTH
+    DIO_PORTA,//!< PORTA
+	DIO_PORTB,//!< PORTB
+	DIO_PORTC,//!< PORTC
+	DIO_PORTD,//!< PORTD
+	DIO_PORTE,//!< PORTE
+	DIO_PORTF,//!< PORTF
+	DIO_PORTG,//!< PORTG
+	DIO_PORTH //!< PORTH
 
 }Dio_PortNumEnum;
 
@@ -460,12 +460,12 @@ typedef enum{
 */
 typedef enum{
 
-    PORTA,//!< PORTA
-    PORTB,//!< PORTB
-    PORTC,//!< PORTC
-    PORTD,//!< PORTD
-    PORTE,//!< PORTE
-	PORTH //!< PORTH
+	DIO_PORTA,//!< PORTA
+	DIO_PORTB,//!< PORTB
+	DIO_PORTC,//!< PORTC
+	DIO_PORTD,//!< PORTD
+	DIO_PORTE,//!< PORTE
+	DIO_PORTH //!< PORTH
 
 }Dio_PortNumEnum;
 
@@ -524,8 +524,6 @@ Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId);
 /* Function for DIO write Port API */
 void Dio_WriteChannel(Dio_ChannelType ChannelId, Dio_LevelType Level);
 
-/* Function for DIO Initialization API */
-void Dio_Init(const Dio_ConfigType * ConfigPtr);
 
 #if (DIO_FLIP_CHANNEL_API == STD_ON)
 /* Function for DIO flip channel API */

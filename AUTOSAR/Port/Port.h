@@ -1297,10 +1297,11 @@ typedef enum{
  */
 typedef enum{
 
-	LOW_SPEED,     //!< LOW_SPEED
-	MEDIUM_SPEED,  //!< MEDIUM_SPEED
-	HIGH_SPEED,    //!< HIGH_SPEED
-	VERY_HIGH_SPEED//!< VERY_HIGH_SPEED
+	NO_SPEED,			//!< NO_SPEED
+	LOW_SPEED = 0,      //!< LOW_SPEED
+	MEDIUM_SPEED,  		//!< MEDIUM_SPEED
+	HIGH_SPEED,    		//!< HIGH_SPEED
+	VERY_HIGH_SPEED		//!< VERY_HIGH_SPEED
 }Port_PinOutputSpeed;
 
 /**
@@ -1341,6 +1342,7 @@ typedef uint8       Port_PinModeType;
 #define ANALOG_MODE_SELECTED                16
 
 /* Define used to decide Output type							 */
+#define OUTPUT_TYPE_OFF						STD_LOW
 #define OUTPUT_TYPE_PUSH_PULL				STD_LOW
 #define OUTPUT_TYPE_OPEN_DRAIN				STD_HIGH
 

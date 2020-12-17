@@ -31,7 +31,7 @@
  * @note:   This driver does NOT Tested Yet on STM32F429 or STM32F407 HW Kits
  ******************************************************************************/
 
-#include <Dio_Reg.h>
+#include "Dio_Reg.h"
 #include "Dio.h"
 
 #if (DIO_DEV_ERROR_DETECT == STD_ON)
@@ -104,7 +104,7 @@ Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId)
 	}
 
 	/* Check if the given Port is within specified values */
-	if ( PORTH < Dio_PortChannels[ChannelId].Port_Num )
+	if (DIO_PORTH < Dio_PortChannels[ChannelId].Port_Num )
 	{
 		/* Port Given is more than specified on This HW, Report a DIO_E_PARAM_INVALID_PORT_ID DET Error */
 		Det_ReportError(DIO_MODULE_ID, DIO_INSTANCE_ID,
@@ -126,27 +126,27 @@ Dio_LevelType Dio_ReadChannel(Dio_ChannelType ChannelId)
 		/* Point to the correct PORT register according to the Port Id stored in the Port_Num member */
 		switch(Dio_PortChannels[ChannelId].Port_Num)
 		{
-		case PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
+		case DIO_PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
 		break;
-		case PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
+		case DIO_PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
 		break;
-		case PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
+		case DIO_PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
 		break;
-		case PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
+		case DIO_PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
 		break;
-		case PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
+		case DIO_PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
 		break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
-		case PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
+		case DIO_PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
 		break;
-		case PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
+		case DIO_PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
 		break;
 #endif
 /****************************************************************************************/
 
-		case PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
+		case DIO_PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
 		break;
 		}
 
@@ -236,7 +236,7 @@ void Dio_WriteChannel(Dio_ChannelType ChannelId, Dio_LevelType Level)
 	}
 
 	/* Check if the given Port is within specified values */
-	if ( PORTH < Dio_PortChannels[ChannelId].Port_Num )
+	if ( DIO_PORTH < Dio_PortChannels[ChannelId].Port_Num )
 	{
 		/* Port Given is more than specified on This HW, Report a DIO_E_PARAM_INVALID_PORT_ID DET Error */
 		Det_ReportError(DIO_MODULE_ID, DIO_INSTANCE_ID,
@@ -258,27 +258,27 @@ void Dio_WriteChannel(Dio_ChannelType ChannelId, Dio_LevelType Level)
 		/* Point to the correct PORT register according to the Port Id stored in the Port_Num member */
 		switch(Dio_PortChannels[ChannelId].Port_Num)
 		{
-		case PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
+		case DIO_PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
 		break;
-		case PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
+		case DIO_PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
 		break;
-		case PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
+		case DIO_PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
 		break;
-		case PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
+		case DIO_PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
 		break;
-		case PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
+		case DIO_PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
 		break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
-		case PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
+		case DIO_PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
 		break;
-		case PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
+		case DIO_PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
 		break;
 #endif
 /****************************************************************************************/
 
-		case PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
+		case DIO_PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
 		break;
 		}
 		if(Level == STD_HIGH)
@@ -423,7 +423,7 @@ Dio_LevelType Dio_FlipChannel(Dio_ChannelType ChannelId)
 	 * Checking with PORTH Value because it is the biggest one
 	 * (Last Port available on HW)
 	*/
-	if ( PORTH < Dio_PortChannels[ChannelId].Port_Num )
+	if ( DIO_PORTH < Dio_PortChannels[ChannelId].Port_Num )
 	{
 		/* Port Given is more than specified on This HW, Report a DIO_E_PARAM_INVALID_PORT_ID DET Error */
 		Det_ReportError(DIO_MODULE_ID, DIO_INSTANCE_ID,
@@ -445,37 +445,37 @@ Dio_LevelType Dio_FlipChannel(Dio_ChannelType ChannelId)
 		/* Point to the correct PORT register according to the Port Id stored in the Port_Num member */
 		switch(Dio_PortChannels[ChannelId].Port_Num)
 		{
-		case PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
+		case DIO_PORTA:    Port_Ptr = (volatile uint32*)GPIO_PORTA_BASE_ADDRESS;
 		break;
-		case PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
+		case DIO_PORTB:    Port_Ptr = (volatile uint32*)GPIO_PORTB_BASE_ADDRESS;
 		break;
-		case PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
+		case DIO_PORTC:    Port_Ptr = (volatile uint32*)GPIO_PORTC_BASE_ADDRESS;
 		break;
-		case PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
+		case DIO_PORTD:    Port_Ptr = (volatile uint32*)GPIO_PORTD_BASE_ADDRESS;
 		break;
-		case PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
+		case DIO_PORTE:    Port_Ptr = (volatile uint32*)GPIO_PORTE_BASE_ADDRESS;
 		break;
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
-		case PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
+		case DIO_PORTF:    Port_Ptr = (volatile uint32*)GPIO_PORTF_BASE_ADDRESS;
 		break;
-		case PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
+		case DIO_PORTG:    Port_Ptr = (volatile uint32*)GPIO_PORTG_BASE_ADDRESS;
 		break;
 #endif
 /****************************************************************************************/
 
 		break;
-		case PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
+		case DIO_PORTH:    Port_Ptr = (volatile uint32*)GPIO_PORTH_BASE_ADDRESS;
 		break;
 		}
 
 		/* Toggle Selected pin */
-		TOGGLE_BIT( *(volatile uint32*)((volatile uint8*)Port_Ptr + DIO_BIT_SET_REGISTER_OFFSET), Dio_PortChannels[ChannelId].Ch_Num  );
+		TOGGLE_BIT( *(volatile uint32*)((volatile uint8*)Port_Ptr + DIO_OUTPUT_DATA_REGISTER_OFFSET), Dio_PortChannels[ChannelId].Ch_Num  );
 
 		/* Get Bit Value after toggling */
 
 		/* Check if the bit value is High */
-		if(BIT_IS_SET(*(volatile uint32*)((volatile uint8*)Port_Ptr + DIO_INPUT_DATA_REGISTER_OFFSET), Dio_PortChannels[ChannelId].Ch_Num) )
+		if(BIT_IS_SET(*(volatile uint32*)((volatile uint8*)Port_Ptr + DIO_OUTPUT_DATA_REGISTER_OFFSET), Dio_PortChannels[ChannelId].Ch_Num) )
 		{
 			/* Bit value is high, save its value on output variable */
 			output = STD_HIGH;

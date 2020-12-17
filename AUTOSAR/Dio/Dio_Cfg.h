@@ -51,24 +51,41 @@
 #define DIO_FLIP_CHANNEL_API                (STD_ON)
 
 /* Number of the configured Dio Channels */
-#define DIO_CONFIGURED_CHANNLES             (4U)
+#define DIO_CONFIGURED_CHANNLES             (7U)
 
 /* Channel Index in the array of structures in Dio_PBcfg.c */
 #define DioConf_LED1_CHANNEL_ID_INDEX        (uint8)0x00
 #define DioConf_LED2_CHANNEL_ID_INDEX        (uint8)0x01
 #define DioConf_SW1_CHANNEL_ID_INDEX         (uint8)0x02
-#define DioConf_SW2_CHANNEL_ID_INDEX         (uint8)0x03
+#define DioConf_USART1_TX_CHANNEL_ID_INDEX   (uint8)0x03
+#define DioConf_USART1_RX_CHANNEL_ID_INDEX   (uint8)0x04
+#define DioConf_UART4_TX_CHANNEL_ID_INDEX    (uint8)0x05
+#define DioConf_UART4_RX_CHANNEL_ID_INDEX    (uint8)0x06
 
-/* DIO Configured Port ID's  */
-#define DioConf_LED1_PORT_NUM                (Dio_PortType)5 /* PORTF */
-#define DioConf_LED2_PORT_NUM                (Dio_PortType)5 /* PORTF */
-#define DioConf_SW1_PORT_NUM                 (Dio_PortType)5 /* PORTF */
-#define DioConf_SW2_PORT_NUM                 (Dio_PortType)5 /* PORTF */
 
-/* DIO Configured Channel ID's */
-#define DioConf_LED1_CHANNEL_NUM             (Dio_ChannelType)1 /* Pin 1 in PORTF */
-#define DioConf_LED2_CHANNEL_NUM             (Dio_ChannelType)2 /* Pin 2 in PORTF */
-#define DioConf_SW1_CHANNEL_NUM              (Dio_ChannelType)4 /* Pin 0 in PORTF */
-#define DioConf_SW2_CHANNEL_NUM              (Dio_ChannelType)0 /* Pin 0 in PORTF */
+/* These USARTs used for Testing Only 					   */
+#define DioConf_USART1_PORT_NUM				 (Dio_PortType)DIO_PORTA
+#define DioConf_UART4_PORT_NUM				 (Dio_PortType)DIO_PORTC
+
+
+/* DIO Configured Port ID's  							   */
+#define DioConf_LED1_PORT_NUM                (Dio_PortType)DIO_PORTG /* DIO_PORTG */
+#define DioConf_LED2_PORT_NUM                (Dio_PortType)DIO_PORTG /* DIO_PORTG */
+#define DioConf_SW1_PORT_NUM                 (Dio_PortType)DIO_PORTA /* DIO_PORTG */
+
+/* DIO Configured Channel ID's 							   */
+#define DioConf_LED1_CHANNEL_NUM             (Dio_ChannelType)DIO_PORT_G_PIN_13 /* Pin 13 in PORTG */
+#define DioConf_LED2_CHANNEL_NUM             (Dio_ChannelType)DIO_PORT_G_PIN_14 /* Pin 14 in PORTG */
+#define DioConf_SW1_CHANNEL_NUM              (Dio_ChannelType)DIO_PORT_A_PIN_0  /* Pin 0  in PORTA */
+
+/* These USARTs used for Testing Only 				*/
+#define DioConf_USART1_TX_CHANNEL_NUM		 (Dio_ChannelType)DIO_PORT_A_PIN_9	/* Pin 9 in PORTA  */
+#define DioConf_USART1_RX_CHANNEL_NUM		 (Dio_ChannelType)DIO_PORT_A_PIN_10 /* Pin 10 in PORTA */
+
+#define DioConf_UART4_TX_CHANNEL_NUM		 (Dio_ChannelType)DIO_PORT_C_PIN_10 /* Pin 10 in PORTC */
+#define DioConf_UART4_RX_CHANNEL_NUM		 (Dio_ChannelType)DIO_PORT_C_PIN_11 /* Pin 11 in PORTC */
+
+
+
 
 #endif /* DIO_CFG_H */

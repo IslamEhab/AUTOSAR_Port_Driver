@@ -92,9 +92,6 @@ void Port_Init(const Port_ConfigType* ConfigPtr)
 	*/
 	volatile GPIO_REG* PortGpio_Ptr = NULL_PTR;
 
-	/* Variable to waste time to ensure clock stability */
-	volatile uint32  delay = 0;
-
 	/* Variable to iterate on it */
 	uint8 counter = 0;
 
@@ -139,39 +136,39 @@ void Port_Init(const Port_ConfigType* ConfigPtr)
 			switch(Port_Channels[counter].portNum)
 			{
 			/* Point the pointer to PORTA Base Address */
-			case PORTA:	PortGpio_Ptr = GPIO_PORTA_BASE_ADDRESS;
+			case PORTA:	PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTA_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTB Base Address */
-			case PORTB:	PortGpio_Ptr = GPIO_PORTB_BASE_ADDRESS;
+			case PORTB:	PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTB_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTC Base Address */
-			case PORTC:	PortGpio_Ptr = GPIO_PORTC_BASE_ADDRESS;
+			case PORTC:	PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTC_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTD Base Address */
-			case PORTD:	PortGpio_Ptr = GPIO_PORTD_BASE_ADDRESS;
+			case PORTD:	PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTD_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTE Base Address */
-			case PORTE:	PortGpio_Ptr = GPIO_PORTE_BASE_ADDRESS;
+			case PORTE:	PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTE_BASE_ADDRESS;
 			break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
 
 			/* Point the pointer to PORTF Base Address */
-			case PORTF: PortGpio_Ptr = GPIO_PORTF_BASE_ADDRESS;
+			case PORTF: PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTF_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTG Base Address */
-			case PORTG: PortGpio_Ptr = GPIO_PORTG_BASE_ADDRESS;
+			case PORTG: PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTG_BASE_ADDRESS;
 			break;
 #endif
 /****************************************************************************************/
 			/* Point the pointer to PORTF Base Address */
-			case PORTH: PortGpio_Ptr = GPIO_PORTH_BASE_ADDRESS;
+			case PORTH: PortGpio_Ptr = (volatile GPIO_REG*)(volatile GPIO_REG*)GPIO_PORTH_BASE_ADDRESS;
 			break;
 			}
 
@@ -295,25 +292,12 @@ void Port_Init(const Port_ConfigType* ConfigPtr)
 					}
 				}
 
-				/* Set Output speed from the structure */
-				/*
-				 * First Clear the corresponding bits then
-				 * Set OSPEEDR corresponding bits for the Pin by its Speed value
-				 * By left shift the value by the (pin number) * 2
-				 * because every pin has 2 bits
-				*/
-				PortGpio_Ptr -> OSPEEDR = ( ( (PortGpio_Ptr -> OSPEEDR) & (~(OSPEEDR_REGISTER_MASK_VALUE  << ( (Port_Channels[counter].pinNum) * OSPEEDR_REGISTER_BIT_NUMBERS) ) ) ) \
-						   	   	   	   	   	   	   	   	   	   	   	   	| ( (Port_Channels[counter].speed << ( (Port_Channels[counter].pinNum) * OSPEEDR_REGISTER_BIT_NUMBERS) ) ) );
-
-
-
 				/* Check if Pin Input or Output */
 				if(Port_Channels[counter].direction == PORT_PIN_OUT)
 				{
 					/* Output Pin Selected */
 
 					/* Set Output Type from the structure */
-
 					/*
 					 * First Clear the corresponding bits then
 					 * Set OTYPER corresponding bits for the Pin by its
@@ -322,6 +306,17 @@ void Port_Init(const Port_ConfigType* ConfigPtr)
 					*/
 					PortGpio_Ptr -> OTYPER = ( ( (PortGpio_Ptr -> OTYPER) & (~(OTYPER_REGISTER_MASK_VALUE   << ( (Port_Channels[counter].pinNum) ) ) ) ) \
 							   	   	   	   	   	   	   	   	   	   	 | ( (Port_Channels[counter].outputType << ( (Port_Channels[counter].pinNum) ) ) ) );
+
+					/* Set Output speed from the structure */
+					/*
+					 * First Clear the corresponding bits then
+					 * Set OSPEEDR corresponding bits for the Pin by its Speed value
+					 * By left shift the value by the (pin number) * 2
+					 * because every pin has 2 bits
+					*/
+					PortGpio_Ptr -> OSPEEDR = ( ( (PortGpio_Ptr -> OSPEEDR) & (~(OSPEEDR_REGISTER_MASK_VALUE  << ( (Port_Channels[counter].pinNum) * OSPEEDR_REGISTER_BIT_NUMBERS) ) ) ) \
+							   	   	   	   	   	   	   	   	   	   	   	   	| ( (Port_Channels[counter].speed << ( (Port_Channels[counter].pinNum) * OSPEEDR_REGISTER_BIT_NUMBERS) ) ) );
+
 
 					/* Check for Initial Value */
 					if(Port_Channels[counter].initialValue == INITIAL_VALUE_HIGH)
@@ -361,7 +356,7 @@ void Port_Init(const Port_ConfigType* ConfigPtr)
 					 * then left shift the value by the (pin number) * 2
 					 * because every pin has 2 bits
 					*/
-					PortGpio_Ptr -> PUPDR = ( ( (PortGpio_Ptr -> PUDR) & (~(PUDR_REGISTER_MASK_VALUE  << ( (Port_Channels[counter].pinNum) * PUDR_REGISTER_BIT_NUMBERS) ) ) ) \
+					PortGpio_Ptr -> PUPDR = ( ( (PortGpio_Ptr -> PUPDR) & (~(PUDR_REGISTER_MASK_VALUE  << ( (Port_Channels[counter].pinNum) * PUDR_REGISTER_BIT_NUMBERS) ) ) ) \
 	   	   	   	   	   	   	   	   	   							 | ( (Port_Channels[counter].resistor << ( (Port_Channels[counter].pinNum) * PUDR_REGISTER_BIT_NUMBERS) ) ) );
 
 				}
@@ -514,39 +509,39 @@ void Port_SetPinDirection(Port_PinType Pin, Port_PinDirectionType Direction)
 		switch(Port_Channels[Id].portNum)
 		{
 		/* Point the pointer to PORTA Base Address */
-		case PORTA:	PortGpio_Ptr = GPIO_PORTA_BASE_ADDRESS;
+		case PORTA:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTA_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTB Base Address */
-		case PORTB:	PortGpio_Ptr = GPIO_PORTB_BASE_ADDRESS;
+		case PORTB:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTB_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTC Base Address */
-		case PORTC:	PortGpio_Ptr = GPIO_PORTC_BASE_ADDRESS;
+		case PORTC:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTC_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTD Base Address */
-		case PORTD:	PortGpio_Ptr = GPIO_PORTD_BASE_ADDRESS;
+		case PORTD:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTD_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTE Base Address */
-		case PORTE:	PortGpio_Ptr = GPIO_PORTE_BASE_ADDRESS;
+		case PORTE:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTE_BASE_ADDRESS;
 		break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
 
 		/* Point the pointer to PORTF Base Address */
-		case PORTF: PortGpio_Ptr = GPIO_PORTF_BASE_ADDRESS;
+		case PORTF: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTF_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTG Base Address */
-		case PORTG: PortGpio_Ptr = GPIO_PORTG_BASE_ADDRESS;
+		case PORTG: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTG_BASE_ADDRESS;
 		break;
 #endif
 /****************************************************************************************/
 		/* Point the pointer to PORTF Base Address */
-		case PORTH: PortGpio_Ptr = GPIO_PORTH_BASE_ADDRESS;
+		case PORTH: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTH_BASE_ADDRESS;
 		break;
 		}
 
@@ -658,39 +653,39 @@ void Port_RefreshPortDirection(void)
 			switch(Port_Channels[counter].portNum)
 			{
 			/* Point the pointer to PORTA Base Address */
-			case PORTA:	PortGpio_Ptr = GPIO_PORTA_BASE_ADDRESS;
+			case PORTA:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTA_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTB Base Address */
-			case PORTB:	PortGpio_Ptr = GPIO_PORTB_BASE_ADDRESS;
+			case PORTB:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTB_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTC Base Address */
-			case PORTC:	PortGpio_Ptr = GPIO_PORTC_BASE_ADDRESS;
+			case PORTC:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTC_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTD Base Address */
-			case PORTD:	PortGpio_Ptr = GPIO_PORTD_BASE_ADDRESS;
+			case PORTD:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTD_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTE Base Address */
-			case PORTE:	PortGpio_Ptr = GPIO_PORTE_BASE_ADDRESS;
+			case PORTE:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTE_BASE_ADDRESS;
 			break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
 
 			/* Point the pointer to PORTF Base Address */
-			case PORTF: PortGpio_Ptr = GPIO_PORTF_BASE_ADDRESS;
+			case PORTF: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTF_BASE_ADDRESS;
 			break;
 
 			/* Point the pointer to PORTG Base Address */
-			case PORTG: PortGpio_Ptr = GPIO_PORTG_BASE_ADDRESS;
+			case PORTG: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTG_BASE_ADDRESS;
 			break;
 #endif
 /****************************************************************************************/
 			/* Point the pointer to PORTF Base Address */
-			case PORTH: PortGpio_Ptr = GPIO_PORTH_BASE_ADDRESS;
+			case PORTH: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTH_BASE_ADDRESS;
 			break;
 			}
 
@@ -928,39 +923,39 @@ void Port_SetPinMode(Port_PinType Pin, Port_PinModeType Mode)
 		switch(Port_Channels[Id].portNum)
 		{
 		/* Point the pointer to PORTA Base Address */
-		case PORTA:	PortGpio_Ptr = GPIO_PORTA_BASE_ADDRESS;
+		case PORTA:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTA_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTB Base Address */
-		case PORTB:	PortGpio_Ptr = GPIO_PORTB_BASE_ADDRESS;
+		case PORTB:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTB_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTC Base Address */
-		case PORTC:	PortGpio_Ptr = GPIO_PORTC_BASE_ADDRESS;
+		case PORTC:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTC_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTD Base Address */
-		case PORTD:	PortGpio_Ptr = GPIO_PORTD_BASE_ADDRESS;
+		case PORTD:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTD_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTE Base Address */
-		case PORTE:	PortGpio_Ptr = GPIO_PORTE_BASE_ADDRESS;
+		case PORTE:	PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTE_BASE_ADDRESS;
 		break;
 
 /************ These 2 Ports are only available on STM32F429 not in STM32F407 ************/
 #ifdef STM32F429
 
 		/* Point the pointer to PORTF Base Address */
-		case PORTF: PortGpio_Ptr = GPIO_PORTF_BASE_ADDRESS;
+		case PORTF: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTF_BASE_ADDRESS;
 		break;
 
 		/* Point the pointer to PORTG Base Address */
-		case PORTG: PortGpio_Ptr = GPIO_PORTG_BASE_ADDRESS;
+		case PORTG: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTG_BASE_ADDRESS;
 		break;
 #endif
 /****************************************************************************************/
 		/* Point the pointer to PORTH Base Address */
-		case PORTH: PortGpio_Ptr = GPIO_PORTH_BASE_ADDRESS;
+		case PORTH: PortGpio_Ptr = (volatile GPIO_REG*)GPIO_PORTH_BASE_ADDRESS;
 		break;
 		}
 

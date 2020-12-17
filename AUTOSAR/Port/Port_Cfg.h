@@ -48,24 +48,40 @@
 #define PORT_CFG_AR_RELEASE_MINOR_VERSION       (3U)
 #define PORT_CFG_AR_RELEASE_PATCH_VERSION       (1U)
 
-/* Pre-compile option for DET Enable/ Disable */
+/* Pre-compile option for DET Enable/ Disable 		*/
 #define PORT_DEV_ERROR_DETECT                   (STD_ON)
 
-/* Pre-compile option for Port_SetPinDirection API */
+/* Pre-compile option for Port_SetPinDirection API 	*/
 #define PORT_SET_PIN_DIRECTION_API              (STD_ON)
 
-/* Pre-compile Option for Port_GetVersionInfo API */
+/* Pre-compile Option for Port_GetVersionInfo API 	*/
 #define PORT_VERSION_INFO_API                   (STD_ON)
 
-/* Number of the configured Dio Channels */
+/* Number of the configured Dio Channels 			*/
 #define PORT_CONFIGURED_CHANNLES                (39U)
 
 /* Port Configured Port ID's  */
-#define PortConf_LED1_PORT_NUM                  (Port_PortNumEnum)PORTF
-#define PortConf_SW1_PORT_NUM                   (Port_PortNumEnum)PORTF
+#define PortConf_LED1_PORT_NUM                  (Port_PortNumEnum)PORTG
+#define PortConf_LED2_PORT_NUM                  (Port_PortNumEnum)PORTG
+#define PortConf_SW1_PORT_NUM                   (Port_PortNumEnum)PORTA
+
+/* These USARTs used for Testing Only 				*/
+#define PortConf_USART1_PORT_NUM				(Port_PortNumEnum)PORTA
+#define PortConf_UART4_PORT_NUM					(Port_PortNumEnum)PORTC
 
 /* Port Configured Pins ID's  */
-#define PortConf_LED1_PIN_NUM                   (Port_PinType)PORT_F_PIN_2 /* Pin 3 in PORTF */
-#define PortConf_SW1_PIN_NUM                    (Port_PinType)PORT_F_PIN_4 /* Pin 4 in PORTF */
+#define PortConf_LED1_PIN_NUM                   (Port_PinType)PORT_G_PIN_13 /* Pin 13 in PORTG */
+#define PortConf_LED2_PIN_NUM                   (Port_PinType)PORT_G_PIN_14 /* Pin 14 in PORTG */
+#define PortConf_SW1_PIN_NUM                    (Port_PinType)PORT_A_PIN_0  /* Pin 0  in PORTA */
+
+/* These USARTs used for Testing Only 				*/
+#define PortConf_USART1_TX_PIN_NUM				(Port_PinType)PORT_A_PIN_9	/* Pin 9 in PORTA  */
+#define PortConf_USART1_RX_PIN_NUM				(Port_PinType)PORT_A_PIN_10 /* Pin 10 in PORTA */
+
+#define PortConf_UART4_TX_PIN_NUM				(Port_PinType)PORT_C_PIN_10 /* Pin 10 in PORTC */
+#define PortConf_UART4_RX_PIN_NUM				(Port_PinType)PORT_C_PIN_11 /* Pin 11 in PORTC */
+
+
+
 
 #endif /* PORT_CFG_H_ */

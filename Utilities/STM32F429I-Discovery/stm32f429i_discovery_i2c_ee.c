@@ -697,7 +697,7 @@ void sEE_I2C_DMA_TX_IRQHandler(void)
     sEETimeout = sEE_LONG_TIMEOUT;
     while(!I2C_GetFlagStatus(sEE_I2C, I2C_FLAG_BTF))
     {
-      if((sEETimeout--) == 0) sEE_TIMEOUT_UserCallback();
+//      if((sEETimeout--) == 0) sEE_TIMEOUT_UserCallback();
     }
     
     /*!< Send STOP condition */

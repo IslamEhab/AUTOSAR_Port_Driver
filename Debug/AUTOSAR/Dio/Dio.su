@@ -1,4 +1,4 @@
-Dio.c:71:15:Dio_ReadChannel	24	static
-Dio.c:207:6:Dio_WriteChannel	24	static
-Dio.c:336:6:Dio_GetVersionInfo	16	static
-Dio.c:386:15:Dio_FlipChannel	24	static
+Dio.c:75:15:Dio_ReadChannel	24	static
+Dio.c:211:6:Dio_WriteChannel	24	static
+Dio.c:340:6:Dio_GetVersionInfo	16	static
+Dio.c:390:15:Dio_FlipChannel	24	static

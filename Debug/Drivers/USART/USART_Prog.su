@@ -1,0 +1,7 @@
+USART_Prog.c:40:6:vidUSART_Init	24	static
+USART_Prog.c:84:6:vidUSART_SendChar	16	static
+USART_Prog.c:91:6:vidUSART_SendString	32	static
+USART_Prog.c:122:6:vidUSART_Receive	32	static
+USART_Prog.c:181:6:vidUSART_Send_DMA	32	static
+USART_Prog.c:211:4:u8USART_Receive_DMA	32	static
+USART_Prog.c:252:6:vidUSART_InitReg	16	static

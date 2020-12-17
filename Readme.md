@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 # DIO & Port AUTOSAR Drivers Version 4.3.1
 ## This driver still under development
 ## 												AUTOSAR Layers 
@@ -17,15 +16,12 @@ This projects implements both Dio and Port Drivers for STM32F429 and STM32F407 u
 - API names and its parameters
 - How to use these APIs, structures and enums 
 
+** Note: AF Function & Ordinary GPIO works properly on STM32F429 **
 
 ** Note: This driver needs: **
-=======
-# Project Initiation
-## This Project is Port AUTOSAR Driver Version 4.3.1
-## This driver should be compatible with STM32F429 & STM32F407 HW Kits 
+ 
 Note: This driver needs:
->>>>>>> 80902c246ae56faf0681d387cdef7d1adf1c1d9f
-1. Testing on STM32F429 & STM32F407
+1. Testing on STM32F407
 1. Write Test cases for Both HW to ensure that Port & Dio works properly
 1. Start Alternative Function Enum for STM32F407
 
