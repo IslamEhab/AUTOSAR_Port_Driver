@@ -1,0 +1,80 @@
+\hypertarget{_common___macros_8h}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Common\+\_\+\+Includes/\+Common\+\_\+\+Macros.h File Reference}
+\label{_common___macros_8h}\index{AUTOSAR/Common\_Includes/Common\_Macros.h@{AUTOSAR/Common\_Includes/Common\_Macros.h}}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_common___macros_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_a26474f43799fbade9cf300e21dd3a91a}{S\+E\+T\+\_\+\+B\+IT}}(R\+EG,  B\+IT)~(R\+EG$\vert$=(1$<$$<$B\+IT))
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_a133aae6fc0d41bffab39ab223a7001de}{C\+L\+E\+A\+R\+\_\+\+B\+IT}}(R\+EG,  B\+IT)~(R\+EG\&=($\sim$(1$<$$<$B\+IT)))
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_a79b3e8e1bc0f4993dce31cc07d86ed58}{G\+E\+T\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+UE}}(R\+EG,  B\+IT)~(((R\+EG) $>$$>$ (B\+IT)) \& 0x01)
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_ae335be8e8dc374dc7075fe9b6a410efd}{T\+O\+G\+G\+L\+E\+\_\+\+B\+IT}}(R\+EG,  B\+IT)~(R\+EG$^\wedge$=(1$<$$<$B\+IT))
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_afb20f25c9f60db5a20902e0e4d30c514}{R\+OR}}(R\+EG,  num)~( R\+EG = (R\+EG$>$$>$num) $\vert$ (R\+EG $<$$<$ ((sizeof(R\+EG) $\ast$ 8)-\/num)) )
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_a8c26888be4ae6397073e42496c885512}{R\+OL}}(R\+EG,  num)~( R\+EG = (R\+EG$<$$<$num) $\vert$ (R\+EG $>$$>$ ((sizeof(R\+EG) $\ast$ 8)-\/num)) )
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_a7f8874337b74eb89e5de9c68325d581d}{B\+I\+T\+\_\+\+I\+S\+\_\+\+S\+ET}}(R\+EG,  B\+IT)~( R\+EG \& (1$<$$<$B\+IT) )
+\item 
+\#define \mbox{\hyperlink{_common___macros_8h_af4d3be1ad5094302bf56b54bbc872e95}{B\+I\+T\+\_\+\+I\+S\+\_\+\+C\+L\+E\+AR}}(R\+EG,  B\+IT)~( !(R\+EG \& (1$<$$<$B\+IT)) )
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_common___macros_8h_af4d3be1ad5094302bf56b54bbc872e95}\label{_common___macros_8h_af4d3be1ad5094302bf56b54bbc872e95}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!BIT\_IS\_CLEAR@{BIT\_IS\_CLEAR}}
+\index{BIT\_IS\_CLEAR@{BIT\_IS\_CLEAR}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{BIT\_IS\_CLEAR}{BIT\_IS\_CLEAR}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+I\+S\+\_\+\+C\+L\+E\+AR(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~( !(R\+EG \& (1$<$$<$B\+IT)) )}
+
+\mbox{\Hypertarget{_common___macros_8h_a7f8874337b74eb89e5de9c68325d581d}\label{_common___macros_8h_a7f8874337b74eb89e5de9c68325d581d}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!BIT\_IS\_SET@{BIT\_IS\_SET}}
+\index{BIT\_IS\_SET@{BIT\_IS\_SET}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{BIT\_IS\_SET}{BIT\_IS\_SET}}
+{\footnotesize\ttfamily \#define B\+I\+T\+\_\+\+I\+S\+\_\+\+S\+ET(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~( R\+EG \& (1$<$$<$B\+IT) )}
+
+\mbox{\Hypertarget{_common___macros_8h_a133aae6fc0d41bffab39ab223a7001de}\label{_common___macros_8h_a133aae6fc0d41bffab39ab223a7001de}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!CLEAR\_BIT@{CLEAR\_BIT}}
+\index{CLEAR\_BIT@{CLEAR\_BIT}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{CLEAR\_BIT}{CLEAR\_BIT}}
+{\footnotesize\ttfamily \#define C\+L\+E\+A\+R\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~(R\+EG\&=($\sim$(1$<$$<$B\+IT)))}
+
+\mbox{\Hypertarget{_common___macros_8h_a79b3e8e1bc0f4993dce31cc07d86ed58}\label{_common___macros_8h_a79b3e8e1bc0f4993dce31cc07d86ed58}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!GET\_BIT\_VALUE@{GET\_BIT\_VALUE}}
+\index{GET\_BIT\_VALUE@{GET\_BIT\_VALUE}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{GET\_BIT\_VALUE}{GET\_BIT\_VALUE}}
+{\footnotesize\ttfamily \#define G\+E\+T\+\_\+\+B\+I\+T\+\_\+\+V\+A\+L\+UE(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~(((R\+EG) $>$$>$ (B\+IT)) \& 0x01)}
+
+\mbox{\Hypertarget{_common___macros_8h_a8c26888be4ae6397073e42496c885512}\label{_common___macros_8h_a8c26888be4ae6397073e42496c885512}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!ROL@{ROL}}
+\index{ROL@{ROL}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{ROL}{ROL}}
+{\footnotesize\ttfamily \#define R\+OL(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{num }\end{DoxyParamCaption})~( R\+EG = (R\+EG$<$$<$num) $\vert$ (R\+EG $>$$>$ ((sizeof(R\+EG) $\ast$ 8)-\/num)) )}
+
+\mbox{\Hypertarget{_common___macros_8h_afb20f25c9f60db5a20902e0e4d30c514}\label{_common___macros_8h_afb20f25c9f60db5a20902e0e4d30c514}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!ROR@{ROR}}
+\index{ROR@{ROR}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{ROR}{ROR}}
+{\footnotesize\ttfamily \#define R\+OR(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{num }\end{DoxyParamCaption})~( R\+EG = (R\+EG$>$$>$num) $\vert$ (R\+EG $<$$<$ ((sizeof(R\+EG) $\ast$ 8)-\/num)) )}
+
+\mbox{\Hypertarget{_common___macros_8h_a26474f43799fbade9cf300e21dd3a91a}\label{_common___macros_8h_a26474f43799fbade9cf300e21dd3a91a}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!SET\_BIT@{SET\_BIT}}
+\index{SET\_BIT@{SET\_BIT}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{SET\_BIT}{SET\_BIT}}
+{\footnotesize\ttfamily \#define S\+E\+T\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~(R\+EG$\vert$=(1$<$$<$B\+IT))}
+
+\mbox{\Hypertarget{_common___macros_8h_ae335be8e8dc374dc7075fe9b6a410efd}\label{_common___macros_8h_ae335be8e8dc374dc7075fe9b6a410efd}} 
+\index{Common\_Macros.h@{Common\_Macros.h}!TOGGLE\_BIT@{TOGGLE\_BIT}}
+\index{TOGGLE\_BIT@{TOGGLE\_BIT}!Common\_Macros.h@{Common\_Macros.h}}
+\doxyparagraph{\texorpdfstring{TOGGLE\_BIT}{TOGGLE\_BIT}}
+{\footnotesize\ttfamily \#define T\+O\+G\+G\+L\+E\+\_\+\+B\+IT(\begin{DoxyParamCaption}\item[{}]{R\+EG,  }\item[{}]{B\+IT }\end{DoxyParamCaption})~(R\+EG$^\wedge$=(1$<$$<$B\+IT))}
+

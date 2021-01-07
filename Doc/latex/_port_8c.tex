@@ -1,0 +1,137 @@
+\hypertarget{_port_8c}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Port/\+Port.c File Reference}
+\label{_port_8c}\index{AUTOSAR/Port/Port.c@{AUTOSAR/Port/Port.c}}
+{\ttfamily \#include \char`\"{}Port.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Port\+\_\+\+Reg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Det.\+h\char`\"{}}\newline
+Include dependency graph for Port.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_port_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} void \mbox{\hyperlink{_port_8c_a56b22ec7c3e8bb26bccac74af493ccb0}{Port\+\_\+\+Reg\+Init}} (void)
+\item 
+void \mbox{\hyperlink{_port_8c_aacbee83a16c5da7f820356b4f0bf151b}{Port\+\_\+\+Init}} (const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} $\ast$Config\+Ptr)
+\item 
+void \mbox{\hyperlink{_port_8c_a69a59c137ea6d4fdfc522ea4d13965bd}{Port\+\_\+\+Set\+Pin\+Direction}} (\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}} Pin, \mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}} Direction)
+\item 
+void \mbox{\hyperlink{_port_8c_a3384c8587ac035499aa8e6d78d7b3377}{Port\+\_\+\+Refresh\+Port\+Direction}} (void)
+\item 
+void \mbox{\hyperlink{_port_8c_a476702fecbd349a3cb7b77aa4811f2bd}{Port\+\_\+\+Get\+Version\+Info}} (\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$versioninfo)
+\item 
+void \mbox{\hyperlink{_port_8c_a9ea52ef3292691674507f049c1e47eef}{Port\+\_\+\+Set\+Pin\+Mode}} (\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}} Pin, \mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}} Mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_port_8c_a2c5dcdd442cd5ea5909fb88875bd0467}{Port\+\_\+\+Status}} = \mbox{\hyperlink{_port_8h_a37d0f331bf766c8d0116c0fa9b786b2a}{P\+O\+R\+T\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}
+\item 
+const \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{struct_port___config_channel}{Port\+\_\+\+Config\+Channel}} $\ast$ \mbox{\hyperlink{_port_8c_afdc7318a21305a16e5ed16ff2abf902b}{Port\+\_\+\+Channels}} = \mbox{\hyperlink{_compiler_8h_a530f11a96e508d171d28564c8dc20942}{N\+U\+L\+L\+\_\+\+P\+TR}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\Hypertarget{_port_8c_a476702fecbd349a3cb7b77aa4811f2bd}\label{_port_8c_a476702fecbd349a3cb7b77aa4811f2bd}} 
+\index{Port.c@{Port.c}!Port\_GetVersionInfo@{Port\_GetVersionInfo}}
+\index{Port\_GetVersionInfo@{Port\_GetVersionInfo}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_GetVersionInfo()}{Port\_GetVersionInfo()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Get\+Version\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$}]{versioninfo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_port_8c_a476702fecbd349a3cb7b77aa4811f2bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8c_aacbee83a16c5da7f820356b4f0bf151b}\label{_port_8c_aacbee83a16c5da7f820356b4f0bf151b}} 
+\index{Port.c@{Port.c}!Port\_Init@{Port\_Init}}
+\index{Port\_Init@{Port\_Init}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_Init()}{Port\_Init()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} $\ast$}]{Config\+Ptr }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_port_8c_aacbee83a16c5da7f820356b4f0bf151b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8c_a3384c8587ac035499aa8e6d78d7b3377}\label{_port_8c_a3384c8587ac035499aa8e6d78d7b3377}} 
+\index{Port.c@{Port.c}!Port\_RefreshPortDirection@{Port\_RefreshPortDirection}}
+\index{Port\_RefreshPortDirection@{Port\_RefreshPortDirection}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_RefreshPortDirection()}{Port\_RefreshPortDirection()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Refresh\+Port\+Direction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{_port_8c_a3384c8587ac035499aa8e6d78d7b3377_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8c_a56b22ec7c3e8bb26bccac74af493ccb0}\label{_port_8c_a56b22ec7c3e8bb26bccac74af493ccb0}} 
+\index{Port.c@{Port.c}!Port\_RegInit@{Port\_RegInit}}
+\index{Port\_RegInit@{Port\_RegInit}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_RegInit()}{Port\_RegInit()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} void Port\+\_\+\+Reg\+Init (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the caller graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=239pt]{_port_8c_a56b22ec7c3e8bb26bccac74af493ccb0_icgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8c_a69a59c137ea6d4fdfc522ea4d13965bd}\label{_port_8c_a69a59c137ea6d4fdfc522ea4d13965bd}} 
+\index{Port.c@{Port.c}!Port\_SetPinDirection@{Port\_SetPinDirection}}
+\index{Port\_SetPinDirection@{Port\_SetPinDirection}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_SetPinDirection()}{Port\_SetPinDirection()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Set\+Pin\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}}]{Pin,  }\item[{\mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}}}]{Direction }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_port_8c_a69a59c137ea6d4fdfc522ea4d13965bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8c_a9ea52ef3292691674507f049c1e47eef}\label{_port_8c_a9ea52ef3292691674507f049c1e47eef}} 
+\index{Port.c@{Port.c}!Port\_SetPinMode@{Port\_SetPinMode}}
+\index{Port\_SetPinMode@{Port\_SetPinMode}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_SetPinMode()}{Port\_SetPinMode()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}}]{Pin,  }\item[{\mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}}}]{Mode }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{_port_8c_a9ea52ef3292691674507f049c1e47eef_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\Hypertarget{_port_8c_afdc7318a21305a16e5ed16ff2abf902b}\label{_port_8c_afdc7318a21305a16e5ed16ff2abf902b}} 
+\index{Port.c@{Port.c}!Port\_Channels@{Port\_Channels}}
+\index{Port\_Channels@{Port\_Channels}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_Channels}{Port\_Channels}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{struct_port___config_channel}{Port\+\_\+\+Config\+Channel}}$\ast$ Port\+\_\+\+Channels = \mbox{\hyperlink{_compiler_8h_a530f11a96e508d171d28564c8dc20942}{N\+U\+L\+L\+\_\+\+P\+TR}}}
+
+\mbox{\Hypertarget{_port_8c_a2c5dcdd442cd5ea5909fb88875bd0467}\label{_port_8c_a2c5dcdd442cd5ea5909fb88875bd0467}} 
+\index{Port.c@{Port.c}!Port\_Status@{Port\_Status}}
+\index{Port\_Status@{Port\_Status}!Port.c@{Port.c}}
+\doxyparagraph{\texorpdfstring{Port\_Status}{Port\_Status}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} Port\+\_\+\+Status = \mbox{\hyperlink{_port_8h_a37d0f331bf766c8d0116c0fa9b786b2a}{P\+O\+R\+T\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}}
+

@@ -1,0 +1,114 @@
+\hypertarget{struct_port___config_channel}{}\doxysubsection{Port\+\_\+\+Config\+Channel Struct Reference}
+\label{struct_port___config_channel}\index{Port\_ConfigChannel@{Port\_ConfigChannel}}
+
+
+Used to set the configurations of a Specific pin in Port Module.  
+
+
+
+
+{\ttfamily \#include $<$Port.\+h$>$}
+
+
+
+Collaboration diagram for Port\+\_\+\+Config\+Channel\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=213pt]{struct_port___config_channel__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}} \mbox{\hyperlink{struct_port___config_channel_a9da3662efd17969434eca1884c086ad5}{pin\+Num}}
+\item 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1}{Port\+\_\+\+Port\+Num\+Enum}} \mbox{\hyperlink{struct_port___config_channel_a2cdfef06fd9c1ee4cab5d4438495f6ef}{port\+Num}}
+\item 
+\mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}} \mbox{\hyperlink{struct_port___config_channel_a2c1eaf32d68d74ef493521e8d416555c}{direction}}
+\item 
+\mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}} \mbox{\hyperlink{struct_port___config_channel_a47c615e257d6c8223ce1aadb2661a6a3}{mode}}
+\item 
+\mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5}{Port\+\_\+\+Internal\+Resistor}} \mbox{\hyperlink{struct_port___config_channel_a9f253baf63d0673d8e2ea3dcef43c77c}{resistor}}
+\item 
+\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{struct_port___config_channel_add3bfcd0f0bf399a7fbfef51ec29a47b}{pin\+Direction\+\_\+\+Changeable}}
+\item 
+\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{struct_port___config_channel_a8665657f95cfffab26ff08da174f56ba}{pin\+Mode\+\_\+\+Changeable}}
+\item 
+\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{struct_port___config_channel_a8ecc1162fefe1aaac11521f64667d7f7}{initial\+Value}}
+\item 
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677}{Port\+\_\+\+Pin\+Output\+Speed}} \mbox{\hyperlink{struct_port___config_channel_a27522ea703b75f712df54b8d534329d2}{speed}}
+\item 
+\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{struct_port___config_channel_a5b2920629a6b4c069e664679be700d73}{output\+Type}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Used to set the configurations of a Specific pin in Port Module. 
+
+\doxysubsubsection{Field Documentation}
+\mbox{\Hypertarget{struct_port___config_channel_a2c1eaf32d68d74ef493521e8d416555c}\label{struct_port___config_channel_a2c1eaf32d68d74ef493521e8d416555c}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!direction@{direction}}
+\index{direction@{direction}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{direction}{direction}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::direction}
+
+member \textquotesingle{}direction\textquotesingle{} used to decide if the pin is input or output You can find its value @\+Port\+\_\+\+Pin\+Direction\+Type \mbox{\Hypertarget{struct_port___config_channel_a8ecc1162fefe1aaac11521f64667d7f7}\label{struct_port___config_channel_a8ecc1162fefe1aaac11521f64667d7f7}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!initialValue@{initialValue}}
+\index{initialValue@{initialValue}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{initialValue}{initialValue}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::initial\+Value}
+
+member \textquotesingle{}initial\+Value\textquotesingle{} used to set an initial value for output pins You can find its value @\+I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+A\+L\+UE \mbox{\Hypertarget{struct_port___config_channel_a47c615e257d6c8223ce1aadb2661a6a3}\label{struct_port___config_channel_a47c615e257d6c8223ce1aadb2661a6a3}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!mode@{mode}}
+\index{mode@{mode}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{mode}{mode}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::mode}
+
+member \textquotesingle{}mode\textquotesingle{} used to decide which mode is used (G\+P\+IO or any alternative function) You can find its value @\+Port\+\_\+\+Pin\+Mode\+Enum \mbox{\Hypertarget{struct_port___config_channel_a5b2920629a6b4c069e664679be700d73}\label{struct_port___config_channel_a5b2920629a6b4c069e664679be700d73}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!outputType@{outputType}}
+\index{outputType@{outputType}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{outputType}{outputType}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::output\+Type}
+
+member \textquotesingle{}output\+Type\textquotesingle{} used to decide if the output is push pull or open drain You can find its value @\+O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+PE \mbox{\Hypertarget{struct_port___config_channel_add3bfcd0f0bf399a7fbfef51ec29a47b}\label{struct_port___config_channel_add3bfcd0f0bf399a7fbfef51ec29a47b}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!pinDirection\_Changeable@{pinDirection\_Changeable}}
+\index{pinDirection\_Changeable@{pinDirection\_Changeable}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{pinDirection\_Changeable}{pinDirection\_Changeable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} Port\+\_\+\+Config\+Channel\+::pin\+Direction\+\_\+\+Changeable}
+
+\mbox{\Hypertarget{struct_port___config_channel_a8665657f95cfffab26ff08da174f56ba}\label{struct_port___config_channel_a8665657f95cfffab26ff08da174f56ba}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!pinMode\_Changeable@{pinMode\_Changeable}}
+\index{pinMode\_Changeable@{pinMode\_Changeable}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{pinMode\_Changeable}{pinMode\_Changeable}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} Port\+\_\+\+Config\+Channel\+::pin\+Mode\+\_\+\+Changeable}
+
+\mbox{\Hypertarget{struct_port___config_channel_a9da3662efd17969434eca1884c086ad5}\label{struct_port___config_channel_a9da3662efd17969434eca1884c086ad5}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!pinNum@{pinNum}}
+\index{pinNum@{pinNum}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{pinNum}{pinNum}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::pin\+Num}
+
+member \textquotesingle{}pin\+Num\textquotesingle{} used to hold Pin \& port number You can find its value @\+Port\+\_\+\+Pin\+Num\+Enum \mbox{\Hypertarget{struct_port___config_channel_a2cdfef06fd9c1ee4cab5d4438495f6ef}\label{struct_port___config_channel_a2cdfef06fd9c1ee4cab5d4438495f6ef}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!portNum@{portNum}}
+\index{portNum@{portNum}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{portNum}{portNum}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::port\+Num}
+
+member \textquotesingle{}port\+Num\textquotesingle{} used to decide which port are used with the required pin You can find its vale @\+Port\+\_\+\+Port\+Num\+Enum \mbox{\Hypertarget{struct_port___config_channel_a9f253baf63d0673d8e2ea3dcef43c77c}\label{struct_port___config_channel_a9f253baf63d0673d8e2ea3dcef43c77c}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!resistor@{resistor}}
+\index{resistor@{resistor}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{resistor}{resistor}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::resistor}
+
+member \textquotesingle{}resistor\textquotesingle{} used to decide if internal resistor is used or not and its mode if used (Pull-\/up or Pull-\/\+Down) You can find its value @\+Port\+\_\+\+Internal\+Resistor \mbox{\Hypertarget{struct_port___config_channel_a27522ea703b75f712df54b8d534329d2}\label{struct_port___config_channel_a27522ea703b75f712df54b8d534329d2}} 
+\index{Port\_ConfigChannel@{Port\_ConfigChannel}!speed@{speed}}
+\index{speed@{speed}!Port\_ConfigChannel@{Port\_ConfigChannel}}
+\doxyparagraph{\texorpdfstring{speed}{speed}}
+{\footnotesize\ttfamily Port\+\_\+\+Config\+Channel\+::speed}
+
+member \textquotesingle{}speed\textquotesingle{} used to decide what speed the o/p will operate You can find its value @\+Port\+\_\+\+Pin\+Output\+Speed 
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+U\+T\+O\+S\+A\+R/\+Port/\mbox{\hyperlink{_port_8h}{Port.\+h}}\end{DoxyCompactItemize}

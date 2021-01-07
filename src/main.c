@@ -30,7 +30,7 @@
 /*******************************************************************************
  * 								Global Variable used						   *
  *******************************************************************************/
-RCC_clockValues			clock_values 		= {0};				/* RCC Clock Structure 							  */
+RCC_clockValues				clock_values 		= {0};				/* RCC Clock Structure 							  */
 USART_Config 				husart				= {0};				/* USART Configuration structure				  */
 
 
@@ -54,8 +54,6 @@ int main (void)
 	/* Port Initialization */
 	Port_Init(&Port_Configuration);
 
-	//	/* Dio Initialization */
-	//	Dio_Init(&Dio_Configuration);
 	/* USARTS Initialization */
 	USART_Configuration();
 

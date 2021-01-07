@@ -1,0 +1,13 @@
+<map id="AUTOSAR/Common_Includes/Platform_Types.h" name="AUTOSAR/Common_Includes/Platform_Types.h">
+<area shape="rect" id="node1" title=" " alt="" coords="415,5,610,47"/>
+<area shape="rect" id="node2" href="$_std___types_8h.html" title=" " alt="" coords="415,95,610,136"/>
+<area shape="rect" id="node3" href="$_det_8h.html" title=" " alt="" coords="176,184,319,211"/>
+<area shape="rect" id="node7" href="$_dio_8h.html" title=" " alt="" coords="350,184,491,211"/>
+<area shape="rect" id="node9" href="$_port_8h.html" title=" " alt="" coords="721,184,872,211"/>
+<area shape="rect" id="node11" href="$_port___reg_8h.html" title=" " alt="" coords="515,184,697,211"/>
+<area shape="rect" id="node4" href="$_det_8c.html" title=" " alt="" coords="5,259,148,285"/>
+<area shape="rect" id="node5" href="$_dio_8c.html" title=" " alt="" coords="173,259,314,285"/>
+<area shape="rect" id="node6" href="$_port_8c.html" title=" " alt="" coords="535,259,685,285"/>
+<area shape="rect" id="node8" href="$_dio___lcfg_8c.html" title=" " alt="" coords="339,259,511,285"/>
+<area shape="rect" id="node10" href="$_port___lcfg_8c.html" title=" " alt="" coords="709,259,892,285"/>
+</map>

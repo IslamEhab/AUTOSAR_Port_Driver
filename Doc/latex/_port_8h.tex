@@ -1,0 +1,725 @@
+\hypertarget{_port_8h}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Port/\+Port.h File Reference}
+\label{_port_8h}\index{AUTOSAR/Port/Port.h@{AUTOSAR/Port/Port.h}}
+{\ttfamily \#include \char`\"{}Std\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Port\+\_\+\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+\_\+\+Macros.\+h\char`\"{}}\newline
+Include dependency graph for Port.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_port_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=348pt]{_port_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_port___config_channel}{Port\+\_\+\+Config\+Channel}}
+\begin{DoxyCompactList}\small\item\em Used to set the configurations of a Specific pin in Port Module. \end{DoxyCompactList}\item 
+struct \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}}
+\begin{DoxyCompactList}\small\item\em This structure holds an array of structures that holds the configurations of the pins. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a344ef80dc9de6d659754364c02849db9}{P\+O\+R\+T\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+ID}}~(1024U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ab9e0746623eb56869a704630cf1fd3b3}{P\+O\+R\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+ID}}~(124U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a6914757f13503824cd8d853434ed4c9c}{P\+O\+R\+T\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+ID}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ae9ffa29e91d769a41e9a33993253209a}{P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ab21c9644cbe3a90eba3d0f3446110a3f}{P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_aeda7b6b5ca9a61e7976951dc1c687e48}{P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a9b3db9bac8835322ba1e42ac12cf0d94}{P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(4U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a66063db2b19c4d2f0876e07adaafc908}{P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(3U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a67213f144b1e33b9694c139f96edd45e}{P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a3758ddd42f5d42495dac924dd51341a9}{P\+O\+R\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a37d0f331bf766c8d0116c0fa9b786b2a}{P\+O\+R\+T\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a7a207ce3080f2cc905889a3462ccfd0d}{P\+O\+R\+T\+\_\+\+I\+N\+I\+T\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x00
+\item 
+\#define \mbox{\hyperlink{_port_8h_a763639bc287092decab23b30aeecfb8e}{P\+O\+R\+T\+\_\+\+S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x01
+\item 
+\#define \mbox{\hyperlink{_port_8h_a1bf86b8567be723b87dfbd38a998a3f0}{P\+O\+R\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+O\+R\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x02
+\item 
+\#define \mbox{\hyperlink{_port_8h_aee8eba2f35b56252eda0e5eccb48fc46}{P\+O\+R\+T\+\_\+\+G\+E\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+N\+F\+O\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x03
+\item 
+\#define \mbox{\hyperlink{_port_8h_a86e80bdd4c3f655eae924af3188ddbc1}{P\+O\+R\+T\+\_\+\+S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x04
+\item 
+\#define \mbox{\hyperlink{_port_8h_a1b8027c5cf0c12325aa2f1bf3728a578}{P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+IN}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0A
+\item 
+\#define \mbox{\hyperlink{_port_8h_ac451f6260a26a62d954b83d259174f6c}{P\+O\+R\+T\+\_\+\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0B
+\item 
+\#define \mbox{\hyperlink{_port_8h_a17fbba93345bcd3e03dc543a4abd837b}{P\+O\+R\+T\+\_\+\+E\+\_\+\+I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0C
+\item 
+\#define \mbox{\hyperlink{_port_8h_a7b3d55d57d571a729d3d9a47e9021f22}{P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+M\+O\+DE}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0D
+\item 
+\#define \mbox{\hyperlink{_port_8h_af88c300628f3e61dc62eb9ddf4afda78}{P\+O\+R\+T\+\_\+\+E\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0E
+\item 
+\#define \mbox{\hyperlink{_port_8h_a2f13240ac42e3669d1dd9fe321287dd9}{P\+O\+R\+T\+\_\+\+E\+\_\+\+U\+N\+I\+N\+IT}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0F
+\item 
+\#define \mbox{\hyperlink{_port_8h_ac1bd31378f5bc8abebf7626d33398c76}{P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+O\+I\+N\+T\+ER}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x10
+\item 
+\#define \mbox{\hyperlink{_port_8h_afbd7b1834b3c83424fd884a5bf519419}{P\+O\+R\+T\+\_\+\+E\+\_\+\+D\+I\+R\+E\+C\+T\+O\+N\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x12
+\item 
+\#define \mbox{\hyperlink{_port_8h_aaf6b69d5a8476a1a9c13ee491510b559}{P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+ON}}~\mbox{\hyperlink{_std___types_8h_aa751842079e9148271cfc8acb6016a9b}{S\+T\+D\+\_\+\+ON}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_ac16eb06ac008fead238c7457813f9aac}{P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+O\+FF}}~\mbox{\hyperlink{_std___types_8h_a06b00117603b302dddd3e5a16e355e60}{S\+T\+D\+\_\+\+O\+FF}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_ad14c7db6c5ae20449cef9fdc45dc0ea2}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+ON}}~\mbox{\hyperlink{_std___types_8h_aa751842079e9148271cfc8acb6016a9b}{S\+T\+D\+\_\+\+ON}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a59adf1f696ee98daf25ffe8d0688911f}{P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+O\+FF}}~\mbox{\hyperlink{_std___types_8h_a06b00117603b302dddd3e5a16e355e60}{S\+T\+D\+\_\+\+O\+FF}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a8dcebd89f017f3cf69fdfb3a664f8d4d}{I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+I\+GH}}~\mbox{\hyperlink{_std___types_8h_a846b47c05a785a028a362b3047ea68a7}{S\+T\+D\+\_\+\+H\+I\+GH}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a07103c7534ff427f3ef137c7f05603ac}{I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+OW}}~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a9a170499db54b1442be10d25451c2841}{A\+N\+A\+L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+L\+E\+C\+T\+ED}}~16
+\item 
+\#define \mbox{\hyperlink{_port_8h_a49d853e492c767a64ece6206f304400a}{O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+FF}}~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_a70ee13996719ea91eaf652b6d2708f97}{O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+U\+S\+H\+\_\+\+P\+U\+LL}}~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_aea4c97a881b58d133eae2481e44f90a2}{O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+P\+E\+N\+\_\+\+D\+R\+A\+IN}}~\mbox{\hyperlink{_std___types_8h_a846b47c05a785a028a362b3047ea68a7}{S\+T\+D\+\_\+\+H\+I\+GH}}
+\item 
+\#define \mbox{\hyperlink{_port_8h_aa821677622831ed368f7f1901f587ae3}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE}}~(0x00000003)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a1f7d21e1b728d4d79088493f2ba52990}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS}}~(2U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a9883a58d093ee5fe8496aeb02cda8b0a}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+V\+A\+L\+UE}}~(0x00000000)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a383956efc08617ababe5d0b4d1372d6d}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+P\+U\+R\+P\+O\+S\+E\+\_\+\+O\+UT}}~(0x00000001)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a8eac56b86dc18877b9e11ff8efa840f0}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+F\+U\+N\+C\+T\+I\+ON}}~(0x00000002)
+\item 
+\#define \mbox{\hyperlink{_port_8h_aaf6b20dd49f8d8f41964933d14943558}{M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+N\+A\+L\+O\+G\+\_\+\+M\+O\+DE}}~(0x00000003)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a2d527f80506e3e0e7ef9d5789d1f45cb}{A\+F\+R\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+I\+N\+\_\+\+N\+UM}}~(7U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a36d67ae0d9b7a34f26ecb51c5f945292}{A\+F\+R\+H\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+I\+N\+\_\+\+N\+UM}}~(15U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ac907961f705b5a5cfcabfa5768849fe3}{A\+F\+R\+H\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+P\+I\+N\+\_\+\+D\+I\+F\+F\+E\+R\+E\+N\+CE}}~(8U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_aa16dc874962dacdd578430a35856bf20}{A\+F\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS}}~(4U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a5941e8d8a0cca6e87479ef1b41c86f65}{A\+F\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE}}~(0x0000000F)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ad62e37807d81c1b5543fe1963d093bed}{O\+S\+P\+E\+E\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS}}~(2U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ab8a835477c664800cb2d7e63321f7b29}{O\+S\+P\+E\+E\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE}}~(0x00000003)
+\item 
+\#define \mbox{\hyperlink{_port_8h_ac1709928a94d31c903972b3cb28e4a6b}{P\+U\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE}}~(0x00000003)
+\item 
+\#define \mbox{\hyperlink{_port_8h_af2ce053b7aec5a0a91a17843c5bdb84b}{P\+U\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS}}~(2U)
+\item 
+\#define \mbox{\hyperlink{_port_8h_a8628f638cc544ffd11ca579a8d0849ac}{O\+T\+Y\+P\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE}}~(0x000000001)
+\item 
+\#define \mbox{\hyperlink{_port_8h_af5716db33ed1c7b12e18a5bbcba558ac}{P\+O\+R\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS}}~(4U)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Enumerations}
+\begin{DoxyCompactItemize}
+\item 
+enum \mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}} \{ \mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578a445bac1041459a27dc37fb820c552d0a}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+IN}}, 
+\mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578afc3efc16ee2108aafeb2849d7b2d4b0c}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+O\+UT}}, 
+\mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578ac317458cf563b62601e4ead589b36aee}{P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+E\+F\+A\+U\+LT}}
+ \}
+\begin{DoxyCompactList}\small\item\em Type definition for Port\+\_\+\+Pin\+Direction\+Type used by P\+O\+RT A\+P\+Is. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5}{Port\+\_\+\+Internal\+Resistor}} \{ \mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a1dcf9ba96d439068d52dc57f3c4b22f5}{I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+S\+I\+S\+T\+O\+R\+\_\+\+O\+FF}}, 
+\mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a6d031447a3a4f4a8bd019caae5a8eefd}{P\+U\+L\+L\+\_\+\+UP}}, 
+\mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a0351276972489e49e38c22116a9b88be}{P\+U\+L\+L\+\_\+\+D\+O\+WN}}
+ \}
+\begin{DoxyCompactList}\small\item\em Used to decide the mode of internal pull up or to disable it at all. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1}{Port\+\_\+\+Port\+Num\+Enum}} \{ \newline
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae3201f6e0d0c1e138c60903276bb3859}{P\+O\+R\+TA}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae51dea4a37f3e2ede7ba6f27c563f6a4}{P\+O\+R\+TB}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afcec7c36cc8137e94db854fdec9d2d50}{P\+O\+R\+TC}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1aa5a8b29c2aba917895d49297270bc877}{P\+O\+R\+TD}}, 
+\newline
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1a5fecb6baf7de2a6d107ee433b4c08616}{P\+O\+R\+TE}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ad0bc8b9ec107437a44fe380184add7c3}{P\+O\+R\+TF}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1acdf0eb3b90cca18a3172ae9309560879}{P\+O\+R\+TG}}, 
+\mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afb265653fe2dc0e4d79e1f0aaedff5f7}{P\+O\+R\+TH}}
+ \}
+\begin{DoxyCompactList}\small\item\em Used to decide the Port Number. \end{DoxyCompactList}\item 
+enum \mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677}{Port\+\_\+\+Pin\+Output\+Speed}} \{ \newline
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a907f37c8a862bce44359813b98cd2289}{N\+O\+\_\+\+S\+P\+E\+ED}}, 
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a9e67a499bd5745123d24101dd7910116}{L\+O\+W\+\_\+\+S\+P\+E\+ED}} = 0, 
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677afc07ca2c3b513ac6c3ccb3f69cab5372}{M\+E\+D\+I\+U\+M\+\_\+\+S\+P\+E\+ED}}, 
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a8208c88a94cc5e919193f2ceeb370c6d}{H\+I\+G\+H\+\_\+\+S\+P\+E\+ED}}, 
+\newline
+\mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a0f8cbf2c127dd912cd0d4f616e75e5fa}{V\+E\+R\+Y\+\_\+\+H\+I\+G\+H\+\_\+\+S\+P\+E\+ED}}
+ \}
+\begin{DoxyCompactList}\small\item\em Decide The speed of the output pin. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+void \mbox{\hyperlink{_port_8h_aacbee83a16c5da7f820356b4f0bf151b}{Port\+\_\+\+Init}} (const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} $\ast$Config\+Ptr)
+\item 
+void \mbox{\hyperlink{_port_8h_a69a59c137ea6d4fdfc522ea4d13965bd}{Port\+\_\+\+Set\+Pin\+Direction}} (\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}} Pin, \mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}} Direction)
+\item 
+void \mbox{\hyperlink{_port_8h_a3384c8587ac035499aa8e6d78d7b3377}{Port\+\_\+\+Refresh\+Port\+Direction}} (void)
+\item 
+void \mbox{\hyperlink{_port_8h_a476702fecbd349a3cb7b77aa4811f2bd}{Port\+\_\+\+Get\+Version\+Info}} (\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$versioninfo)
+\item 
+void \mbox{\hyperlink{_port_8h_a9ea52ef3292691674507f049c1e47eef}{Port\+\_\+\+Set\+Pin\+Mode}} (\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}} Pin, \mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}} Mode)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} \mbox{\hyperlink{_port_8h_a141f8f939d9dd23a8f9124f66936a300}{Port\+\_\+\+Configuration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_port_8h_aa16dc874962dacdd578430a35856bf20}\label{_port_8h_aa16dc874962dacdd578430a35856bf20}} 
+\index{Port.h@{Port.h}!AFR\_REGISTER\_BIT\_NUMBERS@{AFR\_REGISTER\_BIT\_NUMBERS}}
+\index{AFR\_REGISTER\_BIT\_NUMBERS@{AFR\_REGISTER\_BIT\_NUMBERS}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{AFR\_REGISTER\_BIT\_NUMBERS}{AFR\_REGISTER\_BIT\_NUMBERS}}
+{\footnotesize\ttfamily \#define A\+F\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS~(4U)}
+
+\mbox{\Hypertarget{_port_8h_a5941e8d8a0cca6e87479ef1b41c86f65}\label{_port_8h_a5941e8d8a0cca6e87479ef1b41c86f65}} 
+\index{Port.h@{Port.h}!AFR\_REGISTER\_MASK\_VALUE@{AFR\_REGISTER\_MASK\_VALUE}}
+\index{AFR\_REGISTER\_MASK\_VALUE@{AFR\_REGISTER\_MASK\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{AFR\_REGISTER\_MASK\_VALUE}{AFR\_REGISTER\_MASK\_VALUE}}
+{\footnotesize\ttfamily \#define A\+F\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE~(0x0000000F)}
+
+\mbox{\Hypertarget{_port_8h_a36d67ae0d9b7a34f26ecb51c5f945292}\label{_port_8h_a36d67ae0d9b7a34f26ecb51c5f945292}} 
+\index{Port.h@{Port.h}!AFRH\_REGISTER\_MAX\_PIN\_NUM@{AFRH\_REGISTER\_MAX\_PIN\_NUM}}
+\index{AFRH\_REGISTER\_MAX\_PIN\_NUM@{AFRH\_REGISTER\_MAX\_PIN\_NUM}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{AFRH\_REGISTER\_MAX\_PIN\_NUM}{AFRH\_REGISTER\_MAX\_PIN\_NUM}}
+{\footnotesize\ttfamily \#define A\+F\+R\+H\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+I\+N\+\_\+\+N\+UM~(15U)}
+
+\mbox{\Hypertarget{_port_8h_ac907961f705b5a5cfcabfa5768849fe3}\label{_port_8h_ac907961f705b5a5cfcabfa5768849fe3}} 
+\index{Port.h@{Port.h}!AFRH\_REGISTER\_PIN\_DIFFERENCE@{AFRH\_REGISTER\_PIN\_DIFFERENCE}}
+\index{AFRH\_REGISTER\_PIN\_DIFFERENCE@{AFRH\_REGISTER\_PIN\_DIFFERENCE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{AFRH\_REGISTER\_PIN\_DIFFERENCE}{AFRH\_REGISTER\_PIN\_DIFFERENCE}}
+{\footnotesize\ttfamily \#define A\+F\+R\+H\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+P\+I\+N\+\_\+\+D\+I\+F\+F\+E\+R\+E\+N\+CE~(8U)}
+
+\mbox{\Hypertarget{_port_8h_a2d527f80506e3e0e7ef9d5789d1f45cb}\label{_port_8h_a2d527f80506e3e0e7ef9d5789d1f45cb}} 
+\index{Port.h@{Port.h}!AFRL\_REGISTER\_MAX\_PIN\_NUM@{AFRL\_REGISTER\_MAX\_PIN\_NUM}}
+\index{AFRL\_REGISTER\_MAX\_PIN\_NUM@{AFRL\_REGISTER\_MAX\_PIN\_NUM}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{AFRL\_REGISTER\_MAX\_PIN\_NUM}{AFRL\_REGISTER\_MAX\_PIN\_NUM}}
+{\footnotesize\ttfamily \#define A\+F\+R\+L\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+X\+\_\+\+P\+I\+N\+\_\+\+N\+UM~(7U)}
+
+\mbox{\Hypertarget{_port_8h_a9a170499db54b1442be10d25451c2841}\label{_port_8h_a9a170499db54b1442be10d25451c2841}} 
+\index{Port.h@{Port.h}!ANALOG\_MODE\_SELECTED@{ANALOG\_MODE\_SELECTED}}
+\index{ANALOG\_MODE\_SELECTED@{ANALOG\_MODE\_SELECTED}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{ANALOG\_MODE\_SELECTED}{ANALOG\_MODE\_SELECTED}}
+{\footnotesize\ttfamily \#define A\+N\+A\+L\+O\+G\+\_\+\+M\+O\+D\+E\+\_\+\+S\+E\+L\+E\+C\+T\+ED~16}
+
+\mbox{\Hypertarget{_port_8h_a8dcebd89f017f3cf69fdfb3a664f8d4d}\label{_port_8h_a8dcebd89f017f3cf69fdfb3a664f8d4d}} 
+\index{Port.h@{Port.h}!INITIAL\_VALUE\_HIGH@{INITIAL\_VALUE\_HIGH}}
+\index{INITIAL\_VALUE\_HIGH@{INITIAL\_VALUE\_HIGH}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{INITIAL\_VALUE\_HIGH}{INITIAL\_VALUE\_HIGH}}
+{\footnotesize\ttfamily \#define I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+H\+I\+GH~\mbox{\hyperlink{_std___types_8h_a846b47c05a785a028a362b3047ea68a7}{S\+T\+D\+\_\+\+H\+I\+GH}}}
+
+\mbox{\Hypertarget{_port_8h_a07103c7534ff427f3ef137c7f05603ac}\label{_port_8h_a07103c7534ff427f3ef137c7f05603ac}} 
+\index{Port.h@{Port.h}!INITIAL\_VALUE\_LOW@{INITIAL\_VALUE\_LOW}}
+\index{INITIAL\_VALUE\_LOW@{INITIAL\_VALUE\_LOW}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{INITIAL\_VALUE\_LOW}{INITIAL\_VALUE\_LOW}}
+{\footnotesize\ttfamily \#define I\+N\+I\+T\+I\+A\+L\+\_\+\+V\+A\+L\+U\+E\+\_\+\+L\+OW~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}}
+
+\mbox{\Hypertarget{_port_8h_a8eac56b86dc18877b9e11ff8efa840f0}\label{_port_8h_a8eac56b86dc18877b9e11ff8efa840f0}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_ALTERNATIVE\_FUNCTION@{MODER\_REGISTER\_ALTERNATIVE\_FUNCTION}}
+\index{MODER\_REGISTER\_ALTERNATIVE\_FUNCTION@{MODER\_REGISTER\_ALTERNATIVE\_FUNCTION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_ALTERNATIVE\_FUNCTION}{MODER\_REGISTER\_ALTERNATIVE\_FUNCTION}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+L\+T\+E\+R\+N\+A\+T\+I\+V\+E\+\_\+\+F\+U\+N\+C\+T\+I\+ON~(0x00000002)}
+
+\mbox{\Hypertarget{_port_8h_aaf6b20dd49f8d8f41964933d14943558}\label{_port_8h_aaf6b20dd49f8d8f41964933d14943558}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_ANALOG\_MODE@{MODER\_REGISTER\_ANALOG\_MODE}}
+\index{MODER\_REGISTER\_ANALOG\_MODE@{MODER\_REGISTER\_ANALOG\_MODE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_ANALOG\_MODE}{MODER\_REGISTER\_ANALOG\_MODE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+A\+N\+A\+L\+O\+G\+\_\+\+M\+O\+DE~(0x00000003)}
+
+\mbox{\Hypertarget{_port_8h_a1f7d21e1b728d4d79088493f2ba52990}\label{_port_8h_a1f7d21e1b728d4d79088493f2ba52990}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_BIT\_NUMBERS@{MODER\_REGISTER\_BIT\_NUMBERS}}
+\index{MODER\_REGISTER\_BIT\_NUMBERS@{MODER\_REGISTER\_BIT\_NUMBERS}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_BIT\_NUMBERS}{MODER\_REGISTER\_BIT\_NUMBERS}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS~(2U)}
+
+\mbox{\Hypertarget{_port_8h_a383956efc08617ababe5d0b4d1372d6d}\label{_port_8h_a383956efc08617ababe5d0b4d1372d6d}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT@{MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT}}
+\index{MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT@{MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT}{MODER\_REGISTER\_GENERAL\_PURPOSE\_OUT}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+G\+E\+N\+E\+R\+A\+L\+\_\+\+P\+U\+R\+P\+O\+S\+E\+\_\+\+O\+UT~(0x00000001)}
+
+\mbox{\Hypertarget{_port_8h_a9883a58d093ee5fe8496aeb02cda8b0a}\label{_port_8h_a9883a58d093ee5fe8496aeb02cda8b0a}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_INPUT\_VALUE@{MODER\_REGISTER\_INPUT\_VALUE}}
+\index{MODER\_REGISTER\_INPUT\_VALUE@{MODER\_REGISTER\_INPUT\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_INPUT\_VALUE}{MODER\_REGISTER\_INPUT\_VALUE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+I\+N\+P\+U\+T\+\_\+\+V\+A\+L\+UE~(0x00000000)}
+
+\mbox{\Hypertarget{_port_8h_aa821677622831ed368f7f1901f587ae3}\label{_port_8h_aa821677622831ed368f7f1901f587ae3}} 
+\index{Port.h@{Port.h}!MODER\_REGISTER\_MASK\_VALUE@{MODER\_REGISTER\_MASK\_VALUE}}
+\index{MODER\_REGISTER\_MASK\_VALUE@{MODER\_REGISTER\_MASK\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{MODER\_REGISTER\_MASK\_VALUE}{MODER\_REGISTER\_MASK\_VALUE}}
+{\footnotesize\ttfamily \#define M\+O\+D\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE~(0x00000003)}
+
+\mbox{\Hypertarget{_port_8h_ad62e37807d81c1b5543fe1963d093bed}\label{_port_8h_ad62e37807d81c1b5543fe1963d093bed}} 
+\index{Port.h@{Port.h}!OSPEEDR\_REGISTER\_BIT\_NUMBERS@{OSPEEDR\_REGISTER\_BIT\_NUMBERS}}
+\index{OSPEEDR\_REGISTER\_BIT\_NUMBERS@{OSPEEDR\_REGISTER\_BIT\_NUMBERS}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OSPEEDR\_REGISTER\_BIT\_NUMBERS}{OSPEEDR\_REGISTER\_BIT\_NUMBERS}}
+{\footnotesize\ttfamily \#define O\+S\+P\+E\+E\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS~(2U)}
+
+\mbox{\Hypertarget{_port_8h_ab8a835477c664800cb2d7e63321f7b29}\label{_port_8h_ab8a835477c664800cb2d7e63321f7b29}} 
+\index{Port.h@{Port.h}!OSPEEDR\_REGISTER\_MASK\_VALUE@{OSPEEDR\_REGISTER\_MASK\_VALUE}}
+\index{OSPEEDR\_REGISTER\_MASK\_VALUE@{OSPEEDR\_REGISTER\_MASK\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OSPEEDR\_REGISTER\_MASK\_VALUE}{OSPEEDR\_REGISTER\_MASK\_VALUE}}
+{\footnotesize\ttfamily \#define O\+S\+P\+E\+E\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE~(0x00000003)}
+
+\mbox{\Hypertarget{_port_8h_a8628f638cc544ffd11ca579a8d0849ac}\label{_port_8h_a8628f638cc544ffd11ca579a8d0849ac}} 
+\index{Port.h@{Port.h}!OTYPER\_REGISTER\_MASK\_VALUE@{OTYPER\_REGISTER\_MASK\_VALUE}}
+\index{OTYPER\_REGISTER\_MASK\_VALUE@{OTYPER\_REGISTER\_MASK\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OTYPER\_REGISTER\_MASK\_VALUE}{OTYPER\_REGISTER\_MASK\_VALUE}}
+{\footnotesize\ttfamily \#define O\+T\+Y\+P\+E\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE~(0x000000001)}
+
+\mbox{\Hypertarget{_port_8h_a49d853e492c767a64ece6206f304400a}\label{_port_8h_a49d853e492c767a64ece6206f304400a}} 
+\index{Port.h@{Port.h}!OUTPUT\_TYPE\_OFF@{OUTPUT\_TYPE\_OFF}}
+\index{OUTPUT\_TYPE\_OFF@{OUTPUT\_TYPE\_OFF}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OUTPUT\_TYPE\_OFF}{OUTPUT\_TYPE\_OFF}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+FF~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}}
+
+\mbox{\Hypertarget{_port_8h_aea4c97a881b58d133eae2481e44f90a2}\label{_port_8h_aea4c97a881b58d133eae2481e44f90a2}} 
+\index{Port.h@{Port.h}!OUTPUT\_TYPE\_OPEN\_DRAIN@{OUTPUT\_TYPE\_OPEN\_DRAIN}}
+\index{OUTPUT\_TYPE\_OPEN\_DRAIN@{OUTPUT\_TYPE\_OPEN\_DRAIN}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OUTPUT\_TYPE\_OPEN\_DRAIN}{OUTPUT\_TYPE\_OPEN\_DRAIN}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+O\+P\+E\+N\+\_\+\+D\+R\+A\+IN~\mbox{\hyperlink{_std___types_8h_a846b47c05a785a028a362b3047ea68a7}{S\+T\+D\+\_\+\+H\+I\+GH}}}
+
+\mbox{\Hypertarget{_port_8h_a70ee13996719ea91eaf652b6d2708f97}\label{_port_8h_a70ee13996719ea91eaf652b6d2708f97}} 
+\index{Port.h@{Port.h}!OUTPUT\_TYPE\_PUSH\_PULL@{OUTPUT\_TYPE\_PUSH\_PULL}}
+\index{OUTPUT\_TYPE\_PUSH\_PULL@{OUTPUT\_TYPE\_PUSH\_PULL}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{OUTPUT\_TYPE\_PUSH\_PULL}{OUTPUT\_TYPE\_PUSH\_PULL}}
+{\footnotesize\ttfamily \#define O\+U\+T\+P\+U\+T\+\_\+\+T\+Y\+P\+E\+\_\+\+P\+U\+S\+H\+\_\+\+P\+U\+LL~\mbox{\hyperlink{_std___types_8h_afe72211a72a1fe9a6aeda2aa4ce67623}{S\+T\+D\+\_\+\+L\+OW}}}
+
+\mbox{\Hypertarget{_port_8h_ac16eb06ac008fead238c7457813f9aac}\label{_port_8h_ac16eb06ac008fead238c7457813f9aac}} 
+\index{Port.h@{Port.h}!PIN\_DIRECTION\_CHANGEABILITY\_OFF@{PIN\_DIRECTION\_CHANGEABILITY\_OFF}}
+\index{PIN\_DIRECTION\_CHANGEABILITY\_OFF@{PIN\_DIRECTION\_CHANGEABILITY\_OFF}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PIN\_DIRECTION\_CHANGEABILITY\_OFF}{PIN\_DIRECTION\_CHANGEABILITY\_OFF}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+O\+FF~\mbox{\hyperlink{_std___types_8h_a06b00117603b302dddd3e5a16e355e60}{S\+T\+D\+\_\+\+O\+FF}}}
+
+\mbox{\Hypertarget{_port_8h_aaf6b69d5a8476a1a9c13ee491510b559}\label{_port_8h_aaf6b69d5a8476a1a9c13ee491510b559}} 
+\index{Port.h@{Port.h}!PIN\_DIRECTION\_CHANGEABILITY\_ON@{PIN\_DIRECTION\_CHANGEABILITY\_ON}}
+\index{PIN\_DIRECTION\_CHANGEABILITY\_ON@{PIN\_DIRECTION\_CHANGEABILITY\_ON}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PIN\_DIRECTION\_CHANGEABILITY\_ON}{PIN\_DIRECTION\_CHANGEABILITY\_ON}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+ON~\mbox{\hyperlink{_std___types_8h_aa751842079e9148271cfc8acb6016a9b}{S\+T\+D\+\_\+\+ON}}}
+
+\mbox{\Hypertarget{_port_8h_a59adf1f696ee98daf25ffe8d0688911f}\label{_port_8h_a59adf1f696ee98daf25ffe8d0688911f}} 
+\index{Port.h@{Port.h}!PIN\_MODE\_CHANGEABILITY\_OFF@{PIN\_MODE\_CHANGEABILITY\_OFF}}
+\index{PIN\_MODE\_CHANGEABILITY\_OFF@{PIN\_MODE\_CHANGEABILITY\_OFF}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PIN\_MODE\_CHANGEABILITY\_OFF}{PIN\_MODE\_CHANGEABILITY\_OFF}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+O\+FF~\mbox{\hyperlink{_std___types_8h_a06b00117603b302dddd3e5a16e355e60}{S\+T\+D\+\_\+\+O\+FF}}}
+
+\mbox{\Hypertarget{_port_8h_ad14c7db6c5ae20449cef9fdc45dc0ea2}\label{_port_8h_ad14c7db6c5ae20449cef9fdc45dc0ea2}} 
+\index{Port.h@{Port.h}!PIN\_MODE\_CHANGEABILITY\_ON@{PIN\_MODE\_CHANGEABILITY\_ON}}
+\index{PIN\_MODE\_CHANGEABILITY\_ON@{PIN\_MODE\_CHANGEABILITY\_ON}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PIN\_MODE\_CHANGEABILITY\_ON}{PIN\_MODE\_CHANGEABILITY\_ON}}
+{\footnotesize\ttfamily \#define P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+C\+H\+A\+N\+G\+E\+A\+B\+I\+L\+I\+T\+Y\+\_\+\+ON~\mbox{\hyperlink{_std___types_8h_aa751842079e9148271cfc8acb6016a9b}{S\+T\+D\+\_\+\+ON}}}
+
+\mbox{\Hypertarget{_port_8h_a9b3db9bac8835322ba1e42ac12cf0d94}\label{_port_8h_a9b3db9bac8835322ba1e42ac12cf0d94}} 
+\index{Port.h@{Port.h}!PORT\_AR\_RELEASE\_MAJOR\_VERSION@{PORT\_AR\_RELEASE\_MAJOR\_VERSION}}
+\index{PORT\_AR\_RELEASE\_MAJOR\_VERSION@{PORT\_AR\_RELEASE\_MAJOR\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_AR\_RELEASE\_MAJOR\_VERSION}{PORT\_AR\_RELEASE\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(4U)}
+
+\mbox{\Hypertarget{_port_8h_a66063db2b19c4d2f0876e07adaafc908}\label{_port_8h_a66063db2b19c4d2f0876e07adaafc908}} 
+\index{Port.h@{Port.h}!PORT\_AR\_RELEASE\_MINOR\_VERSION@{PORT\_AR\_RELEASE\_MINOR\_VERSION}}
+\index{PORT\_AR\_RELEASE\_MINOR\_VERSION@{PORT\_AR\_RELEASE\_MINOR\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_AR\_RELEASE\_MINOR\_VERSION}{PORT\_AR\_RELEASE\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(3U)}
+
+\mbox{\Hypertarget{_port_8h_a67213f144b1e33b9694c139f96edd45e}\label{_port_8h_a67213f144b1e33b9694c139f96edd45e}} 
+\index{Port.h@{Port.h}!PORT\_AR\_RELEASE\_PATCH\_VERSION@{PORT\_AR\_RELEASE\_PATCH\_VERSION}}
+\index{PORT\_AR\_RELEASE\_PATCH\_VERSION@{PORT\_AR\_RELEASE\_PATCH\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_AR\_RELEASE\_PATCH\_VERSION}{PORT\_AR\_RELEASE\_PATCH\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON~(1U)}
+
+\mbox{\Hypertarget{_port_8h_af5716db33ed1c7b12e18a5bbcba558ac}\label{_port_8h_af5716db33ed1c7b12e18a5bbcba558ac}} 
+\index{Port.h@{Port.h}!PORT\_CONTROL\_BIT\_NUMBERS@{PORT\_CONTROL\_BIT\_NUMBERS}}
+\index{PORT\_CONTROL\_BIT\_NUMBERS@{PORT\_CONTROL\_BIT\_NUMBERS}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_CONTROL\_BIT\_NUMBERS}{PORT\_CONTROL\_BIT\_NUMBERS}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+C\+O\+N\+T\+R\+O\+L\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS~(4U)}
+
+\mbox{\Hypertarget{_port_8h_ac451f6260a26a62d954b83d259174f6c}\label{_port_8h_ac451f6260a26a62d954b83d259174f6c}} 
+\index{Port.h@{Port.h}!PORT\_E\_DIRECTION\_UNCHANGEABLE@{PORT\_E\_DIRECTION\_UNCHANGEABLE}}
+\index{PORT\_E\_DIRECTION\_UNCHANGEABLE@{PORT\_E\_DIRECTION\_UNCHANGEABLE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_DIRECTION\_UNCHANGEABLE}{PORT\_E\_DIRECTION\_UNCHANGEABLE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0B}
+
+\mbox{\Hypertarget{_port_8h_afbd7b1834b3c83424fd884a5bf519419}\label{_port_8h_afbd7b1834b3c83424fd884a5bf519419}} 
+\index{Port.h@{Port.h}!PORT\_E\_DIRECTON\_UNCHANGEABLE@{PORT\_E\_DIRECTON\_UNCHANGEABLE}}
+\index{PORT\_E\_DIRECTON\_UNCHANGEABLE@{PORT\_E\_DIRECTON\_UNCHANGEABLE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_DIRECTON\_UNCHANGEABLE}{PORT\_E\_DIRECTON\_UNCHANGEABLE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+D\+I\+R\+E\+C\+T\+O\+N\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x12}
+
+\mbox{\Hypertarget{_port_8h_a17fbba93345bcd3e03dc543a4abd837b}\label{_port_8h_a17fbba93345bcd3e03dc543a4abd837b}} 
+\index{Port.h@{Port.h}!PORT\_E\_INIT\_FAILED@{PORT\_E\_INIT\_FAILED}}
+\index{PORT\_E\_INIT\_FAILED@{PORT\_E\_INIT\_FAILED}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_INIT\_FAILED}{PORT\_E\_INIT\_FAILED}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+I\+N\+I\+T\+\_\+\+F\+A\+I\+L\+ED~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0C}
+
+\mbox{\Hypertarget{_port_8h_af88c300628f3e61dc62eb9ddf4afda78}\label{_port_8h_af88c300628f3e61dc62eb9ddf4afda78}} 
+\index{Port.h@{Port.h}!PORT\_E\_MODE\_UNCHANGEABLE@{PORT\_E\_MODE\_UNCHANGEABLE}}
+\index{PORT\_E\_MODE\_UNCHANGEABLE@{PORT\_E\_MODE\_UNCHANGEABLE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_MODE\_UNCHANGEABLE}{PORT\_E\_MODE\_UNCHANGEABLE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+M\+O\+D\+E\+\_\+\+U\+N\+C\+H\+A\+N\+G\+E\+A\+B\+LE~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0E}
+
+\mbox{\Hypertarget{_port_8h_a7b3d55d57d571a729d3d9a47e9021f22}\label{_port_8h_a7b3d55d57d571a729d3d9a47e9021f22}} 
+\index{Port.h@{Port.h}!PORT\_E\_PARAM\_INVALID\_MODE@{PORT\_E\_PARAM\_INVALID\_MODE}}
+\index{PORT\_E\_PARAM\_INVALID\_MODE@{PORT\_E\_PARAM\_INVALID\_MODE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_PARAM\_INVALID\_MODE}{PORT\_E\_PARAM\_INVALID\_MODE}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+M\+O\+DE~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0D}
+
+\mbox{\Hypertarget{_port_8h_a1b8027c5cf0c12325aa2f1bf3728a578}\label{_port_8h_a1b8027c5cf0c12325aa2f1bf3728a578}} 
+\index{Port.h@{Port.h}!PORT\_E\_PARAM\_PIN@{PORT\_E\_PARAM\_PIN}}
+\index{PORT\_E\_PARAM\_PIN@{PORT\_E\_PARAM\_PIN}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_PARAM\_PIN}{PORT\_E\_PARAM\_PIN}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+IN~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0A}
+
+\mbox{\Hypertarget{_port_8h_ac1bd31378f5bc8abebf7626d33398c76}\label{_port_8h_ac1bd31378f5bc8abebf7626d33398c76}} 
+\index{Port.h@{Port.h}!PORT\_E\_PARAM\_POINTER@{PORT\_E\_PARAM\_POINTER}}
+\index{PORT\_E\_PARAM\_POINTER@{PORT\_E\_PARAM\_POINTER}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_PARAM\_POINTER}{PORT\_E\_PARAM\_POINTER}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+O\+I\+N\+T\+ER~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x10}
+
+\mbox{\Hypertarget{_port_8h_a2f13240ac42e3669d1dd9fe321287dd9}\label{_port_8h_a2f13240ac42e3669d1dd9fe321287dd9}} 
+\index{Port.h@{Port.h}!PORT\_E\_UNINIT@{PORT\_E\_UNINIT}}
+\index{PORT\_E\_UNINIT@{PORT\_E\_UNINIT}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_E\_UNINIT}{PORT\_E\_UNINIT}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+E\+\_\+\+U\+N\+I\+N\+IT~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0F}
+
+\mbox{\Hypertarget{_port_8h_aee8eba2f35b56252eda0e5eccb48fc46}\label{_port_8h_aee8eba2f35b56252eda0e5eccb48fc46}} 
+\index{Port.h@{Port.h}!PORT\_GET\_VERSION\_INFO\_SID@{PORT\_GET\_VERSION\_INFO\_SID}}
+\index{PORT\_GET\_VERSION\_INFO\_SID@{PORT\_GET\_VERSION\_INFO\_SID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_GET\_VERSION\_INFO\_SID}{PORT\_GET\_VERSION\_INFO\_SID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+G\+E\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+N\+F\+O\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x03}
+
+\mbox{\Hypertarget{_port_8h_a7a207ce3080f2cc905889a3462ccfd0d}\label{_port_8h_a7a207ce3080f2cc905889a3462ccfd0d}} 
+\index{Port.h@{Port.h}!PORT\_INIT\_SID@{PORT\_INIT\_SID}}
+\index{PORT\_INIT\_SID@{PORT\_INIT\_SID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_INIT\_SID}{PORT\_INIT\_SID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+I\+T\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x00}
+
+\mbox{\Hypertarget{_port_8h_a3758ddd42f5d42495dac924dd51341a9}\label{_port_8h_a3758ddd42f5d42495dac924dd51341a9}} 
+\index{Port.h@{Port.h}!PORT\_INITIALIZED@{PORT\_INITIALIZED}}
+\index{PORT\_INITIALIZED@{PORT\_INITIALIZED}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_INITIALIZED}{PORT\_INITIALIZED}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED~(1U)}
+
+\mbox{\Hypertarget{_port_8h_a6914757f13503824cd8d853434ed4c9c}\label{_port_8h_a6914757f13503824cd8d853434ed4c9c}} 
+\index{Port.h@{Port.h}!PORT\_INSTANCE\_ID@{PORT\_INSTANCE\_ID}}
+\index{PORT\_INSTANCE\_ID@{PORT\_INSTANCE\_ID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_INSTANCE\_ID}{PORT\_INSTANCE\_ID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+ID~(0U)}
+
+\mbox{\Hypertarget{_port_8h_ab9e0746623eb56869a704630cf1fd3b3}\label{_port_8h_ab9e0746623eb56869a704630cf1fd3b3}} 
+\index{Port.h@{Port.h}!PORT\_MODULE\_ID@{PORT\_MODULE\_ID}}
+\index{PORT\_MODULE\_ID@{PORT\_MODULE\_ID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_MODULE\_ID}{PORT\_MODULE\_ID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+ID~(124U)}
+
+\mbox{\Hypertarget{_port_8h_a37d0f331bf766c8d0116c0fa9b786b2a}\label{_port_8h_a37d0f331bf766c8d0116c0fa9b786b2a}} 
+\index{Port.h@{Port.h}!PORT\_NOT\_INITIALIZED@{PORT\_NOT\_INITIALIZED}}
+\index{PORT\_NOT\_INITIALIZED@{PORT\_NOT\_INITIALIZED}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_NOT\_INITIALIZED}{PORT\_NOT\_INITIALIZED}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED~(0U)}
+
+\mbox{\Hypertarget{_port_8h_a1bf86b8567be723b87dfbd38a998a3f0}\label{_port_8h_a1bf86b8567be723b87dfbd38a998a3f0}} 
+\index{Port.h@{Port.h}!PORT\_REFRESH\_PORT\_DIRECTION\_SID@{PORT\_REFRESH\_PORT\_DIRECTION\_SID}}
+\index{PORT\_REFRESH\_PORT\_DIRECTION\_SID@{PORT\_REFRESH\_PORT\_DIRECTION\_SID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_REFRESH\_PORT\_DIRECTION\_SID}{PORT\_REFRESH\_PORT\_DIRECTION\_SID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+R\+E\+F\+R\+E\+S\+H\+\_\+\+P\+O\+R\+T\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x02}
+
+\mbox{\Hypertarget{_port_8h_a763639bc287092decab23b30aeecfb8e}\label{_port_8h_a763639bc287092decab23b30aeecfb8e}} 
+\index{Port.h@{Port.h}!PORT\_SET\_PIN\_DIRECTION\_SID@{PORT\_SET\_PIN\_DIRECTION\_SID}}
+\index{PORT\_SET\_PIN\_DIRECTION\_SID@{PORT\_SET\_PIN\_DIRECTION\_SID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_SET\_PIN\_DIRECTION\_SID}{PORT\_SET\_PIN\_DIRECTION\_SID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+D\+I\+R\+E\+C\+T\+I\+O\+N\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x01}
+
+\mbox{\Hypertarget{_port_8h_a86e80bdd4c3f655eae924af3188ddbc1}\label{_port_8h_a86e80bdd4c3f655eae924af3188ddbc1}} 
+\index{Port.h@{Port.h}!PORT\_SET\_PIN\_MODE\_SID@{PORT\_SET\_PIN\_MODE\_SID}}
+\index{PORT\_SET\_PIN\_MODE\_SID@{PORT\_SET\_PIN\_MODE\_SID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_SET\_PIN\_MODE\_SID}{PORT\_SET\_PIN\_MODE\_SID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+E\+T\+\_\+\+P\+I\+N\+\_\+\+M\+O\+D\+E\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x04}
+
+\mbox{\Hypertarget{_port_8h_ae9ffa29e91d769a41e9a33993253209a}\label{_port_8h_ae9ffa29e91d769a41e9a33993253209a}} 
+\index{Port.h@{Port.h}!PORT\_SW\_MAJOR\_VERSION@{PORT\_SW\_MAJOR\_VERSION}}
+\index{PORT\_SW\_MAJOR\_VERSION@{PORT\_SW\_MAJOR\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_SW\_MAJOR\_VERSION}{PORT\_SW\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(1U)}
+
+\mbox{\Hypertarget{_port_8h_ab21c9644cbe3a90eba3d0f3446110a3f}\label{_port_8h_ab21c9644cbe3a90eba3d0f3446110a3f}} 
+\index{Port.h@{Port.h}!PORT\_SW\_MINOR\_VERSION@{PORT\_SW\_MINOR\_VERSION}}
+\index{PORT\_SW\_MINOR\_VERSION@{PORT\_SW\_MINOR\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_SW\_MINOR\_VERSION}{PORT\_SW\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(0U)}
+
+\mbox{\Hypertarget{_port_8h_aeda7b6b5ca9a61e7976951dc1c687e48}\label{_port_8h_aeda7b6b5ca9a61e7976951dc1c687e48}} 
+\index{Port.h@{Port.h}!PORT\_SW\_PATCH\_VERSION@{PORT\_SW\_PATCH\_VERSION}}
+\index{PORT\_SW\_PATCH\_VERSION@{PORT\_SW\_PATCH\_VERSION}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_SW\_PATCH\_VERSION}{PORT\_SW\_PATCH\_VERSION}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+S\+W\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON~(0U)}
+
+\mbox{\Hypertarget{_port_8h_a344ef80dc9de6d659754364c02849db9}\label{_port_8h_a344ef80dc9de6d659754364c02849db9}} 
+\index{Port.h@{Port.h}!PORT\_VENDOR\_ID@{PORT\_VENDOR\_ID}}
+\index{PORT\_VENDOR\_ID@{PORT\_VENDOR\_ID}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PORT\_VENDOR\_ID}{PORT\_VENDOR\_ID}}
+{\footnotesize\ttfamily \#define P\+O\+R\+T\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+ID~(1024U)}
+
+\mbox{\Hypertarget{_port_8h_af2ce053b7aec5a0a91a17843c5bdb84b}\label{_port_8h_af2ce053b7aec5a0a91a17843c5bdb84b}} 
+\index{Port.h@{Port.h}!PUDR\_REGISTER\_BIT\_NUMBERS@{PUDR\_REGISTER\_BIT\_NUMBERS}}
+\index{PUDR\_REGISTER\_BIT\_NUMBERS@{PUDR\_REGISTER\_BIT\_NUMBERS}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PUDR\_REGISTER\_BIT\_NUMBERS}{PUDR\_REGISTER\_BIT\_NUMBERS}}
+{\footnotesize\ttfamily \#define P\+U\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+B\+I\+T\+\_\+\+N\+U\+M\+B\+E\+RS~(2U)}
+
+\mbox{\Hypertarget{_port_8h_ac1709928a94d31c903972b3cb28e4a6b}\label{_port_8h_ac1709928a94d31c903972b3cb28e4a6b}} 
+\index{Port.h@{Port.h}!PUDR\_REGISTER\_MASK\_VALUE@{PUDR\_REGISTER\_MASK\_VALUE}}
+\index{PUDR\_REGISTER\_MASK\_VALUE@{PUDR\_REGISTER\_MASK\_VALUE}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{PUDR\_REGISTER\_MASK\_VALUE}{PUDR\_REGISTER\_MASK\_VALUE}}
+{\footnotesize\ttfamily \#define P\+U\+D\+R\+\_\+\+R\+E\+G\+I\+S\+T\+E\+R\+\_\+\+M\+A\+S\+K\+\_\+\+V\+A\+L\+UE~(0x00000003)}
+
+
+
+\doxysubsubsection{Typedef Documentation}
+\mbox{\Hypertarget{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}\label{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}} 
+\index{Port.h@{Port.h}!Port\_PinModeType@{Port\_PinModeType}}
+\index{Port\_PinModeType@{Port\_PinModeType}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_PinModeType}{Port\_PinModeType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}}}
+
+Type definition for Port\+\_\+\+Pin\+Mode\+Type used by P\+O\+RT A\+P\+Is Which used to decide the mode of the Pin Note\+: You can find these values @\+Port\+\_\+\+Pin\+Mode\+Enum \mbox{\Hypertarget{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}\label{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}} 
+\index{Port.h@{Port.h}!Port\_PinType@{Port\_PinType}}
+\index{Port\_PinType@{Port\_PinType}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_PinType}{Port\_PinType}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}}
+
+Type definition for Port\+\_\+\+Pin\+Type used by P\+O\+RT A\+P\+Is Which used to decide which pin is used Note\+: You can find these values @\+Port\+\_\+\+Pin\+Num\+Enum 
+
+\doxysubsubsection{Enumeration Type Documentation}
+\mbox{\Hypertarget{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5}\label{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5}} 
+\index{Port.h@{Port.h}!Port\_InternalResistor@{Port\_InternalResistor}}
+\index{Port\_InternalResistor@{Port\_InternalResistor}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_InternalResistor}{Port\_InternalResistor}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5}{Port\+\_\+\+Internal\+Resistor}}}
+
+
+
+Used to decide the mode of internal pull up or to disable it at all. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{INTERNAL\_RESISTOR\_OFF@{INTERNAL\_RESISTOR\_OFF}!Port.h@{Port.h}}\index{Port.h@{Port.h}!INTERNAL\_RESISTOR\_OFF@{INTERNAL\_RESISTOR\_OFF}}}\mbox{\Hypertarget{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a1dcf9ba96d439068d52dc57f3c4b22f5}\label{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a1dcf9ba96d439068d52dc57f3c4b22f5}} 
+I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+S\+I\+S\+T\+O\+R\+\_\+\+O\+FF&I\+N\+T\+E\+R\+N\+A\+L\+\_\+\+R\+E\+S\+I\+S\+T\+O\+R\+\_\+\+O\+FF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PULL\_UP@{PULL\_UP}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PULL\_UP@{PULL\_UP}}}\mbox{\Hypertarget{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a6d031447a3a4f4a8bd019caae5a8eefd}\label{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a6d031447a3a4f4a8bd019caae5a8eefd}} 
+P\+U\+L\+L\+\_\+\+UP&P\+U\+L\+L\+\_\+\+UP. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PULL\_DOWN@{PULL\_DOWN}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PULL\_DOWN@{PULL\_DOWN}}}\mbox{\Hypertarget{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a0351276972489e49e38c22116a9b88be}\label{_port_8h_a9ac2d61e1ca9ab997654e0ce2f3459f5a0351276972489e49e38c22116a9b88be}} 
+P\+U\+L\+L\+\_\+\+D\+O\+WN&P\+U\+L\+L\+\_\+\+D\+O\+WN. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_port_8h_acd1027b312389f7a2af38a605d53a578}\label{_port_8h_acd1027b312389f7a2af38a605d53a578}} 
+\index{Port.h@{Port.h}!Port\_PinDirectionType@{Port\_PinDirectionType}}
+\index{Port\_PinDirectionType@{Port\_PinDirectionType}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_PinDirectionType}{Port\_PinDirectionType}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}}}
+
+
+
+Type definition for Port\+\_\+\+Pin\+Direction\+Type used by P\+O\+RT A\+P\+Is. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORT\_PIN\_IN@{PORT\_PIN\_IN}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORT\_PIN\_IN@{PORT\_PIN\_IN}}}\mbox{\Hypertarget{_port_8h_acd1027b312389f7a2af38a605d53a578a445bac1041459a27dc37fb820c552d0a}\label{_port_8h_acd1027b312389f7a2af38a605d53a578a445bac1041459a27dc37fb820c552d0a}} 
+P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+IN&P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+IN. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORT\_PIN\_OUT@{PORT\_PIN\_OUT}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORT\_PIN\_OUT@{PORT\_PIN\_OUT}}}\mbox{\Hypertarget{_port_8h_acd1027b312389f7a2af38a605d53a578afc3efc16ee2108aafeb2849d7b2d4b0c}\label{_port_8h_acd1027b312389f7a2af38a605d53a578afc3efc16ee2108aafeb2849d7b2d4b0c}} 
+P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+O\+UT&P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+O\+UT. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORT\_PIN\_DEFAULT@{PORT\_PIN\_DEFAULT}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORT\_PIN\_DEFAULT@{PORT\_PIN\_DEFAULT}}}\mbox{\Hypertarget{_port_8h_acd1027b312389f7a2af38a605d53a578ac317458cf563b62601e4ead589b36aee}\label{_port_8h_acd1027b312389f7a2af38a605d53a578ac317458cf563b62601e4ead589b36aee}} 
+P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+E\+F\+A\+U\+LT&P\+O\+R\+T\+\_\+\+P\+I\+N\+\_\+\+D\+E\+F\+A\+U\+LT. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677}} 
+\index{Port.h@{Port.h}!Port\_PinOutputSpeed@{Port\_PinOutputSpeed}}
+\index{Port\_PinOutputSpeed@{Port\_PinOutputSpeed}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_PinOutputSpeed}{Port\_PinOutputSpeed}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677}{Port\+\_\+\+Pin\+Output\+Speed}}}
+
+
+
+Decide The speed of the output pin. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{NO\_SPEED@{NO\_SPEED}!Port.h@{Port.h}}\index{Port.h@{Port.h}!NO\_SPEED@{NO\_SPEED}}}\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a907f37c8a862bce44359813b98cd2289}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a907f37c8a862bce44359813b98cd2289}} 
+N\+O\+\_\+\+S\+P\+E\+ED&N\+O\+\_\+\+S\+P\+E\+ED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{LOW\_SPEED@{LOW\_SPEED}!Port.h@{Port.h}}\index{Port.h@{Port.h}!LOW\_SPEED@{LOW\_SPEED}}}\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a9e67a499bd5745123d24101dd7910116}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a9e67a499bd5745123d24101dd7910116}} 
+L\+O\+W\+\_\+\+S\+P\+E\+ED&L\+O\+W\+\_\+\+S\+P\+E\+ED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{MEDIUM\_SPEED@{MEDIUM\_SPEED}!Port.h@{Port.h}}\index{Port.h@{Port.h}!MEDIUM\_SPEED@{MEDIUM\_SPEED}}}\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677afc07ca2c3b513ac6c3ccb3f69cab5372}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677afc07ca2c3b513ac6c3ccb3f69cab5372}} 
+M\+E\+D\+I\+U\+M\+\_\+\+S\+P\+E\+ED&M\+E\+D\+I\+U\+M\+\_\+\+S\+P\+E\+ED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{HIGH\_SPEED@{HIGH\_SPEED}!Port.h@{Port.h}}\index{Port.h@{Port.h}!HIGH\_SPEED@{HIGH\_SPEED}}}\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a8208c88a94cc5e919193f2ceeb370c6d}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a8208c88a94cc5e919193f2ceeb370c6d}} 
+H\+I\+G\+H\+\_\+\+S\+P\+E\+ED&H\+I\+G\+H\+\_\+\+S\+P\+E\+ED. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{VERY\_HIGH\_SPEED@{VERY\_HIGH\_SPEED}!Port.h@{Port.h}}\index{Port.h@{Port.h}!VERY\_HIGH\_SPEED@{VERY\_HIGH\_SPEED}}}\mbox{\Hypertarget{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a0f8cbf2c127dd912cd0d4f616e75e5fa}\label{_port_8h_a0a10357a1ebdfe06e1c450a1e04b1677a0f8cbf2c127dd912cd0d4f616e75e5fa}} 
+V\+E\+R\+Y\+\_\+\+H\+I\+G\+H\+\_\+\+S\+P\+E\+ED&V\+E\+R\+Y\+\_\+\+H\+I\+G\+H\+\_\+\+S\+P\+E\+ED. \\
+\hline
+
+\end{DoxyEnumFields}
+\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1}} 
+\index{Port.h@{Port.h}!Port\_PortNumEnum@{Port\_PortNumEnum}}
+\index{Port\_PortNumEnum@{Port\_PortNumEnum}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_PortNumEnum}{Port\_PortNumEnum}}
+{\footnotesize\ttfamily enum \mbox{\hyperlink{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1}{Port\+\_\+\+Port\+Num\+Enum}}}
+
+
+
+Used to decide the Port Number. 
+
+\begin{DoxyEnumFields}{Enumerator}
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTA@{PORTA}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTA@{PORTA}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae3201f6e0d0c1e138c60903276bb3859}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae3201f6e0d0c1e138c60903276bb3859}} 
+P\+O\+R\+TA&P\+O\+R\+TA. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTB@{PORTB}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTB@{PORTB}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae51dea4a37f3e2ede7ba6f27c563f6a4}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ae51dea4a37f3e2ede7ba6f27c563f6a4}} 
+P\+O\+R\+TB&P\+O\+R\+TB. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTC@{PORTC}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTC@{PORTC}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afcec7c36cc8137e94db854fdec9d2d50}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afcec7c36cc8137e94db854fdec9d2d50}} 
+P\+O\+R\+TC&P\+O\+R\+TC. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTD@{PORTD}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTD@{PORTD}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1aa5a8b29c2aba917895d49297270bc877}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1aa5a8b29c2aba917895d49297270bc877}} 
+P\+O\+R\+TD&P\+O\+R\+TD. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTE@{PORTE}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTE@{PORTE}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1a5fecb6baf7de2a6d107ee433b4c08616}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1a5fecb6baf7de2a6d107ee433b4c08616}} 
+P\+O\+R\+TE&P\+O\+R\+TE. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTF@{PORTF}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTF@{PORTF}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ad0bc8b9ec107437a44fe380184add7c3}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1ad0bc8b9ec107437a44fe380184add7c3}} 
+P\+O\+R\+TF&P\+O\+R\+TF. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTG@{PORTG}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTG@{PORTG}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1acdf0eb3b90cca18a3172ae9309560879}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1acdf0eb3b90cca18a3172ae9309560879}} 
+P\+O\+R\+TG&P\+O\+R\+TG. \\
+\hline
+
+\raisebox{\heightof{T}}[0pt][0pt]{\index{PORTH@{PORTH}!Port.h@{Port.h}}\index{Port.h@{Port.h}!PORTH@{PORTH}}}\mbox{\Hypertarget{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afb265653fe2dc0e4d79e1f0aaedff5f7}\label{_port_8h_a3c28f4a2c075118d6368b5344d7ac0e1afb265653fe2dc0e4d79e1f0aaedff5f7}} 
+P\+O\+R\+TH&P\+O\+R\+TH. \\
+\hline
+
+\end{DoxyEnumFields}
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\Hypertarget{_port_8h_a476702fecbd349a3cb7b77aa4811f2bd}\label{_port_8h_a476702fecbd349a3cb7b77aa4811f2bd}} 
+\index{Port.h@{Port.h}!Port\_GetVersionInfo@{Port\_GetVersionInfo}}
+\index{Port\_GetVersionInfo@{Port\_GetVersionInfo}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_GetVersionInfo()}{Port\_GetVersionInfo()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Get\+Version\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$}]{versioninfo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=306pt]{_port_8h_a476702fecbd349a3cb7b77aa4811f2bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8h_aacbee83a16c5da7f820356b4f0bf151b}\label{_port_8h_aacbee83a16c5da7f820356b4f0bf151b}} 
+\index{Port.h@{Port.h}!Port\_Init@{Port\_Init}}
+\index{Port\_Init@{Port\_Init}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_Init()}{Port\_Init()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Init (\begin{DoxyParamCaption}\item[{const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} $\ast$}]{Config\+Ptr }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=255pt]{_port_8h_aacbee83a16c5da7f820356b4f0bf151b_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8h_a3384c8587ac035499aa8e6d78d7b3377}\label{_port_8h_a3384c8587ac035499aa8e6d78d7b3377}} 
+\index{Port.h@{Port.h}!Port\_RefreshPortDirection@{Port\_RefreshPortDirection}}
+\index{Port\_RefreshPortDirection@{Port\_RefreshPortDirection}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_RefreshPortDirection()}{Port\_RefreshPortDirection()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Refresh\+Port\+Direction (\begin{DoxyParamCaption}\item[{void}]{ }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=331pt]{_port_8h_a3384c8587ac035499aa8e6d78d7b3377_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8h_a69a59c137ea6d4fdfc522ea4d13965bd}\label{_port_8h_a69a59c137ea6d4fdfc522ea4d13965bd}} 
+\index{Port.h@{Port.h}!Port\_SetPinDirection@{Port\_SetPinDirection}}
+\index{Port\_SetPinDirection@{Port\_SetPinDirection}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_SetPinDirection()}{Port\_SetPinDirection()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Set\+Pin\+Direction (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}}]{Pin,  }\item[{\mbox{\hyperlink{_port_8h_acd1027b312389f7a2af38a605d53a578}{Port\+\_\+\+Pin\+Direction\+Type}}}]{Direction }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=309pt]{_port_8h_a69a59c137ea6d4fdfc522ea4d13965bd_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_port_8h_a9ea52ef3292691674507f049c1e47eef}\label{_port_8h_a9ea52ef3292691674507f049c1e47eef}} 
+\index{Port.h@{Port.h}!Port\_SetPinMode@{Port\_SetPinMode}}
+\index{Port\_SetPinMode@{Port\_SetPinMode}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_SetPinMode()}{Port\_SetPinMode()}}
+{\footnotesize\ttfamily void Port\+\_\+\+Set\+Pin\+Mode (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_port_8h_a8b33d60d05f5e2bacc03cef31b4751fa}{Port\+\_\+\+Pin\+Type}}}]{Pin,  }\item[{\mbox{\hyperlink{_port_8h_a9443481d9e0031c2ab03a566fd9ebae5}{Port\+\_\+\+Pin\+Mode\+Type}}}]{Mode }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=295pt]{_port_8h_a9ea52ef3292691674507f049c1e47eef_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\Hypertarget{_port_8h_a141f8f939d9dd23a8f9124f66936a300}\label{_port_8h_a141f8f939d9dd23a8f9124f66936a300}} 
+\index{Port.h@{Port.h}!Port\_Configuration@{Port\_Configuration}}
+\index{Port\_Configuration@{Port\_Configuration}!Port.h@{Port.h}}
+\doxyparagraph{\texorpdfstring{Port\_Configuration}{Port\_Configuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_port___config_type}{Port\+\_\+\+Config\+Type}} Port\+\_\+\+Configuration}
+

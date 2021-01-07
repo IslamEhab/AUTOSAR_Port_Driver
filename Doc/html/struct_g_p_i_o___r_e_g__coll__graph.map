@@ -1,0 +1,3 @@
+<map id="GPIO_REG" name="GPIO_REG">
+<area shape="rect" id="node1" title="Used to hold register with their offsets by saving them in the struct with their order from data shee..." alt="" coords="5,5,104,229"/>
+</map>

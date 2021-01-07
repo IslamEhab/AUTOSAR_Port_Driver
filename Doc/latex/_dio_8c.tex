@@ -1,0 +1,97 @@
+\hypertarget{_dio_8c}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Dio/\+Dio.c File Reference}
+\label{_dio_8c}\index{AUTOSAR/Dio/Dio.c@{AUTOSAR/Dio/Dio.c}}
+{\ttfamily \#include \char`\"{}Dio\+\_\+\+Reg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dio.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Det.\+h\char`\"{}}\newline
+Include dependency graph for Dio.\+c\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_dio_8c__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} \mbox{\hyperlink{_dio_8c_aa5482dd0b4b8e3cd7c984cffbc423330}{Dio\+\_\+\+Read\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id)
+\item 
+void \mbox{\hyperlink{_dio_8c_ab5069dd14692cf83b1a90d3f98faf158}{Dio\+\_\+\+Write\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id, \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Level)
+\item 
+void \mbox{\hyperlink{_dio_8c_a404b6f57d9f6192203a8ad1d211e4f74}{Dio\+\_\+\+Get\+Version\+Info}} (\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$versioninfo)
+\item 
+\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} \mbox{\hyperlink{_dio_8c_a16650b42ff331c4df37e50a3c99c03e1}{Dio\+\_\+\+Flip\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{struct_dio___config_channel}{Dio\+\_\+\+Config\+Channel}} $\ast$ \mbox{\hyperlink{_dio_8c_adb4674ab3f17aeca3fea314f1ffd8d6c}{Dio\+\_\+\+Port\+Channels}} = Dio\+\_\+\+Configuration.\+Channels
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\Hypertarget{_dio_8c_a16650b42ff331c4df37e50a3c99c03e1}\label{_dio_8c_a16650b42ff331c4df37e50a3c99c03e1}} 
+\index{Dio.c@{Dio.c}!Dio\_FlipChannel@{Dio\_FlipChannel}}
+\index{Dio\_FlipChannel@{Dio\_FlipChannel}!Dio.c@{Dio.c}}
+\doxyparagraph{\texorpdfstring{Dio\_FlipChannel()}{Dio\_FlipChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Dio\+\_\+\+Flip\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{_dio_8c_a16650b42ff331c4df37e50a3c99c03e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8c_a404b6f57d9f6192203a8ad1d211e4f74}\label{_dio_8c_a404b6f57d9f6192203a8ad1d211e4f74}} 
+\index{Dio.c@{Dio.c}!Dio\_GetVersionInfo@{Dio\_GetVersionInfo}}
+\index{Dio\_GetVersionInfo@{Dio\_GetVersionInfo}!Dio.c@{Dio.c}}
+\doxyparagraph{\texorpdfstring{Dio\_GetVersionInfo()}{Dio\_GetVersionInfo()}}
+{\footnotesize\ttfamily void Dio\+\_\+\+Get\+Version\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$}]{versioninfo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_dio_8c_a404b6f57d9f6192203a8ad1d211e4f74_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8c_aa5482dd0b4b8e3cd7c984cffbc423330}\label{_dio_8c_aa5482dd0b4b8e3cd7c984cffbc423330}} 
+\index{Dio.c@{Dio.c}!Dio\_ReadChannel@{Dio\_ReadChannel}}
+\index{Dio\_ReadChannel@{Dio\_ReadChannel}!Dio.c@{Dio.c}}
+\doxyparagraph{\texorpdfstring{Dio\_ReadChannel()}{Dio\_ReadChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Dio\+\_\+\+Read\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_dio_8c_aa5482dd0b4b8e3cd7c984cffbc423330_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8c_ab5069dd14692cf83b1a90d3f98faf158}\label{_dio_8c_ab5069dd14692cf83b1a90d3f98faf158}} 
+\index{Dio.c@{Dio.c}!Dio\_WriteChannel@{Dio\_WriteChannel}}
+\index{Dio\_WriteChannel@{Dio\_WriteChannel}!Dio.c@{Dio.c}}
+\doxyparagraph{\texorpdfstring{Dio\_WriteChannel()}{Dio\_WriteChannel()}}
+{\footnotesize\ttfamily void Dio\+\_\+\+Write\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id,  }\item[{\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}}}]{Level }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{_dio_8c_ab5069dd14692cf83b1a90d3f98faf158_cgraph}
+\end{center}
+\end{figure}
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\Hypertarget{_dio_8c_adb4674ab3f17aeca3fea314f1ffd8d6c}\label{_dio_8c_adb4674ab3f17aeca3fea314f1ffd8d6c}} 
+\index{Dio.c@{Dio.c}!Dio\_PortChannels@{Dio\_PortChannels}}
+\index{Dio\_PortChannels@{Dio\_PortChannels}!Dio.c@{Dio.c}}
+\doxyparagraph{\texorpdfstring{Dio\_PortChannels}{Dio\_PortChannels}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{_compiler_8h_a10b2d890d871e1489bb02b7e70d9bdfb}{S\+T\+A\+T\+IC}} \mbox{\hyperlink{struct_dio___config_channel}{Dio\+\_\+\+Config\+Channel}}$\ast$ Dio\+\_\+\+Port\+Channels = Dio\+\_\+\+Configuration.\+Channels}
+

@@ -1,0 +1,127 @@
+\hypertarget{struct_g_p_i_o___r_e_g}{}\doxysubsection{G\+P\+I\+O\+\_\+\+R\+EG Struct Reference}
+\label{struct_g_p_i_o___r_e_g}\index{GPIO\_REG@{GPIO\_REG}}
+
+
+Used to hold register with their offsets by saving them in the struct with their order from data sheet.  
+
+
+
+
+{\ttfamily \#include $<$Port\+\_\+\+Reg.\+h$>$}
+
+
+
+Collaboration diagram for G\+P\+I\+O\+\_\+\+R\+EG\+:\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=154pt]{struct_g_p_i_o___r_e_g__coll__graph}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Fields}
+\begin{DoxyCompactItemize}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_aa73addf103335caaccdd34ac9e08b48d}{M\+O\+D\+ER}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a037bcba9b56e65255de634ebd60517dc}{O\+T\+Y\+P\+ER}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a29db265e84ea30812c1da61c370a4251}{O\+S\+P\+E\+E\+DR}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_aa03945868940aa251ee045c982244118}{P\+U\+P\+DR}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a84c4f2aba873c14a044d2f00247fa0e4}{I\+DR}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a4953ead27e2c628555d2cf66e5e9569b}{O\+DR}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_ac435b43e31e725fe79f66d9f7bd28be1}{B\+S\+R\+RL}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a1ea055e64d7020dbd08e9ab1caebc64b}{B\+S\+R\+RH}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a04cb7f1daab9b88afeb2f0cdb8fff00d}{L\+C\+KR}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a2d4a126aa5e936fa04ffa4771e65f255}{A\+F\+RL}}
+\item 
+volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} \mbox{\hyperlink{struct_g_p_i_o___r_e_g_a66b31ba9c104579e2b82b64df5277d97}{A\+F\+RH}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Detailed Description}
+Used to hold register with their offsets by saving them in the struct with their order from data sheet. 
+
+\begin{DoxyNote}{Note}
+B\+S\+RR divided into 2 registers B\+S\+R\+RL (Least significant 16 bit) which used to set certain bit with \textquotesingle{}1\textquotesingle{} \& B\+S\+R\+RH (Most significant 16 bit) Which used to clear certain bit 
+\end{DoxyNote}
+
+
+\doxysubsubsection{Field Documentation}
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a66b31ba9c104579e2b82b64df5277d97}\label{struct_g_p_i_o___r_e_g_a66b31ba9c104579e2b82b64df5277d97}} 
+\index{GPIO\_REG@{GPIO\_REG}!AFRH@{AFRH}}
+\index{AFRH@{AFRH}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{AFRH}{AFRH}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+A\+F\+RH}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a2d4a126aa5e936fa04ffa4771e65f255}\label{struct_g_p_i_o___r_e_g_a2d4a126aa5e936fa04ffa4771e65f255}} 
+\index{GPIO\_REG@{GPIO\_REG}!AFRL@{AFRL}}
+\index{AFRL@{AFRL}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{AFRL}{AFRL}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+A\+F\+RL}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a1ea055e64d7020dbd08e9ab1caebc64b}\label{struct_g_p_i_o___r_e_g_a1ea055e64d7020dbd08e9ab1caebc64b}} 
+\index{GPIO\_REG@{GPIO\_REG}!BSRRH@{BSRRH}}
+\index{BSRRH@{BSRRH}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{BSRRH}{BSRRH}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+B\+S\+R\+RH}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_ac435b43e31e725fe79f66d9f7bd28be1}\label{struct_g_p_i_o___r_e_g_ac435b43e31e725fe79f66d9f7bd28be1}} 
+\index{GPIO\_REG@{GPIO\_REG}!BSRRL@{BSRRL}}
+\index{BSRRL@{BSRRL}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{BSRRL}{BSRRL}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a05f6b0ae8f6a6e135b0e290c25fe0e4e}{uint16}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+B\+S\+R\+RL}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a84c4f2aba873c14a044d2f00247fa0e4}\label{struct_g_p_i_o___r_e_g_a84c4f2aba873c14a044d2f00247fa0e4}} 
+\index{GPIO\_REG@{GPIO\_REG}!IDR@{IDR}}
+\index{IDR@{IDR}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{IDR}{IDR}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+I\+DR}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a04cb7f1daab9b88afeb2f0cdb8fff00d}\label{struct_g_p_i_o___r_e_g_a04cb7f1daab9b88afeb2f0cdb8fff00d}} 
+\index{GPIO\_REG@{GPIO\_REG}!LCKR@{LCKR}}
+\index{LCKR@{LCKR}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{LCKR}{LCKR}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+L\+C\+KR}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_aa73addf103335caaccdd34ac9e08b48d}\label{struct_g_p_i_o___r_e_g_aa73addf103335caaccdd34ac9e08b48d}} 
+\index{GPIO\_REG@{GPIO\_REG}!MODER@{MODER}}
+\index{MODER@{MODER}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{MODER}{MODER}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+M\+O\+D\+ER}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a4953ead27e2c628555d2cf66e5e9569b}\label{struct_g_p_i_o___r_e_g_a4953ead27e2c628555d2cf66e5e9569b}} 
+\index{GPIO\_REG@{GPIO\_REG}!ODR@{ODR}}
+\index{ODR@{ODR}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{ODR}{ODR}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+O\+DR}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a29db265e84ea30812c1da61c370a4251}\label{struct_g_p_i_o___r_e_g_a29db265e84ea30812c1da61c370a4251}} 
+\index{GPIO\_REG@{GPIO\_REG}!OSPEEDR@{OSPEEDR}}
+\index{OSPEEDR@{OSPEEDR}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{OSPEEDR}{OSPEEDR}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+O\+S\+P\+E\+E\+DR}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_a037bcba9b56e65255de634ebd60517dc}\label{struct_g_p_i_o___r_e_g_a037bcba9b56e65255de634ebd60517dc}} 
+\index{GPIO\_REG@{GPIO\_REG}!OTYPER@{OTYPER}}
+\index{OTYPER@{OTYPER}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{OTYPER}{OTYPER}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+O\+T\+Y\+P\+ER}
+
+\mbox{\Hypertarget{struct_g_p_i_o___r_e_g_aa03945868940aa251ee045c982244118}\label{struct_g_p_i_o___r_e_g_aa03945868940aa251ee045c982244118}} 
+\index{GPIO\_REG@{GPIO\_REG}!PUPDR@{PUPDR}}
+\index{PUPDR@{PUPDR}!GPIO\_REG@{GPIO\_REG}}
+\doxyparagraph{\texorpdfstring{PUPDR}{PUPDR}}
+{\footnotesize\ttfamily volatile \mbox{\hyperlink{_platform___types_8h_a4b435a49c74bb91f284f075e63416cb6}{uint32}} G\+P\+I\+O\+\_\+\+R\+E\+G\+::\+P\+U\+P\+DR}
+
+
+
+The documentation for this struct was generated from the following file\+:\begin{DoxyCompactItemize}
+\item 
+A\+U\+T\+O\+S\+A\+R/\+Port/\mbox{\hyperlink{_port___reg_8h}{Port\+\_\+\+Reg.\+h}}\end{DoxyCompactItemize}

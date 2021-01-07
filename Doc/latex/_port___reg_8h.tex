@@ -1,0 +1,159 @@
+\hypertarget{_port___reg_8h}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Port/\+Port\+\_\+\+Reg.h File Reference}
+\label{_port___reg_8h}\index{AUTOSAR/Port/Port\_Reg.h@{AUTOSAR/Port/Port\_Reg.h}}
+{\ttfamily \#include \char`\"{}Std\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+\_\+\+Macros.\+h\char`\"{}}\newline
+Include dependency graph for Port\+\_\+\+Reg.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=329pt]{_port___reg_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=216pt]{_port___reg_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}
+\begin{DoxyCompactList}\small\item\em Used to hold register with their offsets by saving them in the struct with their order from data sheet. \end{DoxyCompactList}\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a309d34d42a30bf7021404bb99b09608e}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40020000)        /$\ast$ G\+P\+I\+OA(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a453dba8550632082c40ef8a9ed37d7f6}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40020400)        /$\ast$ G\+P\+I\+OB(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_aa6f07106bfeb2140735dc641e379b2a5}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40020800)        /$\ast$ G\+P\+I\+OC(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a286eb428695c0f6ebcf2f6495e35b8d4}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+D\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40020\+C00)        /$\ast$ G\+P\+I\+OD(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a5fa8f90fe329ef30ba694b25ac767618}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+E\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40021000)        /$\ast$ G\+P\+I\+OE(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a6ea78e1b23123efd693344226db95e7f}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+F\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40021400)        /$\ast$ G\+P\+I\+OF(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_aa74ebf11a44df2da6ad0221539d98815}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40021800)        /$\ast$ G\+P\+I\+OG(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a4ea462d17764fd4afae2c8a3e93b0454}{G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+H\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~(0x40021\+C00)        /$\ast$ G\+P\+I\+OH(A\+H\+B1) Base Address $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a034245d27ea38f0c5b26e72f78b18d8c}{G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020000)	/$\ast$ Pointer to G\+P\+I\+OA Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_abbde468c4be08bb6288f992d2ba4b0b2}{G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020400)	/$\ast$ Pointer to G\+P\+I\+OB Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_acc0899208f96ee70b8f7bdab8d9045a4}{G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020800)	/$\ast$ Pointer to G\+P\+I\+OC Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a1037262f28dcfa9627e238a683992681}{G\+P\+I\+O\+D\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020\+C00)	/$\ast$ Pointer to G\+P\+I\+OD Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a05d19291760c424ec9ec1c55a0c4a719}{G\+P\+I\+O\+E\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021000)	/$\ast$ Pointer to G\+P\+I\+OE Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_a9ab2405f220b434c0f2a90933df98cba}{G\+P\+I\+O\+F\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021400)	/$\ast$ Pointer to G\+P\+I\+OF Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_aeedd77f5598be1d5c573eae4ecd1b30e}{G\+P\+I\+O\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021800)	/$\ast$ Pointer to G\+P\+I\+OG Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\item 
+\#define \mbox{\hyperlink{_port___reg_8h_af0b1a0c02e287e6f598d10001bd62a1f}{G\+P\+I\+O\+H\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS}}~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021\+C00)	/$\ast$ Pointer to G\+P\+I\+OH Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_port___reg_8h_a309d34d42a30bf7021404bb99b09608e}\label{_port___reg_8h_a309d34d42a30bf7021404bb99b09608e}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTA\_BASE\_ADDRESS@{GPIO\_PORTA\_BASE\_ADDRESS}}
+\index{GPIO\_PORTA\_BASE\_ADDRESS@{GPIO\_PORTA\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTA\_BASE\_ADDRESS}{GPIO\_PORTA\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40020000)        /$\ast$ G\+P\+I\+OA(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a453dba8550632082c40ef8a9ed37d7f6}\label{_port___reg_8h_a453dba8550632082c40ef8a9ed37d7f6}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTB\_BASE\_ADDRESS@{GPIO\_PORTB\_BASE\_ADDRESS}}
+\index{GPIO\_PORTB\_BASE\_ADDRESS@{GPIO\_PORTB\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTB\_BASE\_ADDRESS}{GPIO\_PORTB\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40020400)        /$\ast$ G\+P\+I\+OB(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_aa6f07106bfeb2140735dc641e379b2a5}\label{_port___reg_8h_aa6f07106bfeb2140735dc641e379b2a5}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTC\_BASE\_ADDRESS@{GPIO\_PORTC\_BASE\_ADDRESS}}
+\index{GPIO\_PORTC\_BASE\_ADDRESS@{GPIO\_PORTC\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTC\_BASE\_ADDRESS}{GPIO\_PORTC\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40020800)        /$\ast$ G\+P\+I\+OC(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a286eb428695c0f6ebcf2f6495e35b8d4}\label{_port___reg_8h_a286eb428695c0f6ebcf2f6495e35b8d4}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTD\_BASE\_ADDRESS@{GPIO\_PORTD\_BASE\_ADDRESS}}
+\index{GPIO\_PORTD\_BASE\_ADDRESS@{GPIO\_PORTD\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTD\_BASE\_ADDRESS}{GPIO\_PORTD\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+D\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40020\+C00)        /$\ast$ G\+P\+I\+OD(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a5fa8f90fe329ef30ba694b25ac767618}\label{_port___reg_8h_a5fa8f90fe329ef30ba694b25ac767618}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTE\_BASE\_ADDRESS@{GPIO\_PORTE\_BASE\_ADDRESS}}
+\index{GPIO\_PORTE\_BASE\_ADDRESS@{GPIO\_PORTE\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTE\_BASE\_ADDRESS}{GPIO\_PORTE\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+E\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40021000)        /$\ast$ G\+P\+I\+OE(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a6ea78e1b23123efd693344226db95e7f}\label{_port___reg_8h_a6ea78e1b23123efd693344226db95e7f}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTF\_BASE\_ADDRESS@{GPIO\_PORTF\_BASE\_ADDRESS}}
+\index{GPIO\_PORTF\_BASE\_ADDRESS@{GPIO\_PORTF\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTF\_BASE\_ADDRESS}{GPIO\_PORTF\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+F\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40021400)        /$\ast$ G\+P\+I\+OF(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_aa74ebf11a44df2da6ad0221539d98815}\label{_port___reg_8h_aa74ebf11a44df2da6ad0221539d98815}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTG\_BASE\_ADDRESS@{GPIO\_PORTG\_BASE\_ADDRESS}}
+\index{GPIO\_PORTG\_BASE\_ADDRESS@{GPIO\_PORTG\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTG\_BASE\_ADDRESS}{GPIO\_PORTG\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40021800)        /$\ast$ G\+P\+I\+OG(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a4ea462d17764fd4afae2c8a3e93b0454}\label{_port___reg_8h_a4ea462d17764fd4afae2c8a3e93b0454}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIO\_PORTH\_BASE\_ADDRESS@{GPIO\_PORTH\_BASE\_ADDRESS}}
+\index{GPIO\_PORTH\_BASE\_ADDRESS@{GPIO\_PORTH\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIO\_PORTH\_BASE\_ADDRESS}{GPIO\_PORTH\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+\_\+\+P\+O\+R\+T\+H\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~(0x40021\+C00)        /$\ast$ G\+P\+I\+OH(A\+H\+B1) Base Address $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a034245d27ea38f0c5b26e72f78b18d8c}\label{_port___reg_8h_a034245d27ea38f0c5b26e72f78b18d8c}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOA\_BASE\_ADDRESS@{GPIOA\_BASE\_ADDRESS}}
+\index{GPIOA\_BASE\_ADDRESS@{GPIOA\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOA\_BASE\_ADDRESS}{GPIOA\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+A\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020000)	/$\ast$ Pointer to G\+P\+I\+OA Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_abbde468c4be08bb6288f992d2ba4b0b2}\label{_port___reg_8h_abbde468c4be08bb6288f992d2ba4b0b2}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOB\_BASE\_ADDRESS@{GPIOB\_BASE\_ADDRESS}}
+\index{GPIOB\_BASE\_ADDRESS@{GPIOB\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOB\_BASE\_ADDRESS}{GPIOB\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+B\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020400)	/$\ast$ Pointer to G\+P\+I\+OB Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_acc0899208f96ee70b8f7bdab8d9045a4}\label{_port___reg_8h_acc0899208f96ee70b8f7bdab8d9045a4}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOC\_BASE\_ADDRESS@{GPIOC\_BASE\_ADDRESS}}
+\index{GPIOC\_BASE\_ADDRESS@{GPIOC\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOC\_BASE\_ADDRESS}{GPIOC\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+C\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020800)	/$\ast$ Pointer to G\+P\+I\+OC Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a1037262f28dcfa9627e238a683992681}\label{_port___reg_8h_a1037262f28dcfa9627e238a683992681}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOD\_BASE\_ADDRESS@{GPIOD\_BASE\_ADDRESS}}
+\index{GPIOD\_BASE\_ADDRESS@{GPIOD\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOD\_BASE\_ADDRESS}{GPIOD\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+D\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40020\+C00)	/$\ast$ Pointer to G\+P\+I\+OD Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a05d19291760c424ec9ec1c55a0c4a719}\label{_port___reg_8h_a05d19291760c424ec9ec1c55a0c4a719}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOE\_BASE\_ADDRESS@{GPIOE\_BASE\_ADDRESS}}
+\index{GPIOE\_BASE\_ADDRESS@{GPIOE\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOE\_BASE\_ADDRESS}{GPIOE\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+E\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021000)	/$\ast$ Pointer to G\+P\+I\+OE Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_a9ab2405f220b434c0f2a90933df98cba}\label{_port___reg_8h_a9ab2405f220b434c0f2a90933df98cba}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOF\_BASE\_ADDRESS@{GPIOF\_BASE\_ADDRESS}}
+\index{GPIOF\_BASE\_ADDRESS@{GPIOF\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOF\_BASE\_ADDRESS}{GPIOF\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+F\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021400)	/$\ast$ Pointer to G\+P\+I\+OF Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_aeedd77f5598be1d5c573eae4ecd1b30e}\label{_port___reg_8h_aeedd77f5598be1d5c573eae4ecd1b30e}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOG\_BASE\_ADDRESS@{GPIOG\_BASE\_ADDRESS}}
+\index{GPIOG\_BASE\_ADDRESS@{GPIOG\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOG\_BASE\_ADDRESS}{GPIOG\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+G\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021800)	/$\ast$ Pointer to G\+P\+I\+OG Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+
+\mbox{\Hypertarget{_port___reg_8h_af0b1a0c02e287e6f598d10001bd62a1f}\label{_port___reg_8h_af0b1a0c02e287e6f598d10001bd62a1f}} 
+\index{Port\_Reg.h@{Port\_Reg.h}!GPIOH\_BASE\_ADDRESS@{GPIOH\_BASE\_ADDRESS}}
+\index{GPIOH\_BASE\_ADDRESS@{GPIOH\_BASE\_ADDRESS}!Port\_Reg.h@{Port\_Reg.h}}
+\doxyparagraph{\texorpdfstring{GPIOH\_BASE\_ADDRESS}{GPIOH\_BASE\_ADDRESS}}
+{\footnotesize\ttfamily \#define G\+P\+I\+O\+H\+\_\+\+B\+A\+S\+E\+\_\+\+A\+D\+D\+R\+E\+SS~((\mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}}$\ast$) 0x40021\+C00)	/$\ast$ Pointer to G\+P\+I\+OH Base Address of type \mbox{\hyperlink{struct_g_p_i_o___r_e_g}{G\+P\+I\+O\+\_\+\+R\+EG}} $\ast$/}
+

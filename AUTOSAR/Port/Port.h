@@ -193,6 +193,7 @@ typedef enum{
  * @brief This enum has all the alternative function values of the TM4C123GH6PM
  * 		  to be used with Port_PinModeType data type
  */
+#ifdef STM32F429
 typedef enum{
 
 /********* Alternative function = 0 For all Pins that have it **************/
@@ -236,7 +237,7 @@ typedef enum{
 	PORT_B_PIN_0_AF1_TIM1_CH2N				= 1,                                           //!< PORT_B_PIN_0_AF1_TIM1_CH2N
 	PORT_B_PIN_1_AF1_TIM1_CH3N				= 1,                                           //!< PORT_B_PIN_1_AF1_TIM1_CH3N
 	PORT_B_PIN_3_AF1_TIM1_CH2				= 1,                                            //!< PORT_B_PIN_3_AF1_TIM1_CH2
-	PORT_B_PIN_10_AF1_TIM12_CH3				= 1,                                          //!< PORT_B_PIN_10_AF1_TIM12_CH3
+	PORT_B_PIN_10_AF1_TIM2_CH3				= 1,                                          //!< PORT_B_PIN_10_AF1_TIM12_CH3
 	PORT_B_PIN_11_AF1_TIM2_CH4				= 1,                                           //!< PORT_B_PIN_11_AF1_TIM2_CH4
 	PORT_B_PIN_12_AF1_TIM1_BKIN				= 1,                                          //!< PORT_B_PIN_12_AF1_TIM1_BKIN
 	PORT_B_PIN_13_AF1_TIM1_CH1N				= 1,                                          //!< PORT_B_PIN_13_AF1_TIM1_CH1N
@@ -430,13 +431,15 @@ typedef enum{
 /************ Alternative Function  = 6 For all Pins that have it *************/
     PORT_A_PIN_4_AF6_SPI3_NSS				= 6, /* Note: PA6 AF6 Has 2 modes */         //!< PORT_A_PIN_4_AF6_SPI3_NSS
 	PORT_A_PIN_4_AF6_I2S3_WS				= 6, /* SPI3 NSS & I2S3 WS 		  */                //!< PORT_A_PIN_4_AF6_I2S3_WS
+	PORT_A_PIN_15_AF6_SPI3_NSS 				= 6, /* Note: PA15 AF6 Has 2 modes*///!< PORT_A_PIN_15_AF6_SPI3_NSS
+	PORT_A_PIN_15_AF6_I2S3_WS 				= 6, /* SPI3 NSS & I2S3 WS 		  */    //!< PORT_A_PIN_15_AF6_I2S3_WS
 
 	PORT_B_PIN_3_AF6_SPI3_SCK				= 6, /* Note: PB3 AF6 Has 2 modes */            //!< PORT_B_PIN_3_AF6_SPI3_SCK
 	PORT_B_PIN_3_AF6_I2S3_CK				= 6, /* SPI3 SCK & I2S3 CK	      */              //!< PORT_B_PIN_3_AF6_I2S3_CK
-	PORT_B_PIN_4_AF6_SPI1_MISO				= 6,                                           //!< PORT_B_PIN_4_AF6_SPI1_MISO
-	PORT_B_PIN_5_AF6_SPI1_MOSI				= 6, /* Note: PB5 AF6 has 2 modes */           //!< PORT_B_PIN_5_AF6_SPI1_MOSI
-	PORT_B_PIN_5_AF6_I2S3_SD			    = 6, /* SPI1 MOSI & I2S3 SD	      */          //!< PORT_B_PIN_5_AF6_I2S3_SD
-	PORT_B_PIN_5_AF6_I2S2_EXT_SD 			= 6,                                         //!< PORT_B_PIN_5_AF6_I2S2_EXT_SD
+	PORT_B_PIN_4_AF6_SPI3_MISO				= 6,                                           //!< PORT_B_PIN_4_AF6_SPI3_MISO
+	PORT_B_PIN_5_AF6_SPI3_MOSI				= 6, /* Note: PB5 AF6 has 2 modes */           //!< PORT_B_PIN_5_AF6_SPI3_MOSI
+	PORT_B_PIN_5_AF6_I2S3_SD			    = 6, /* SPI3 MOSI & I2S3 SD	      */          //!< PORT_B_PIN_5_AF6_I2S3_SD
+	PORT_B_PIN_14_AF6_I2S2_EXT_SD 			= 6,                                         //!< PORT_B_PIN_14_AF6_I2S2_EXT_SD
 
 	PORT_C_PIN_2_AF6_I2S2_EXT_SD 			= 6,                                         //!< PORT_C_PIN_2_AF6_I2S2_EXT_SD
 	PORT_C_PIN_7_AF6_I2S3_MCK 				= 6,                                           //!< PORT_C_PIN_7_AF6_I2S3_MCK
@@ -635,8 +638,8 @@ typedef enum{
 	PORT_B_PIN_11_AF11_ETH_RMII_TX_EN 		= 11, /* ETH (MII TX & RMII TX )EN   */  //!< PORT_B_PIN_11_AF11_ETH_RMII_TX_EN
 	PORT_B_PIN_12_AF11_ETH_MII_TXD0 		= 11, /* Note: PB12 AF11 has 2 modes */    //!< PORT_B_PIN_12_AF11_ETH_MII_TXD0
 	PORT_B_PIN_12_AF11_ETH_RMII_TXD0 		= 11, /* ETH (MII TXD0 & RMII TXD0)  */   //!< PORT_B_PIN_12_AF11_ETH_RMII_TXD0
-	PORT_B_PIN_12_AF11_ETH_MII_TXD 			= 11, /* Note: PB13 AF11 has 2 modes */    //!< PORT_B_PIN_12_AF11_ETH_MII_TXD
-	PORT_B_PIN_12_AF11_ETH_RMII_TXD1 		= 11, /* ETH (MII TXD & RMII TXD1    */   //!< PORT_B_PIN_12_AF11_ETH_RMII_TXD1
+	PORT_B_PIN_12_AF11_ETH_MII_TXD1 		= 11, /* Note: PB13 AF11 has 2 modes */    //!< PORT_B_PIN_12_AF11_ETH_MII_TXD
+	PORT_B_PIN_12_AF11_ETH_RMII_TXD1 		= 11, /* ETH (MII TXD1 & RMII TXD1    */   //!< PORT_B_PIN_12_AF11_ETH_RMII_TXD1
 
 	PORT_C_PIN_1_AF11_ETH_MDC 				= 11,                                          //!< PORT_C_PIN_1_AF11_ETH_MDC
 	PORT_C_PIN_2_AF11_ETH_MII_TXD2 			= 11,                                      //!< PORT_C_PIN_2_AF11_ETH_MII_TXD2
@@ -688,7 +691,7 @@ typedef enum{
 	PORT_C_PIN_12_AF12_SDIO_CK 				= 12,                                         //!< PORT_C_PIN_12_AF12_SDIO_CK
 
 	PORT_D_PIN_0_AF12_FMC_D2				= 12,                                            //!< PORT_D_PIN_0_AF12_FMC_D2
-	PORT_D_PIN_1_AF12_FMC_D1				= 12,                                            //!< PORT_D_PIN_1_AF12_FMC_D1
+	PORT_D_PIN_1_AF12_FMC_D3				= 12,                                            //!< PORT_D_PIN_1_AF12_FMC_D3
 	PORT_D_PIN_2_AF12_SDIO_CMD	 			= 12,                                         //!< PORT_D_PIN_2_AF12_SDIO_CMD
 	PORT_D_PIN_3_AF12_FMC_CLK 				= 12,                                          //!< PORT_D_PIN_3_AF12_FMC_CLK
 	PORT_D_PIN_4_AF12_FMC_NOE 				= 12,                                          //!< PORT_D_PIN_4_AF12_FMC_NOE
@@ -989,6 +992,592 @@ typedef enum{
 
 }Port_PinModeEnum;
 
+#elif defined STM32F407
+
+typedef enum{
+
+/********* Alternative function = 0 For all Pins that have it **************/
+	PORT_A_PIN_8_AF0_MCO1					= 0,                                               //!< PORT_A_PIN_8_AF0_MCO1
+	PORT_A_PIN_13_AF0_JTMS_SWDIO			= 0,                                          //!< PORT_A_PIN_13_AF0_JTMS_SWDIO
+	PORT_A_PIN_14_AF0_JTCK_SWCLK			= 0,                                          //!< PORT_A_PIN_14_AF0_JTCK_SWCLK
+	PORT_A_PIN_15_AF0_JTDI					= 0,                                              //!< PORT_A_PIN_15_AF0_JTDI
+
+	PORT_B_PIN_3_AF0_JTDO_TRACES_WO			= 0,                                       //!< PORT_B_PIN_3_AF0_JTDO_TRAC_ESWO
+	PORT_B_PIN_4_AF0_NTJRST					= 0,                                             //!< PORT_B_PIN_4_AF0_NTJRST
+	PORT_B_PIN_15_AF0_RTC_REFIN				= 0,                                          //!< PORT_B_PIN_15_AF0_RTC_REFIN
+
+	PORT_C_PIN_9_AF0_MCO2					= 0,                                               //!< PORT_C_PIN_9_AF0_MCO2
+
+	PORT_E_PIN_2_AF0_TRAC_ECLK				= 0,                                           //!< PORT_E_PIN_2_AF0_TRAC_ECLK
+	PORT_E_PIN_3_AF0_TRAC_ED0				= 0,                                            //!< PORT_E_PIN_3_AF0_TRAC_ED0
+	PORT_E_PIN_4_AF0_TRAC_ED1				= 0,                                            //!< PORT_E_PIN_4_AF0_TRAC_ED1
+	PORT_E_PIN_5_AF0_TRAC_ED2				= 0,                                            //!< PORT_E_PIN_5_AF0_TRAC_ED2
+	PORT_E_PIN_6_AF0_TRAC_ED3				= 0,                                            //!< PORT_E_PIN_6_AF0_TRAC_ED3
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 1 For all Pins that have it ***********/
+    PORT_A_PIN_0_AF1_TMI2_CH1_ETR		    = 1,                         //!< PORT_A_PIN_0_AF1_TMI2_CH1_ETR
+	PORT_A_PIN_1_AF1_TIM2_CH2				= 1,                                            //!< PORT_A_PIN_1_AF1_TIM2_CH2
+	PORT_A_PIN_2_AF1_TIM2_CH3				= 1,                                            //!< PORT_A_PIN_2_AF1_TIM2_CH3
+	PORT_A_PIN_3_AF1_TIM2_CH4				= 1,                                            //!< PORT_A_PIN_3_AF1_TIM2_CH4
+	PORT_A_PIN_5_AF1_TIM2_CH1_ETR			= 1,                               //!< PORT_A_PIN_5_AF1_TIM2_CH1_ETR
+	PORT_A_PIN_6_AF1_TIM1_BKIN				= 1,                                           //!< PORT_A_PIN_6_AF1_TIM1_BKIN
+	PORT_A_PIN_7_AF1_TIM1_CH1N				= 1,                                           //!< PORT_A_PIN_7_AF1_TIM1_CH1N
+	PORT_A_PIN_8_AF1_TIM1_CH1				= 1,                                            //!< PORT_A_PIN_8_AF1_TIM1_CH1
+	PORT_A_PIN_9_AF1_TIM1_CH2				= 1,                                            //!< PORT_A_PIN_9_AF1_TIM1_CH2
+	PORT_A_PIN_10_AF1_TIM1_CH3				= 1,                                           //!< PORT_A_PIN_10_AF1_TIM1_CH3
+	PORT_A_PIN_11_AF1_TIM1_CH4				= 1,                                           //!< PORT_A_PIN_11_AF1_TIM1_CH4
+	PORT_A_PIN_12_AF1_TIM1_ETR				= 1,                                           //!< PORT_A_PIN_12_AF1_TIM1_ETR
+	PORT_A_PIN_15_AF1_TIM2_CH1				= 1, /* Note: PA15 AF0 has 2modes*/            //!< PORT_A_PIN_15_AF1_TIM2_CH1
+	PORT_A_PIN_15_AF1_TIM2_ETR				= 1, /* TIM2 (CH1 & ETR) (as PA0)*/            //!< PORT_A_PIN_15_AF1_TIM2_ETR
+
+	PORT_B_PIN_0_AF1_TIM1_CH2N				= 1,                                           //!< PORT_B_PIN_0_AF1_TIM1_CH2N
+	PORT_B_PIN_1_AF1_TIM1_CH3N				= 1,                                           //!< PORT_B_PIN_1_AF1_TIM1_CH3N
+	PORT_B_PIN_3_AF1_TIM1_CH2				= 1,                                            //!< PORT_B_PIN_3_AF1_TIM1_CH2
+	PORT_B_PIN_10_AF1_TIM2_CH3				= 1,                                          //!< PORT_B_PIN_10_AF1_TIM12_CH3
+	PORT_B_PIN_11_AF1_TIM2_CH4				= 1,                                           //!< PORT_B_PIN_11_AF1_TIM2_CH4
+	PORT_B_PIN_12_AF1_TIM1_BKIN				= 1,                                          //!< PORT_B_PIN_12_AF1_TIM1_BKIN
+	PORT_B_PIN_13_AF1_TIM1_CH1N				= 1,                                          //!< PORT_B_PIN_13_AF1_TIM1_CH1N
+	PORT_B_PIN_14_AF1_TIM1_CH2N			 	= 1,                                         //!< PORT_B_PIN_14_AF1_TIM1_CH2N
+	PORT_B_PIN_15_AF1_TIM1_CH3N				= 1,                                          //!< PORT_B_PIN_15_AF1_TIM1_CH3N
+
+	/*--------------------------- No AF1 In Port C ------------------------*/
+
+	/*--------------------------- No AF1 In Port D ------------------------*/
+
+	PORT_E_PIN_7_AF1_TIM1_ETR				= 1,                                            //!< PORT_E_PIN_7_AF1_TIM1_ETR
+	PORT_E_PIN_8_AF1_TIM1_CH1N 				= 1,                                          //!< PORT_E_PIN_8_AF1_TIM1_CH1N
+	PORT_E_PIN_9_AF1_TIM1_CH1 				= 1,                                           //!< PORT_E_PIN_9_AF1_TIM1_CH1
+	PORT_E_PIN_10_AF1_TIM1_CH2N				= 1,                                          //!< PORT_E_PIN_10_AF1_TIM1_CH2N
+	PORT_E_PIN_11_AF1_TIM1_CH2 				= 1,                                          //!< PORT_E_PIN_11_AF1_TIM1_CH2
+	PORT_E_PIN_12_AF1_TIM1_CH3N	 			= 1,                                         //!< PORT_E_PIN_12_AF1_TIM1_CH3N
+	PORT_E_PIN_13_AF1_TIM1_CH3 				= 1,                                          //!< PORT_E_PIN_13_AF1_TIM1_CH3
+	PORT_E_PIN_14_AF1_TIM1_CH4 				= 1,                                          //!< PORT_E_PIN_14_AF1_TIM1_CH4
+	PORT_E_PIN_15_AF1_TIM1_BKIN 			= 1,                                          //!< PORT_E_PIN_15_AF1_TIM1_BKIN
+
+	/*--------------------------- No AF1 In Port H ------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 2 For all Pins that have it ***********/
+    PORT_A_PIN_0_AF2_TIM5_CH1				= 2,                                         //!< PORT_A_PIN_0_AF2_TIM5_CH1
+	PORT_A_PIN_1_AF2_TIM5_CH2				= 2,                                            //!< PORT_A_PIN_1_AF2_TIM5_CH2
+	PORT_A_PIN_2_AF2_TIM5_CH3				= 2,                                            //!< PORT_A_PIN_2_AF2_TIM5_CH3
+	PORT_A_PIN_3_AF2_TIM5_CH4				= 2,                                            //!< PORT_A_PIN_3_AF2_TIM5_CH4
+	PORT_A_PIN_6_AF2_TIM3_CH1				= 2,                                            //!< PORT_A_PIN_6_AF2_TIM3_CH1
+	PORT_A_PIN_6_AF2_TIM3_CH2				= 2,                                            //!< PORT_A_PIN_6_AF2_TIM3_CH2
+
+	PORT_B_PIN_0_AF2_TIM3_CH3				= 2,                                            //!< PORT_B_PIN_0_AF2_TIM3_CH3
+	PORT_B_PIN_1_AF2_TIM3_CH4				= 2,                                            //!< PORT_B_PIN_1_AF2_TIM3_CH4
+	PORT_B_PIN_4_AF2_TIM3_CH1				= 2,                                            //!< PORT_B_PIN_4_AF2_TIM3_CH1
+	PORT_B_PIN_5_AF2_TIM3_CH2				= 2,                                            //!< PORT_B_PIN_5_AF2_TIM3_CH2
+	PORT_B_PIN_6_AF2_TIM4_CH1				= 2,                                            //!< PORT_B_PIN_6_AF2_TIM4_CH1
+	PORT_B_PIN_7_AF2_TIM4_CH2				= 2,                                            //!< PORT_B_PIN_7_AF2_TIM4_CH2
+	PORT_B_PIN_8_AF2_TIM4_CH3				= 2,                                            //!< PORT_B_PIN_8_AF2_TIM4_CH3
+	PORT_B_PIN_9_AF2_TIM4_CH4				= 2,                                            //!< PORT_B_PIN_9_AF2_TIM4_CH4
+
+	PORT_C_PIN_6_AF2_TIM3_CH1 				= 2,                                           //!< PORT_C_PIN_6_AF2_TIM3_CH1
+	PORT_C_PIN_7_AF2_TIM3_CH2 				= 2,                                           //!< PORT_C_PIN_7_AF2_TIM3_CH2
+	PORT_C_PIN_8_AF2_TIM3_CH3 				= 2,                                           //!< PORT_C_PIN_8_AF2_TIM3_CH3
+	PORT_C_PIN_9_AF2_TIM3_CH4 				= 2,                                           //!< PORT_C_PIN_9_AF2_TIM3_CH4
+
+	PORT_D_PIN_2_AF2_TIM3_ETR 				= 2,                                           //!< PORT_D_PIN_2_AF2_TIM3_ETR
+	PORT_D_PIN_12_AF2_TIM4_CH1 				= 2,                                          //!< PORT_D_PIN_12_AF2_TIM4_CH1
+	PORT_D_PIN_13_AF2_TIM4_CH2 				= 2,                                          //!< PORT_D_PIN_13_AF2_TIM4_CH2
+	PORT_D_PIN_14_AF2_TIM4_CH3 				= 2,                                          //!< PORT_D_PIN_14_AF2_TIM4_CH3
+	PORT_D_PIN_15_AF2_TIM4_CH4 				= 2,                                          //!< PORT_D_PIN_15_AF2_TIM4_CH4
+
+	PORT_E_PIN_0_AF2_TIM4_ETR 				= 2,                                           //!< PORT_E_PIN_0_AF2_TIM4_ETR
+
+	/*--------------------------- No AF2 In Port H ------------------------*/
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 3 For all Pins that have it ***********/
+    PORT_A_PIN_0_AF3_TIM8_ETR    		    = 3,                                   //!< PORT_A_PIN_0_AF3_TIM8_ETR
+	PORT_A_PIN_2_AF3_TIM9_CH1				= 3,                                            //!< PORT_A_PIN_2_AF3_TIM9_CH1
+	PORT_A_PIN_3_AF3_TIM9_CH2				= 3,                                            //!< PORT_A_PIN_3_AF3_TIM9_CH2
+	PORT_A_PIN_5_AF3_TIM8_CH1N				= 3,                                           //!< PORT_A_PIN_5_AF3_TIM8_CH1N
+	PORT_A_PIN_6_AF3_TIM8_BKIN				= 3,                                           //!< PORT_A_PIN_6_AF3_TIM8_BKIN
+	PORT_A_PIN_7_AF3_TIM8_CH1N				= 3,                                           //!< PORT_A_PIN_7_AF3_TIM8_CH1N
+
+	PORT_B_PIN_0_AF3_TIM8_CH2N				= 3,                                           //!< PORT_B_PIN_0_AF3_TIM8_CH2N
+	PORT_B_PIN_1_AF3_TIM8_CH3N				= 3,                                           //!< PORT_B_PIN_1_AF3_TIM8_CH3N
+	PORT_B_PIN_8_AF3_TIM10_CH1				= 3,                                           //!< PORT_B_PIN_8_AF3_TIM10_CH1
+	PORT_B_PIN_9_AF3_TIM11_CH1				= 3,                                           //!< PORT_B_PIN_9_AF3_TIM11_CH1
+	PORT_B_PIN_14_AF3_TIM8_CH2N 			= 3,                                          //!< PORT_B_PIN_14_AF3_TIM8_CH2N
+	PORT_B_PIN_15_AF3_TIM8_CH3N 			= 3,                                          //!< PORT_B_PIN_15_AF3_TIM8_CH3N
+
+	PORT_C_PIN_6_AF3_TIM8_CH1 				= 3,                                           //!< PORT_C_PIN_6_AF3_TIM8_CH1
+	PORT_C_PIN_7_AF3_TIM8_CH2 				= 3,                                           //!< PORT_C_PIN_7_AF3_TIM8_CH2
+	PORT_C_PIN_8_AF3_TIM8_CH3			 	= 3,                                           //!< PORT_C_PIN_8_AF3_TIM8_CH3
+	PORT_C_PIN_9_AF3_TIM8_CH4				= 3,                                            //!< PORT_C_PIN_9_AF3_TIM8_CH4
+
+	/*--------------------------- No AF3 In Port D ------------------------*/
+
+	PORT_E_PIN_5_AF3_TIM9_CH1 				= 3,                                           //!< PORT_E_PIN_5_AF3_TIM9_CH1
+	PORT_E_PIN_6_AF3_TIM9_CH2 				= 3,                                           //!< PORT_E_PIN_6_AF3_TIM9_CH2
+
+	/*--------------------------- No AF3 In Port H ------------------------*/
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 4 For all Pins that have it ***********/
+    PORT_A_PIN_8_AF4_I2C3_SCL     			= 4,                                     //!< PORT_A_PIN_8_AF4_I2C3_SCL
+	PORT_A_PIN_9_AF4_I2C3_SMBA				= 4,                                           //!< PORT_A_PIN_9_AF4_I2C3_SMBA
+
+	PORT_B_PIN_5_AF4_I2C1_SMBA				= 4,                                           //!< PORT_B_PIN_5_AF4_I2C1_SMBA
+	PORT_B_PIN_6_AF4_I2C1_SCL				= 4,                                            //!< PORT_B_PIN_6_AF4_I2C1_SCL
+	PORT_B_PIN_7_AF4_I2C1_SDA			 	= 4,                                           //!< PORT_B_PIN_7_AF4_I2C1_SDA
+	PORT_B_PIN_8_AF4_I2C1_SCL				= 4,                                            //!< PORT_B_PIN_8_AF4_I2C1_SCL
+	PORT_B_PIN_9_AF4_I2C1_SDA				= 4,                                            //!< PORT_B_PIN_9_AF4_I2C1_SDA
+	PORT_B_PIN_10_AF4_I2C2_SCL				= 4,                                           //!< PORT_B_PIN_10_AF4_I2C2_SCL
+	PORT_B_PIN_11_AF4_I2C2_SDA				= 4,                                           //!< PORT_B_PIN_11_AF4_I2C2_SDA
+	PORT_B_PIN_12_AF4_I2C2_SMBA				= 4,                                          //!< PORT_B_PIN_12_AF4_I2C2_SMBA
+
+	PORT_C_PIN_9_AF4_I2C3_SDA				= 4,                                            //!< PORT_C_PIN_9_AF4_I2C3_SDA
+
+	/*--------------------------- No AF4 In Port D ------------------------*/
+
+	/*--------------------------- No AF4 In Port E ------------------------*/
+
+	/*--------------------------- No AF4 In Port H ------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 5 For all Pins that have it ***********/
+    PORT_A_PIN_4_AF5_SPI1_NSS     			= 5,                                     //!< PORT_A_PIN_4_AF5_SPI1_NSS
+	PORT_A_PIN_5_AF5_SPI1_SCK				= 5,                                            //!< PORT_A_PIN_5_AF5_SPI1_SCK
+	PORT_A_PIN_6_AF5_SPI1_MISO				= 5,                                           //!< PORT_A_PIN_6_AF5_SPI1_MISO
+	PORT_A_PIN_7_AF5_SPI1_MOSI				= 5,                                           //!< PORT_A_PIN_7_AF5_SPI1_MOSI
+	PORT_A_PIN_15_AF5_SPI1_NSS				= 5,                                           //!< PORT_A_PIN_15_AF5_SPI1_NSS
+
+	PORT_B_PIN_3_AF5_SPI1_SCK				= 5,                                            //!< PORT_B_PIN_3_AF5_SPI1_SCK
+	PORT_B_PIN_4_AF5_SPI1_MISO				= 5,                                           //!< PORT_B_PIN_4_AF5_SPI1_MISO
+	PORT_B_PIN_5_AF5_SPI1_MOSI				= 5,                                           //!< PORT_B_PIN_5_AF5_SPI1_MOSI
+	PORT_B_PIN_9_AF5_SPI2_NSS				= 5, /* Note: PB9 AF5 Has 2 modes */            //!< PORT_B_PIN_9_AF5_SPI2_NSS
+	PORT_B_PIN_9_AF5_I2S2_WS				= 5, /* SPI2 NSS & I2S2 WS	      */              //!< PORT_B_PIN_9_AF5_I2S2_WS
+	PORT_B_PIN_10_AF5_SPI2_SCK				= 5, /* Note: PB10 AF5 Has 2 modes*/           //!< PORT_B_PIN_10_AF5_SPI2_SCK
+	PORT_B_PIN_10_AF5_I2S2_CK				= 5, /* SPI2 SCK & I2S2 CK	      */             //!< PORT_B_PIN_10_AF5_I2S2_CK
+	PORT_B_PIN_12_AF5_SPI2_NSS 				= 5, /* Note: PB12 AF5 has 2 modes*/          //!< PORT_B_PIN_12_AF5_SPI2_NSS
+	PORT_B_PIN_12_AF5_I2S2_WS 				= 5, /* SPI2 NSS & I2S2 WS 		  */              //!< PORT_B_PIN_12_AF5_I2S2_WS
+	PORT_B_PIN_13_AF5_SPI2_SCK			 	= 5, /* NoteL PB13 AF5 has 2 modes*/          //!< PORT_B_PIN_13_AF5_SPI2_SCK
+	PORT_B_PIN_13_AF5_I2S2_CK 				= 5, /* SPI2 SCK & I2S2 CK 		  */              //!< PORT_B_PIN_13_AF5_I2S2_CK
+	PORT_B_PIN_14_AF5_SPI2_MISO 			= 5,                                          //!< PORT_B_PIN_14_AF5_SPI2_MISO
+	PORT_B_PIN_15_AF5_SPI2_MOSI 			= 5, /*Note: PB15 AF5 has 2 modes */          //!< PORT_B_PIN_15_AF5_SPI2_MOSI
+	PORT_B_PIN_15_AF5_I2S2_SD 				= 5, /* SPI2 MOSI & I2S2 SD 	  */              //!< PORT_B_PIN_15_AF5_I2S2_SD
+
+	PORT_C_PIN_2_AF5_SPI2_MISO 				= 5,                                          //!< PORT_C_PIN_2_AF5_SPI2_MISO
+	PORT_C_PIN_3_AF5_SPI2_MOSI			 	= 5, /* Note: PC3 AF5 has 2 modes */          //!< PORT_C_PIN_3_AF5_SPI2_MOSI
+	PORT_C_PIN_3_AF5_I2S2_SD 				= 5, /* SPI2 MOSI & I2S2 SD 	  */               //!< PORT_C_PIN_3_AF5_I2S2_SD
+	PORT_C_PIN_6_AF5_I2S2_MCK			 	= 5,                                           //!< PORT_C_PIN_6_AF5_I2S2_MCK
+	PORT_C_PIN_9_AF5_I2S_CKIN 				= 5,                                           //!< PORT_C_PIN_9_AF5_I2S_CKIN
+	PORT_C_PIN_11_AF5_I2S3_EXT_SD 			= 5,                                        //!< PORT_C_PIN_11_AF5_I2S3_EXT_SD
+
+	/*--------------------------- No AF5 In Port H ------------------------*/
+
+/***************************************************************************/
+
+/************ Alternative Function  = 6 For all Pins that have it *************/
+    PORT_A_PIN_4_AF6_SPI3_NSS				= 6, /* Note: PA6 AF6 Has 2 modes */         //!< PORT_A_PIN_4_AF6_SPI3_NSS
+	PORT_A_PIN_4_AF6_I2S3_WS				= 6, /* SPI3 NSS & I2S3 WS 		  */                //!< PORT_A_PIN_4_AF6_I2S3_WS
+	PORT_A_PIN_15_AF6_SPI3_NSS 				= 6, /* Note: PA15 AF6 Has 2 modes*///!< PORT_A_PIN_15_AF6_SPI3_NSS
+	PORT_A_PIN_15_AF6_I2S3_WS 				= 6, /* SPI3 NSS & I2S3 WS 		  */    //!< PORT_A_PIN_15_AF6_I2S3_WS
+
+	PORT_B_PIN_3_AF6_SPI3_SCK				= 6, /* Note: PB3 AF6 Has 2 modes */            //!< PORT_B_PIN_3_AF6_SPI3_SCK
+	PORT_B_PIN_3_AF6_I2S3_CK				= 6, /* SPI3 SCK & I2S3 CK	      */              //!< PORT_B_PIN_3_AF6_I2S3_CK
+	PORT_B_PIN_4_AF6_SPI3_MISO				= 6,                                           //!< PORT_B_PIN_4_AF6_SPI1_MISO
+	PORT_B_PIN_5_AF6_SPI3_MOSI				= 6, /* Note: PB5 AF6 has 2 modes */           //!< PORT_B_PIN_5_AF6_SPI1_MOSI
+	PORT_B_PIN_5_AF6_I2S3_SD			    = 6, /* SPI1 MOSI & I2S3 SD	      */          //!< PORT_B_PIN_5_AF6_I2S3_SD
+	PORT_B_PIN_14_AF6_I2S2_EXT_SD 			= 6,                                         //!< PORT_B_PIN_14_AF6_I2S2_EXT_SD
+
+	PORT_C_PIN_2_AF6_I2S2_EXT_SD 			= 6,                                         //!< PORT_C_PIN_2_AF6_I2S2_EXT_SD
+	PORT_C_PIN_7_AF6_I2S3_MCK 				= 6,                                           //!< PORT_C_PIN_7_AF6_I2S3_MCK
+	PORT_C_PIN_10_AF6_SPI3_SCK 				= 6, /* Note: PC10 AF6 has 2 modes*/          //!< PORT_C_PIN_10_AF6_SPI3_SCK
+	PORT_C_PIN_10_AF6_I2S3_CK 				= 6, /* SPI3 SCK & I2S3 CK 		  */              //!< PORT_C_PIN_10_AF6_I2S3_CK
+	PORT_C_PIN_11_AF6_SPI3_MISO 			= 6,                                          //!< PORT_C_PIN_11_AF6_SPI3_MISO
+	PORT_C_PIN_12_AF6_SPI3_MOSI 			= 6, /* Note: PC12 AF6 has 2 modes*/          //!< PORT_C_PIN_12_AF6_SPI3_MOSI
+	PORT_C_PIN_12_AF6_I2S3_SD 				= 6, /* SPI3 MOSI & I2S3 SD	 	  */             //!< PORT_C_PIN_12_AF6_I2S3_SD
+
+	/*--------------------------- No AF6 In Port H ------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 7 For all Pins that have it ***********/
+    PORT_A_PIN_0_AF7_USART2_CTS				= 7,                                       //!< PORT_A_PIN_0_AF7_USART2_CTS
+	PORT_A_PIN_1_AF7_USART2_RTS			    = 7,                                       //!< PORT_A_PIN_1_AF7_USART2_RTS
+	PORT_A_PIN_2_AF7_USART2_TX				= 7,                                           //!< PORT_A_PIN_2_AF7_USART2_TX
+	PORT_A_PIN_3_AF7_USART2_RX				= 7,                                           //!< PORT_A_PIN_3_AF7_USART2_RX
+	PORT_A_PIN_4_AF7_USART2_CK				= 7,                                           //!< PORT_A_PIN_4_AF7_USART2_CK
+	PORT_A_PIN_8_AF7_USART1_CK				= 7,                                           //!< PORT_A_PIN_8_AF7_USART1_CK
+	PORT_A_PIN_9_AF7_USART1_TX				= 7,                                           //!< PORT_A_PIN_9_AF7_USART1_TX
+	PORT_A_PIN_10_AF7_USART1_RX				= 7,                                          //!< PORT_A_PIN_10_AF7_USART1_RX
+	PORT_A_PIN_11_AF7_USART1_CTS			= 7,                                          //!< PORT_A_PIN_11_AF7_USART1_CTS
+	PORT_A_PIN_12_AF7_USART1_RTS			= 7,                                          //!< PORT_A_PIN_12_AF7_USART1_RTS
+
+	PORT_B_PIN_4_AF7_I2S3_EXT_SD			= 7,                                          //!< PORT_B_PIN_4_AF7_I2S3_EXT_SD
+	PORT_B_PIN_6_AF7_USART1_TX				= 7,                                           //!< PORT_B_PIN_6_AF7_USART1_TX
+	PORT_B_PIN_7_AF7_USART1_RX				= 7,                                           //!< PORT_B_PIN_7_AF7_USART1_RX
+	PORT_B_PIN_10_AF7_USART3_TX				= 7,                                          //!< PORT_B_PIN_10_AF7_USART3_TX
+	PORT_B_PIN_11_AF7_USART3_RX				= 7,                                          //!< PORT_B_PIN_11_AF7_USART3_RX
+	PORT_B_PIN_12_AF7_USART3_CK 			= 7,                                          //!< PORT_B_PIN_12_AF7_USART3_CK
+	PORT_B_PIN_13_AF7_USART3_CTS 			= 7,                                         //!< PORT_B_PIN_13_AF7_USART3_CTS
+	PORT_B_PIN_14_AF7_USART3_RTS 			= 7,                                         //!< PORT_B_PIN_14_AF7_USART3_RTS
+
+	PORT_C_PIN_10_AF7_USART3_TX 			= 7,                                          //!< PORT_C_PIN_10_AF7_USART3_TX
+	PORT_C_PIN_11_AF7_USART3_RX 			= 7,                                          //!< PORT_C_PIN_11_AF7_USART3_RX
+	PORT_C_PIN_12_AF7_USART3_CK 			= 7,                                          //!< PORT_C_PIN_12_AF7_USART3_CK
+
+	PORT_D_PIN_3_AF7_USART2_CTS 			= 7,                                          //!< PORT_D_PIN_3_AF7_USART2_CTS
+	PORT_D_PIN_4_AF7_USART2_RTS 			= 7,                                          //!< PORT_D_PIN_4_AF7_USART2_RTS
+	PORT_D_PIN_5_AF7_USART2_TX 				= 7,                                          //!< PORT_D_PIN_5_AF7_USART2_TX
+	PORT_D_PIN_6_AF7_USART2_RX 				= 7,                                          //!< PORT_D_PIN_6_AF7_USART2_RX
+	PORT_D_PIN_7_AF7_USART2_CK			 	= 7,                                          //!< PORT_D_PIN_7_AF7_USART2_CK
+	PORT_D_PIN_8_AF7_USART3_TX 				= 7,                                          //!< PORT_D_PIN_8_AF7_USART3_TX
+	PORT_D_PIN_9_AF7_USART3_RX 				= 7,                                          //!< PORT_D_PIN_9_AF7_USART3_RX
+	PORT_D_PIN_10_AF7_USART3_CK 			= 7,                                          //!< PORT_D_PIN_10_AF7_USART3_CK
+	PORT_D_PIN_11_AF7_USART3_CTS 			= 7,                                         //!< PORT_D_PIN_11_AF7_USART3_CTS
+	PORT_D_PIN_12_AF7_USART3_RTS			= 7,                                          //!< PORT_D_PIN_12_AF7_USART3_RTS
+
+	/*--------------------------- No AF7 In Port H ------------------------*/
+
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 8 For all Pins that have it ***********/
+    PORT_A_PIN_0_AF8_UART4_TX				= 8,                                         //!< PORT_A_PIN_0_AF8_UART4_TX
+	PORT_A_PIN_1_AF8_UART4_RX				= 8,                                            //!< PORT_A_PIN_1_AF8_UART4_RX
+
+	/*--------------------------- No AF8 In Port B ------------------------*/
+
+	PORT_C_PIN_6_AF8_USART6_TX				= 8,                                           //!< PORT_C_PIN_6_AF8_USART6_TX
+	PORT_C_PIN_7_AF8_USART6_RX 				= 8,                                          //!< PORT_C_PIN_7_AF8_USART6_RX
+	PORT_C_PIN_8_AF8_USART6_CK 				= 8,                                          //!< PORT_C_PIN_8_AF8_USART6_CK
+	PORT_C_PIN_10_AF8_UART4_TX 				= 8,                                          //!< PORT_C_PIN_10_AF8_UART4_TX
+	PORT_C_PIN_11_AF8_UART4_RX 				= 8,                                          //!< PORT_C_PIN_11_AF8_UART4_RX
+	PORT_C_PIN_12_AF8_UART5_TX 				= 8,                                          //!< PORT_C_PIN_12_AF8_UART5_TX
+
+	PORT_D_PIN_2_AF8_UART5_RX 				= 8,                                           //!< PORT_D_PIN_2_AF8_UART5_RX
+
+	/*--------------------------- No AF8 In Port E ------------------------*/
+
+	/*--------------------------- No AF8 In Port H ------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 9 For all Pins that have it ***********/
+    PORT_A_PIN_6_AF9_TIM13_CH1				= 9,                                        //!< PORT_A_PIN_6_AF9_TIM13_CH1
+	PORT_A_PIN_7_AF9_TIM14_CH1				= 9,                                           //!< PORT_A_PIN_7_AF9_TIM14_CH1
+	PORT_A_PIN_11_AF9_CAN1_RX				= 9,                                            //!< PORT_A_PIN_11_AF9_CAN1_RX
+	PORT_A_PIN_12_AF9_CAN1_TX				= 9,                                            //!< PORT_A_PIN_12_AF9_CAN1_TX
+
+	PORT_B_PIN_5_AF9_CAN2_RX				= 9,                                             //!< PORT_B_PIN_5_AF9_CAN2_RX
+	PORT_B_PIN_6_AF9_CAN2_TX				= 9,                                             //!< PORT_B_PIN_6_AF9_CAN2_TX
+	PORT_B_PIN_8_AF9_CAN1_RX				= 9,                                             //!< PORT_B_PIN_8_AF9_CAN1_RX
+	PORT_B_PIN_9_AF9_CAN1_TX				= 9,                                             //!< PORT_B_PIN_9_AF9_CAN1_TX
+	PORT_B_PIN_12_AF9_CAN2_RX 				= 9,                                           //!< PORT_B_PIN_12_AF9_CAN2_RX
+	PORT_B_PIN_13_AF9_CAN2_TX 				= 9,                                           //!< PORT_B_PIN_13_AF9_CAN2_TX
+	PORT_B_PIN_14_AF9_TIM12_CH1				= 9,                                          //!< PORT_B_PIN_14_AF9_TIM12_CH1
+	PORT_B_PIN_15_AF9_TIM12_CH2				= 9,                                          //!< PORT_B_PIN_15_AF9_TIM12_CH2
+
+	/*--------------------------- No AF9 In Port C ------------------------*/
+
+	PORT_D_PIN_0_AF9_CAN1_RX				= 9,                                             //!< PORT_D_PIN_0_AF9_CAN1_RX
+	PORT_D_PIN_1_AF9_CAN1_TX 				= 9,                                            //!< PORT_D_PIN_1_AF9_CAN1_TX
+
+	/*--------------------------- No AF9 In Port E ------------------------*/
+
+	/*--------------------------- No AF9 In Port H ------------------------*/
+
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 10 For all Pins that have it **********/
+	PORT_A_PIN_3_AF10_OTG_HS_ULPI_D0		= 10,                                      //!< PORT_A_PIN_3_AF10_OTG_HS_ULPI_D0
+	PORT_A_PIN_5_AF10_OTG_HS_ULPI_CK		= 10,                                      //!< PORT_A_PIN_5_AF10_OTG_HS_ULPI_CK
+	PORT_A_PIN_8_AF10_OTG_FS_SOF			= 10,                                         //!< PORT_A_PIN_8_AF10_OTG_FS_SOF
+	PORT_A_PIN_10_AF10_OTG_FS_ID			= 10,                                         //!< PORT_A_PIN_10_AF10_OTG_FS_ID
+	PORT_A_PIN_11_AF10_OTG_FS_DM			= 10,                                         //!< PORT_A_PIN_11_AF10_OTG_FS_DM
+	PORT_A_PIN_12_AF10_OTG_FS_DP			= 10,                                         //!< PORT_A_PIN_12_AF10_OTG_FS_DP
+
+	PORT_B_PIN_0_AF10_OTG_HS_ULPI_D1		= 10,                                      //!< PORT_B_PIN_0_AF10_OTG_HS_ULPI_D1
+	PORT_B_PIN_1_AF10_OTG_HS_ULPI_D2		= 10,                                      //!< PORT_B_PIN_1_AF10_OTG_HS_ULPI_D2
+	PORT_B_PIN_5_AF10_OTG_HS_ULPI_D7		= 10,                                      //!< PORT_B_PIN_5_AF10_OTG_HS_ULPI_D7
+	PORT_B_PIN_10_AF10_OTG_HS_ULPI_D3		= 10,                                     //!< PORT_B_PIN_10_AF10_OTG_HS_ULPI_D3
+	PORT_B_PIN_11_AF10_OTG_HS_ULPI_D4		= 10,                                     //!< PORT_B_PIN_11_AF10_OTG_HS_ULPI_D4
+	PORT_B_PIN_12_AF10_OTG_HS_ULPI_D5		= 10,                                     //!< PORT_B_PIN_12_AF10_OTG_HS_ULPI_D5
+	PORT_B_PIN_13_AF10_OTG_HS_ULPI_D6		= 10,                                     //!< PORT_B_PIN_13_AF10_OTG_HS_ULPI_D6
+
+	PORT_C_PIN_0_AF10_OTG_HS_ULPI_STP		= 10,                                     //!< PORT_C_PIN_0_AF10_OTG_HS_ULPI_STP
+	PORT_C_PIN_2_AF10_OTG_HS_ULPI_DIR		= 10,                                     //!< PORT_C_PIN_2_AF10_OTG_HS_ULPI_DIR
+	PORT_C_PIN_3_AF10_OTG_HS_ULPI_NXT		= 10,                                     //!< PORT_C_PIN_3_AF10_OTG_HS_ULPI_NXT
+
+	/*--------------------------- No AF10 In Port D ------------------------*/
+
+	/*--------------------------- No AF10 In Port E ------------------------*/
+
+	/*--------------------------- No AF10 In Port H ------------------------*/
+
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 11 For all Pins that have it **********/
+	PORT_A_PIN_0_AF11_ETH_MII_CRS			= 11,                                        //!< PORT_A_PIN_0_AF11_ETH_MII_CRS
+	PORT_A_PIN_1_AF11_ETH_MII_RX_CLK		= 11, /* Note: PA1 AF11 has 2 modes  */    //!< PORT_A_PIN_1_AF11_ETH_MII_RX_CLK
+	PORT_A_PIN_1_AF11_ETH_RMII_REF_CLK		= 11, /* ETH (MII RX & RMII REF)CLK  */  //!< PORT_A_PIN_1_AF11_ETH_RMII_REF_CLK
+	PORT_A_PIN_2_AF11_ETH_MDIO				= 11,                                          //!< PORT_A_PIN_2_AF11_ETH_MDIO
+	PORT_A_PIN_3_AF11_ETH_MII_COL			= 11,                                        //!< PORT_A_PIN_3_AF11_ETH_MII_COL
+	PORT_A_PIN_7_AF11_ETH_MII_RX_DV			= 11, /* Note: PA7 AF11 has 2 modes  */    //!< PORT_A_PIN_7_AF11_ETH_MII_RX_DV
+	PORT_A_PIN_7_AF11_ETH_RMII_CRS_DV		= 11, /* ETH(MII RX DV & RMII CRS DV)*/   //!< PORT_A_PIN_7_AF11_ETH_RMII_CRS_DV
+
+	PORT_B_PIN_0_AF11_ETH_MII_RXD2			= 11,                                       //!< PORT_B_PIN_0_AF11_ETH_MII_RXD2
+	PORT_B_PIN_1_AF11_ETH_MII_RXD3			= 11,                                       //!< PORT_B_PIN_1_AF11_ETH_MII_RXD3
+	PORT_B_PIN_5_AF11_ETH_PPS_OUT			= 11,                                        //!< PORT_B_PIN_5_AF11_ETH_PPS_OUT
+	PORT_B_PIN_8_AF11_ETH_MII_TXD3			= 11,                                       //!< PORT_B_PIN_8_AF11_ETH_MII_TXD3
+	PORT_B_PIN_10_AF11_ETH_MII_RX_ER		= 11,                                      //!< PORT_B_PIN_10_AF11_ETH_MII_RX_ER
+	PORT_B_PIN_11_AF11_ETH_MII_TX_EN 		= 11, /* Note: PB11 AF11 has 2 modes */   //!< PORT_B_PIN_11_AF11_ETH_MII_TX_EN
+	PORT_B_PIN_11_AF11_ETH_RMII_TX_EN 		= 11, /* ETH (MII TX & RMII TX )EN   */  //!< PORT_B_PIN_11_AF11_ETH_RMII_TX_EN
+	PORT_B_PIN_12_AF11_ETH_MII_TXD0 		= 11, /* Note: PB12 AF11 has 2 modes */    //!< PORT_B_PIN_12_AF11_ETH_MII_TXD0
+	PORT_B_PIN_12_AF11_ETH_RMII_TXD0 		= 11, /* ETH (MII TXD0 & RMII TXD0)  */   //!< PORT_B_PIN_12_AF11_ETH_RMII_TXD0
+	PORT_B_PIN_12_AF11_ETH_MII_TXD1			= 11, /* Note: PB13 AF11 has 2 modes */    //!< PORT_B_PIN_12_AF11_ETH_MII_TXD
+	PORT_B_PIN_12_AF11_ETH_RMII_TXD1 		= 11, /* ETH (MII TXD & RMII TXD1    */   //!< PORT_B_PIN_12_AF11_ETH_RMII_TXD1
+
+	PORT_C_PIN_1_AF11_ETH_MDC 				= 11,                                          //!< PORT_C_PIN_1_AF11_ETH_MDC
+	PORT_C_PIN_2_AF11_ETH_MII_TXD2 			= 11,                                      //!< PORT_C_PIN_2_AF11_ETH_MII_TXD2
+	PORT_C_PIN_3_AF11_ETH_MII_CLK 			= 11,                                       //!< PORT_C_PIN_3_AF11_ETH_MII_CLK
+	PORT_C_PIN_4_AF11_ETH_MII_RXD0 			= 11, /* Note: PC4 AF11 has 2 modes  */    //!< PORT_C_PIN_4_AF11_ETH_MII_RXD0
+	PORT_C_PIN_4_AF11_ETH_RMII_RXD0			= 11, /* ETH (MII RXD0 & RMII RXD0)  */    //!< PORT_C_PIN_4_AF11_ETH_RMII_RXD0
+	PORT_C_PIN_5_AF11_ETH_MII_RXD1 			= 11, /* Note: PC5 AF11 has 2 modes  */    //!< PORT_C_PIN_5_AF11_ETH_MII_RXD1
+	PORT_C_PIN_5_AF11_ETH_RMII_RXD1			= 11, /* ETH (MII RXD1 & RMII RXD1)  */    //!< PORT_C_PIN_5_AF11_ETH_RMII_RXD1
+
+	/*------------------------------ No AF11 In Port D --------------------------*/
+
+	PORT_E_PIN_2_AF11_ETH_MII_TXD3			= 11,                                       //!< PORT_E_PIN_2_AF11_ETH_MII_TXD3
+
+	/*------------------------------ No AF11 In Port H --------------------------*/
+
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 12 For all Pins that have it **********/
+	PORT_A_PIN_4_AF12_OTG_HS_SOF			= 12,                                         //!< PORT_A_PIN_4_AF12_OTG_HS_SOF
+
+	PORT_B_PIN_7_AF12_FMC_NL				= 12,                                            //!< PORT_B_PIN_7_AF12_FMC_NL
+	PORT_B_PIN_8_AF12_SDIO_D4				= 12,                                           //!< PORT_B_PIN_8_AF12_SDIO_D4
+	PORT_B_PIN_9_AF12_SDIO_D5				= 12,                                           //!< PORT_B_PIN_9_AF12_SDIO_D5
+	PORT_B_PIN_12_AF12_OTG_HS_ID 			= 12,                                        //!< PORT_B_PIN_12_AF12_OTG_HS_ID
+	PORT_B_PIN_14_AF12_OTG_HS_DM 			= 12,                                        //!< PORT_B_PIN_14_AF12_OTG_HS_DM
+	PORT_B_PIN_15_AF12_OTG_HS_DP 			= 12,                                        //!< PORT_B_PIN_15_AF12_OTG_HS_DP
+
+	PORT_C_PIN_6_AF12_SDIO_D6 				= 12,                                          //!< PORT_C_PIN_6_AF12_SDIO_D6
+	PORT_C_PIN_7_AF12_SDIO_D7 				= 12,                                          //!< PORT_C_PIN_7_AF12_SDIO_D7
+	PORT_C_PIN_8_AF12_SDIO_D0 				= 12,                                          //!< PORT_C_PIN_8_AF12_SDIO_D0
+	PORT_C_PIN_9_AF12_SDIO_D1 				= 12,                                          //!< PORT_C_PIN_9_AF12_SDIO_D1
+	PORT_C_PIN_10_AF12_SDIO_D2 				= 12,                                         //!< PORT_C_PIN_10_AF12_SDIO_D2
+	PORT_C_PIN_11_AF12_SDIO_D3 				= 12,                                         //!< PORT_C_PIN_11_AF12_SDIO_D3
+	PORT_C_PIN_12_AF12_SDIO_CK 				= 12,                                         //!< PORT_C_PIN_12_AF12_SDIO_CK
+
+	PORT_D_PIN_0_AF12_FMC_D2				= 12,                                            //!< PORT_D_PIN_0_AF12_FMC_D2
+	PORT_D_PIN_1_AF12_FMC_D3				= 12,                                            //!< PORT_D_PIN_1_AF12_FMC_D3
+	PORT_D_PIN_2_AF12_SDIO_CMD	 			= 12,                                         //!< PORT_D_PIN_2_AF12_SDIO_CMD
+	PORT_D_PIN_3_AF12_FMC_CLK 				= 12,                                          //!< PORT_D_PIN_3_AF12_FMC_CLK
+	PORT_D_PIN_4_AF12_FMC_NOE 				= 12,                                          //!< PORT_D_PIN_4_AF12_FMC_NOE
+	PORT_D_PIN_5_AF12_FMC_NWE 				= 12,                                          //!< PORT_D_PIN_5_AF12_FMC_NWE
+	PORT_D_PIN_6_AF12_FMC_NWAIT 			= 12,                                         //!< PORT_D_PIN_6_AF12_FMC_NWAIT
+	PORT_D_PIN_7_AF12_FMC_NE1 				= 12, /* Note: PD7 AF12 has 2 modes */         //!< PORT_D_PIN_7_AF12_FMC_NE1
+	PORT_D_PIN_7_AF12_FMC_NCE2 				= 12, /* FMC (NE1 & NCE2)		    */             //!< PORT_D_PIN_7_AF12_FMC_NCE2
+	PORT_D_PIN_8_AF12_FMC_D13 				= 12,                                          //!< PORT_D_PIN_8_AF12_FMC_D13
+	PORT_D_PIN_9_AF12_FMC_D14 				= 12,                                          //!< PORT_D_PIN_9_AF12_FMC_D14
+	PORT_D_PIN_10_AF12_FMC_D15 				= 12,                                         //!< PORT_D_PIN_10_AF12_FMC_D15
+	PORT_D_PIN_11_AF12_FMC_A16 				= 12,                                         //!< PORT_D_PIN_11_AF12_FMC_A16
+	PORT_D_PIN_12_AF12_FMC_A17 				= 12,                                         //!< PORT_D_PIN_12_AF12_FMC_A17
+	PORT_D_PIN_13_AF12_FMC_A18 				= 12,                                         //!< PORT_D_PIN_13_AF12_FMC_A18
+	PORT_D_PIN_14_AF12_FMC_D0 				= 12,                                          //!< PORT_D_PIN_14_AF12_FMC_D0
+	PORT_D_PIN_15_AF12_FMC_D1 				= 12,                                          //!< PORT_D_PIN_15_AF12_FMC_D1
+
+
+	PORT_E_PIN_0_AF12_FMC_NBL0 				= 12,                                         //!< PORT_E_PIN_0_AF12_FMC_NBL0
+	PORT_E_PIN_1_AF12_FMC_NBL1 				= 12,                                         //!< PORT_E_PIN_1_AF12_FMC_NBL1
+	PORT_E_PIN_2_AF12_FMC_A23 				= 12,                                          //!< PORT_E_PIN_2_AF12_FMC_A23
+	PORT_E_PIN_3_AF12_FMC_A19 				= 12,                                          //!< PORT_E_PIN_3_AF12_FMC_A19
+	PORT_E_PIN_4_AF12_FMC_A20 				= 12,                                          //!< PORT_E_PIN_4_AF12_FMC_A20
+	PORT_E_PIN_5_AF12_FMC_A21 				= 12,                                          //!< PORT_E_PIN_5_AF12_FMC_A21
+	PORT_E_PIN_6_AF12_FMC_A22 				= 12,                                          //!< PORT_E_PIN_6_AF12_FMC_A22
+	PORT_E_PIN_7_AF12_FMC_D4				= 12,                                            //!< PORT_E_PIN_7_AF12_FMC_D4
+	PORT_E_PIN_8_AF12_FMC_D5				= 12,                                            //!< PORT_E_PIN_8_AF12_FMC_D5
+	PORT_E_PIN_9_AF12_FMC_D6				= 12,                                            //!< PORT_E_PIN_9_AF12_FMC_D6
+	PORT_E_PIN_10_AF12_FMC_D7				= 12,                                           //!< PORT_E_PIN_10_AF12_FMC_D7
+	PORT_E_PIN_11_AF12_FMC_D8				= 12,                                           //!< PORT_E_PIN_11_AF12_FMC_D8
+	PORT_E_PIN_12_AF12_FMC_D9				= 12,                                           //!< PORT_E_PIN_12_AF12_FMC_D9
+	PORT_E_PIN_13_AF12_FMC_D10				= 12,                                          //!< PORT_E_PIN_13_AF12_FMC_D10
+	PORT_E_PIN_14_AF12_FMC_D11				= 12,                                          //!< PORT_E_PIN_14_AF12_FMC_D11
+	PORT_E_PIN_15_AF12_FMC_D12				= 12,                                          //!< PORT_E_PIN_15_AF12_FMC_D12
+	/*------------------------------ No AF12 In Port H --------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 13 For all Pins that have it **********/
+	PORT_A_PIN_4_AF13_DCMI_HSYNC			= 13,                                         //!< PORT_A_PIN_4_AF13_DCMI_HSYNC
+	PORT_A_PIN_6_AF13_DCMI_PIXCLK			= 13,                                        //!< PORT_A_PIN_6_AF13_DCMI_PIXCLK
+	PORT_A_PIN_9_AF13_DCMI_D0				= 13,                                           //!< PORT_A_PIN_9_AF13_DCMI_D0
+	PORT_A_PIN_10_AF13_DCMI_D1				= 13,                                          //!< PORT_A_PIN_10_AF13_DCMI_D1
+
+	PORT_B_PIN_5_AF13_DCMI_D10				= 13,                                          //!< PORT_B_PIN_5_AF13_DCMI_D10
+	PORT_B_PIN_6_AF13_DCMI_D5				= 13,                                           //!< PORT_B_PIN_6_AF13_DCMI_D5
+	PORT_B_PIN_7_AF13_DCMI_VSYNC			= 13,                                         //!< PORT_B_PIN_7_AF13_DCMI_VSYNC
+	PORT_B_PIN_8_AF13_DCMI_D6				= 13,                                           //!< PORT_B_PIN_8_AF13_DCMI_D6
+	PORT_B_PIN_9_AF13_DCMI_D7				= 13,                                           //!< PORT_B_PIN_9_AF13_DCMI_D7
+
+	PORT_C_PIN_6_AF13_DCMI_D0				= 13,                                           //!< PORT_C_PIN_6_AF13_DCMI_D0
+	PORT_C_PIN_7_AF13_DCMI_D1				= 13,                                           //!< PORT_C_PIN_7_AF13_DCMI_D1
+	PORT_C_PIN_8_AF13_DCMI_D2				= 13,                                           //!< PORT_C_PIN_8_AF13_DCMI_D2
+	PORT_C_PIN_9_AF13_DCMI_D3				= 13,                                           //!< PORT_C_PIN_9_AF13_DCMI_D3
+	PORT_C_PIN_10_AF13_DCMI_D8				= 13,                                          //!< PORT_C_PIN_10_AF13_DCMI_D8
+	PORT_C_PIN_11_AF13_DCMI_D4				= 13,                                          //!< PORT_C_PIN_11_AF13_DCMI_D4
+	PORT_C_PIN_12_AF13_DCMI_D9				= 13,                                          //!< PORT_C_PIN_12_AF13_DCMI_D9
+
+	PORT_D_PIN_2_AF13_DCMI_D11				= 13,                                          //!< PORT_D_PIN_2_AF13_DCMI_D11
+
+	PORT_E_PIN_0_AF13_DCMI_D2				= 13,                                           //!< PORT_E_PIN_0_AF13_DCMI_D2
+	PORT_E_PIN_1_AF13_DCMI_D3				= 13,                                           //!< PORT_E_PIN_1_AF13_DCMI_D3
+	PORT_E_PIN_4_AF13_DCMI_D4				= 13,                                           //!< PORT_E_PIN_4_AF13_DCMI_D4
+	PORT_E_PIN_5_AF13_DCMI_D6				= 13,                                           //!< PORT_E_PIN_5_AF13_DCMI_D6
+	PORT_E_PIN_6_AF13_DCMI_D7				= 13,                                           //!< PORT_E_PIN_6_AF13_DCMI_D7
+
+
+	/*------------------------------ No AF13 In Port H --------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 14 For all Pins that have it **********/
+	/*------------------------------ No AF14 In Port A --------------------------*/
+
+	/*------------------------------ No AF14 In Port B --------------------------*/
+
+	/*------------------------------ No AF14 In Port C --------------------------*/
+
+	/*------------------------------ No AF14 In Port D --------------------------*/
+
+	/*------------------------------ No AF14 In Port E --------------------------*/
+
+	/*------------------------------ No AF14 In Port H --------------------------*/
+
+
+/***************************************************************************/
+
+/*********** Alternative Function  = 15 For all Pins that have it **********/
+	PORT_A_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_0_AF15_EVENT_OUT
+	PORT_A_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_1_AF15_EVENT_OUT
+	PORT_A_PIN_2_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_2_AF15_EVENT_OUT
+	PORT_A_PIN_3_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_3_AF15_EVENT_OUT
+	PORT_A_PIN_4_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_4_AF15_EVENT_OUT
+	PORT_A_PIN_5_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_5_AF15_EVENT_OUT
+	PORT_A_PIN_6_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_6_AF15_EVENT_OUT
+	PORT_A_PIN_7_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_7_AF15_EVENT_OUT
+	PORT_A_PIN_8_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_8_AF15_EVENT_OUT
+	PORT_A_PIN_9_AF15_EVENT_OUT				= 15,                                         //!< PORT_A_PIN_9_AF15_EVENT_OUT
+	PORT_A_PIN_10_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_10_AF15_EVENT_OUT
+	PORT_A_PIN_11_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_11_AF15_EVENT_OUT
+	PORT_A_PIN_12_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_12_AF15_EVENT_OUT
+	PORT_A_PIN_13_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_13_AF15_EVENT_OUT
+	PORT_A_PIN_14_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_14_AF15_EVENT_OUT
+	PORT_A_PIN_15_AF15_EVENT_OUT			= 15,                                         //!< PORT_A_PIN_15_AF15_EVENT_OUT
+
+	PORT_B_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_0_AF15_EVENT_OUT
+	PORT_B_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_1_AF15_EVENT_OUT
+	PORT_B_PIN_2_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_2_AF15_EVENT_OUT
+	PORT_B_PIN_3_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_3_AF15_EVENT_OUT
+	PORT_B_PIN_4_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_4_AF15_EVENT_OUT
+	PORT_B_PIN_5_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_5_AF15_EVENT_OUT
+	PORT_B_PIN_6_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_6_AF15_EVENT_OUT
+	PORT_B_PIN_7_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_7_AF15_EVENT_OUT
+	PORT_B_PIN_8_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_8_AF15_EVENT_OUT
+	PORT_B_PIN_9_AF15_EVENT_OUT				= 15,                                         //!< PORT_B_PIN_9_AF15_EVENT_OUT
+	PORT_B_PIN_10_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_10_AF15_EVENT_OUT
+	PORT_B_PIN_11_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_11_AF15_EVENT_OUT
+	PORT_B_PIN_12_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_12_AF15_EVENT_OUT
+	PORT_B_PIN_13_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_13_AF15_EVENT_OUT
+	PORT_B_PIN_14_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_14_AF15_EVENT_OUT
+	PORT_B_PIN_15_AF15_EVENT_OUT			= 15,                                         //!< PORT_B_PIN_15_AF15_EVENT_OUT
+
+	PORT_C_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_0_AF15_EVENT_OUT
+	PORT_C_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_1_AF15_EVENT_OUT
+	PORT_C_PIN_2_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_2_AF15_EVENT_OUT
+	PORT_C_PIN_3_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_3_AF15_EVENT_OUT
+	PORT_C_PIN_4_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_4_AF15_EVENT_OUT
+	PORT_C_PIN_5_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_5_AF15_EVENT_OUT
+	PORT_C_PIN_6_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_6_AF15_EVENT_OUT
+	PORT_C_PIN_7_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_7_AF15_EVENT_OUT
+	PORT_C_PIN_8_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_8_AF15_EVENT_OUT
+	PORT_C_PIN_9_AF15_EVENT_OUT				= 15,                                         //!< PORT_C_PIN_9_AF15_EVENT_OUT
+	PORT_C_PIN_10_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_10_AF15_EVENT_OUT
+	PORT_C_PIN_11_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_11_AF15_EVENT_OUT
+	PORT_C_PIN_12_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_12_AF15_EVENT_OUT
+	PORT_C_PIN_13_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_13_AF15_EVENT_OUT
+	PORT_C_PIN_14_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_14_AF15_EVENT_OUT
+	PORT_C_PIN_15_AF15_EVENT_OUT			= 15,                                         //!< PORT_C_PIN_15_AF15_EVENT_OUT
+
+
+	PORT_D_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_0_AF15_EVENT_OUT
+	PORT_D_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_1_AF15_EVENT_OUT
+	PORT_D_PIN_2_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_2_AF15_EVENT_OUT
+	PORT_D_PIN_3_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_3_AF15_EVENT_OUT
+	PORT_D_PIN_4_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_4_AF15_EVENT_OUT
+	PORT_D_PIN_5_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_5_AF15_EVENT_OUT
+	PORT_D_PIN_6_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_6_AF15_EVENT_OUT
+	PORT_D_PIN_7_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_7_AF15_EVENT_OUT
+	PORT_D_PIN_8_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_8_AF15_EVENT_OUT
+	PORT_D_PIN_9_AF15_EVENT_OUT				= 15,                                         //!< PORT_D_PIN_9_AF15_EVENT_OUT
+	PORT_D_PIN_10_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_10_AF15_EVENT_OUT
+	PORT_D_PIN_11_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_11_AF15_EVENT_OUT
+	PORT_D_PIN_12_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_12_AF15_EVENT_OUT
+	PORT_D_PIN_13_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_13_AF15_EVENT_OUT
+	PORT_D_PIN_14_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_14_AF15_EVENT_OUT
+	PORT_D_PIN_15_AF15_EVENT_OUT			= 15,                                         //!< PORT_D_PIN_15_AF15_EVENT_OUT
+
+	PORT_E_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_0_AF15_EVENT_OUT
+	PORT_E_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_1_AF15_EVENT_OUT
+	PORT_E_PIN_2_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_2_AF15_EVENT_OUT
+	PORT_E_PIN_3_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_3_AF15_EVENT_OUT
+	PORT_E_PIN_4_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_4_AF15_EVENT_OUT
+	PORT_E_PIN_5_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_5_AF15_EVENT_OUT
+	PORT_E_PIN_6_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_6_AF15_EVENT_OUT
+	PORT_E_PIN_7_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_7_AF15_EVENT_OUT
+	PORT_E_PIN_8_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_8_AF15_EVENT_OUT
+	PORT_E_PIN_9_AF15_EVENT_OUT				= 15,                                         //!< PORT_E_PIN_9_AF15_EVENT_OUT
+	PORT_E_PIN_10_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_10_AF15_EVENT_OUT
+	PORT_E_PIN_11_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_11_AF15_EVENT_OUT
+	PORT_E_PIN_12_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_12_AF15_EVENT_OUT
+	PORT_E_PIN_13_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_13_AF15_EVENT_OUT
+	PORT_E_PIN_14_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_14_AF15_EVENT_OUT
+	PORT_E_PIN_15_AF15_EVENT_OUT			= 15,                                         //!< PORT_E_PIN_15_AF15_EVENT_OUT
+
+	PORT_H_PIN_0_AF15_EVENT_OUT				= 15,                                         //!< PORT_H_PIN_0_AF15_EVENT_OUT
+	PORT_H_PIN_1_AF15_EVENT_OUT				= 15,                                         //!< PORT_H_PIN_1_AF15_EVENT_OUT
+/***************************************************************************/
+
+/***************************************************************************/
+
+/************* Alternative Function  = 17 to DIO ordinary mode ************/
+	DIO_PIN								= 17                                                          //!< DIO_PIN
+/***************************************************************************/
+
+
+
+}Port_PinModeEnum;
+
+#endif
 
 
 /**

@@ -1,0 +1,4 @@
+<map id="Port_ConfigType" name="Port_ConfigType">
+<area shape="rect" id="node1" title="This structure holds an array of structures that holds the configurations of the pins." alt="" coords="35,277,153,355"/>
+<area shape="rect" id="node2" href="$struct_port___config_channel.html" title="Used to set the configurations of a Specific pin in Port Module." alt="" coords="5,5,183,215"/>
+</map>

@@ -1,0 +1,374 @@
+\hypertarget{_dio_8h}{}\doxysubsection{A\+U\+T\+O\+S\+A\+R/\+Dio/\+Dio.h File Reference}
+\label{_dio_8h}\index{AUTOSAR/Dio/Dio.h@{AUTOSAR/Dio/Dio.h}}
+{\ttfamily \#include \char`\"{}Std\+\_\+\+Types.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Dio\+\_\+\+Cfg.\+h\char`\"{}}\newline
+{\ttfamily \#include \char`\"{}Common\+\_\+\+Macros.\+h\char`\"{}}\newline
+Include dependency graph for Dio.\+h\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=350pt]{_dio_8h__incl}
+\end{center}
+\end{figure}
+This graph shows which files directly or indirectly include this file\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=334pt]{_dio_8h__dep__incl}
+\end{center}
+\end{figure}
+\doxysubsubsection*{Data Structures}
+\begin{DoxyCompactItemize}
+\item 
+struct \mbox{\hyperlink{struct_dio___channel_group_type}{Dio\+\_\+\+Channel\+Group\+Type}}
+\item 
+struct \mbox{\hyperlink{struct_dio___config_channel}{Dio\+\_\+\+Config\+Channel}}
+\item 
+struct \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Macros}
+\begin{DoxyCompactItemize}
+\item 
+\#define \mbox{\hyperlink{_dio_8h_adf19dc06bbae4a2fe9f16970bf415176}{D\+I\+O\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+ID}}~(1024U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a4e4ad3ba87f0cd202b4071516da4b079}{D\+I\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+ID}}~(120U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a1397f775640ca2f86dafea1041b8a31b}{D\+I\+O\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+ID}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a768352c58d32295439fc5c3181f8feef}{D\+I\+O\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a395a26e7ea6164ce53e27aec0d61af59}{D\+I\+O\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_aa3a7ee780298097478a343541c872212}{D\+I\+O\+\_\+\+S\+W\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a0b864f17f3f0df1726873136e666b2a2}{D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(4U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a4fd38c9ad3836bb6acc123ae106ffc16}{D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON}}~(3U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a1a61f72d63c62cdf29dfa00127a65cdc}{D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a6007ef2f1f35fec0eeb37ae08225b162}{D\+I\+O\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}~(1U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a7daf05ceaec24ee2822616e42aa605a1}{D\+I\+O\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED}}~(0U)
+\item 
+\#define \mbox{\hyperlink{_dio_8h_ac6b0177b73133faab9cfbb52b77dae3f}{D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x00
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a5eaecc2279316a7e9d3969216687eb0b}{D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x01
+\item 
+\#define \mbox{\hyperlink{_dio_8h_ade551ef502560856426f1e684547eced}{D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+P\+O\+R\+T\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x02
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a2371f93d36be9ac7c80e8574029cff8c}{D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+O\+R\+T\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x03
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a01115ee6c82219818cf8c53f1ee746d9}{D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x04
+\item 
+\#define \mbox{\hyperlink{_dio_8h_afc1a760e0dd18d38db552958ded69521}{D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x05
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a95b2a7722ecf2a1dd783864ecd59ecfe}{D\+I\+O\+\_\+\+G\+E\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+N\+F\+O\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x12
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a9942dcc4e0e24293dc7a6e7a208909b0}{D\+I\+O\+\_\+\+F\+L\+I\+P\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x11
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a8ba89654e352982be760803e719e288a}{D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0A
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a8ce09ffac83de1518e7baf6a1ac58bb1}{D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+O\+R\+T\+\_\+\+ID}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x14
+\item 
+\#define \mbox{\hyperlink{_dio_8h_afedfea95f64b4233f27dd66118c21161}{D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+G\+R\+O\+UP}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x1F
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a0c714d8894d181413926f9283982d911}{D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+O\+I\+N\+T\+ER}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x20
+\item 
+\#define \mbox{\hyperlink{_dio_8h_a3cab0a18288c4a0d2a17872e5e1ca60b}{D\+I\+O\+\_\+\+E\+\_\+\+U\+N\+I\+N\+IT}}~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x\+F0
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Typedefs}
+\begin{DoxyCompactItemize}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}}
+\item 
+typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}}
+\item 
+typedef struct \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}} \mbox{\hyperlink{_dio_8h_a915738337c6a62bd2abe621358beb38b}{Dio\+\_\+\+Config\+Type}}
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Functions}
+\begin{DoxyCompactItemize}
+\item 
+\mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}} \mbox{\hyperlink{_dio_8h_a9d1cb52352ab6ced4a470b5b4e817c92}{Dio\+\_\+\+Read\+Port}} (\mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}} Port\+Id)
+\item 
+void \mbox{\hyperlink{_dio_8h_a3f2328a3c8a1e4aab0ec3cd4ba1fd241}{Dio\+\_\+\+Write\+Port}} (\mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}} Port\+Id, \mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}} Level)
+\item 
+\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} \mbox{\hyperlink{_dio_8h_aa5482dd0b4b8e3cd7c984cffbc423330}{Dio\+\_\+\+Read\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id)
+\item 
+void \mbox{\hyperlink{_dio_8h_ab5069dd14692cf83b1a90d3f98faf158}{Dio\+\_\+\+Write\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id, \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Level)
+\item 
+\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} \mbox{\hyperlink{_dio_8h_a16650b42ff331c4df37e50a3c99c03e1}{Dio\+\_\+\+Flip\+Channel}} (\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}} Channel\+Id)
+\item 
+void \mbox{\hyperlink{_dio_8h_a404b6f57d9f6192203a8ad1d211e4f74}{Dio\+\_\+\+Get\+Version\+Info}} (\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$versioninfo)
+\end{DoxyCompactItemize}
+\doxysubsubsection*{Variables}
+\begin{DoxyCompactItemize}
+\item 
+const \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}} \mbox{\hyperlink{_dio_8h_aab6baa4bef3f5f86ed2460eb112bb9ce}{Dio\+\_\+\+Configuration}}
+\end{DoxyCompactItemize}
+
+
+\doxysubsubsection{Macro Definition Documentation}
+\mbox{\Hypertarget{_dio_8h_a0b864f17f3f0df1726873136e666b2a2}\label{_dio_8h_a0b864f17f3f0df1726873136e666b2a2}} 
+\index{Dio.h@{Dio.h}!DIO\_AR\_RELEASE\_MAJOR\_VERSION@{DIO\_AR\_RELEASE\_MAJOR\_VERSION}}
+\index{DIO\_AR\_RELEASE\_MAJOR\_VERSION@{DIO\_AR\_RELEASE\_MAJOR\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_AR\_RELEASE\_MAJOR\_VERSION}{DIO\_AR\_RELEASE\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(4U)}
+
+\mbox{\Hypertarget{_dio_8h_a4fd38c9ad3836bb6acc123ae106ffc16}\label{_dio_8h_a4fd38c9ad3836bb6acc123ae106ffc16}} 
+\index{Dio.h@{Dio.h}!DIO\_AR\_RELEASE\_MINOR\_VERSION@{DIO\_AR\_RELEASE\_MINOR\_VERSION}}
+\index{DIO\_AR\_RELEASE\_MINOR\_VERSION@{DIO\_AR\_RELEASE\_MINOR\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_AR\_RELEASE\_MINOR\_VERSION}{DIO\_AR\_RELEASE\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(3U)}
+
+\mbox{\Hypertarget{_dio_8h_a1a61f72d63c62cdf29dfa00127a65cdc}\label{_dio_8h_a1a61f72d63c62cdf29dfa00127a65cdc}} 
+\index{Dio.h@{Dio.h}!DIO\_AR\_RELEASE\_PATCH\_VERSION@{DIO\_AR\_RELEASE\_PATCH\_VERSION}}
+\index{DIO\_AR\_RELEASE\_PATCH\_VERSION@{DIO\_AR\_RELEASE\_PATCH\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_AR\_RELEASE\_PATCH\_VERSION}{DIO\_AR\_RELEASE\_PATCH\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+A\+R\+\_\+\+R\+E\+L\+E\+A\+S\+E\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON~(1U)}
+
+\mbox{\Hypertarget{_dio_8h_a8ba89654e352982be760803e719e288a}\label{_dio_8h_a8ba89654e352982be760803e719e288a}} 
+\index{Dio.h@{Dio.h}!DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID@{DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID}}
+\index{DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID@{DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID}{DIO\_E\_PARAM\_INVALID\_CHANNEL\_ID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x0A}
+
+\mbox{\Hypertarget{_dio_8h_afedfea95f64b4233f27dd66118c21161}\label{_dio_8h_afedfea95f64b4233f27dd66118c21161}} 
+\index{Dio.h@{Dio.h}!DIO\_E\_PARAM\_INVALID\_GROUP@{DIO\_E\_PARAM\_INVALID\_GROUP}}
+\index{DIO\_E\_PARAM\_INVALID\_GROUP@{DIO\_E\_PARAM\_INVALID\_GROUP}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_E\_PARAM\_INVALID\_GROUP}{DIO\_E\_PARAM\_INVALID\_GROUP}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+G\+R\+O\+UP~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x1F}
+
+\mbox{\Hypertarget{_dio_8h_a8ce09ffac83de1518e7baf6a1ac58bb1}\label{_dio_8h_a8ce09ffac83de1518e7baf6a1ac58bb1}} 
+\index{Dio.h@{Dio.h}!DIO\_E\_PARAM\_INVALID\_PORT\_ID@{DIO\_E\_PARAM\_INVALID\_PORT\_ID}}
+\index{DIO\_E\_PARAM\_INVALID\_PORT\_ID@{DIO\_E\_PARAM\_INVALID\_PORT\_ID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_E\_PARAM\_INVALID\_PORT\_ID}{DIO\_E\_PARAM\_INVALID\_PORT\_ID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+I\+N\+V\+A\+L\+I\+D\+\_\+\+P\+O\+R\+T\+\_\+\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x14}
+
+\mbox{\Hypertarget{_dio_8h_a0c714d8894d181413926f9283982d911}\label{_dio_8h_a0c714d8894d181413926f9283982d911}} 
+\index{Dio.h@{Dio.h}!DIO\_E\_PARAM\_POINTER@{DIO\_E\_PARAM\_POINTER}}
+\index{DIO\_E\_PARAM\_POINTER@{DIO\_E\_PARAM\_POINTER}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_E\_PARAM\_POINTER}{DIO\_E\_PARAM\_POINTER}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+E\+\_\+\+P\+A\+R\+A\+M\+\_\+\+P\+O\+I\+N\+T\+ER~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x20}
+
+\mbox{\Hypertarget{_dio_8h_a3cab0a18288c4a0d2a17872e5e1ca60b}\label{_dio_8h_a3cab0a18288c4a0d2a17872e5e1ca60b}} 
+\index{Dio.h@{Dio.h}!DIO\_E\_UNINIT@{DIO\_E\_UNINIT}}
+\index{DIO\_E\_UNINIT@{DIO\_E\_UNINIT}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_E\_UNINIT}{DIO\_E\_UNINIT}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+E\+\_\+\+U\+N\+I\+N\+IT~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x\+F0}
+
+\mbox{\Hypertarget{_dio_8h_a9942dcc4e0e24293dc7a6e7a208909b0}\label{_dio_8h_a9942dcc4e0e24293dc7a6e7a208909b0}} 
+\index{Dio.h@{Dio.h}!DIO\_FLIP\_CHANNEL\_SID@{DIO\_FLIP\_CHANNEL\_SID}}
+\index{DIO\_FLIP\_CHANNEL\_SID@{DIO\_FLIP\_CHANNEL\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_FLIP\_CHANNEL\_SID}{DIO\_FLIP\_CHANNEL\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+F\+L\+I\+P\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x11}
+
+\mbox{\Hypertarget{_dio_8h_a95b2a7722ecf2a1dd783864ecd59ecfe}\label{_dio_8h_a95b2a7722ecf2a1dd783864ecd59ecfe}} 
+\index{Dio.h@{Dio.h}!DIO\_GET\_VERSION\_INFO\_SID@{DIO\_GET\_VERSION\_INFO\_SID}}
+\index{DIO\_GET\_VERSION\_INFO\_SID@{DIO\_GET\_VERSION\_INFO\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_GET\_VERSION\_INFO\_SID}{DIO\_GET\_VERSION\_INFO\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+G\+E\+T\+\_\+\+V\+E\+R\+S\+I\+O\+N\+\_\+\+I\+N\+F\+O\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x12}
+
+\mbox{\Hypertarget{_dio_8h_a6007ef2f1f35fec0eeb37ae08225b162}\label{_dio_8h_a6007ef2f1f35fec0eeb37ae08225b162}} 
+\index{Dio.h@{Dio.h}!DIO\_INITIALIZED@{DIO\_INITIALIZED}}
+\index{DIO\_INITIALIZED@{DIO\_INITIALIZED}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_INITIALIZED}{DIO\_INITIALIZED}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED~(1U)}
+
+\mbox{\Hypertarget{_dio_8h_a1397f775640ca2f86dafea1041b8a31b}\label{_dio_8h_a1397f775640ca2f86dafea1041b8a31b}} 
+\index{Dio.h@{Dio.h}!DIO\_INSTANCE\_ID@{DIO\_INSTANCE\_ID}}
+\index{DIO\_INSTANCE\_ID@{DIO\_INSTANCE\_ID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_INSTANCE\_ID}{DIO\_INSTANCE\_ID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+I\+N\+S\+T\+A\+N\+C\+E\+\_\+\+ID~(0U)}
+
+\mbox{\Hypertarget{_dio_8h_a4e4ad3ba87f0cd202b4071516da4b079}\label{_dio_8h_a4e4ad3ba87f0cd202b4071516da4b079}} 
+\index{Dio.h@{Dio.h}!DIO\_MODULE\_ID@{DIO\_MODULE\_ID}}
+\index{DIO\_MODULE\_ID@{DIO\_MODULE\_ID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_MODULE\_ID}{DIO\_MODULE\_ID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+M\+O\+D\+U\+L\+E\+\_\+\+ID~(120U)}
+
+\mbox{\Hypertarget{_dio_8h_a7daf05ceaec24ee2822616e42aa605a1}\label{_dio_8h_a7daf05ceaec24ee2822616e42aa605a1}} 
+\index{Dio.h@{Dio.h}!DIO\_NOT\_INITIALIZED@{DIO\_NOT\_INITIALIZED}}
+\index{DIO\_NOT\_INITIALIZED@{DIO\_NOT\_INITIALIZED}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_NOT\_INITIALIZED}{DIO\_NOT\_INITIALIZED}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+N\+O\+T\+\_\+\+I\+N\+I\+T\+I\+A\+L\+I\+Z\+ED~(0U)}
+
+\mbox{\Hypertarget{_dio_8h_a01115ee6c82219818cf8c53f1ee746d9}\label{_dio_8h_a01115ee6c82219818cf8c53f1ee746d9}} 
+\index{Dio.h@{Dio.h}!DIO\_READ\_CHANNEL\_GROUP\_SID@{DIO\_READ\_CHANNEL\_GROUP\_SID}}
+\index{DIO\_READ\_CHANNEL\_GROUP\_SID@{DIO\_READ\_CHANNEL\_GROUP\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_READ\_CHANNEL\_GROUP\_SID}{DIO\_READ\_CHANNEL\_GROUP\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x04}
+
+\mbox{\Hypertarget{_dio_8h_ac6b0177b73133faab9cfbb52b77dae3f}\label{_dio_8h_ac6b0177b73133faab9cfbb52b77dae3f}} 
+\index{Dio.h@{Dio.h}!DIO\_READ\_CHANNEL\_SID@{DIO\_READ\_CHANNEL\_SID}}
+\index{DIO\_READ\_CHANNEL\_SID@{DIO\_READ\_CHANNEL\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_READ\_CHANNEL\_SID}{DIO\_READ\_CHANNEL\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x00}
+
+\mbox{\Hypertarget{_dio_8h_ade551ef502560856426f1e684547eced}\label{_dio_8h_ade551ef502560856426f1e684547eced}} 
+\index{Dio.h@{Dio.h}!DIO\_READ\_PORT\_SID@{DIO\_READ\_PORT\_SID}}
+\index{DIO\_READ\_PORT\_SID@{DIO\_READ\_PORT\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_READ\_PORT\_SID}{DIO\_READ\_PORT\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+R\+E\+A\+D\+\_\+\+P\+O\+R\+T\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x02}
+
+\mbox{\Hypertarget{_dio_8h_a768352c58d32295439fc5c3181f8feef}\label{_dio_8h_a768352c58d32295439fc5c3181f8feef}} 
+\index{Dio.h@{Dio.h}!DIO\_SW\_MAJOR\_VERSION@{DIO\_SW\_MAJOR\_VERSION}}
+\index{DIO\_SW\_MAJOR\_VERSION@{DIO\_SW\_MAJOR\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_SW\_MAJOR\_VERSION}{DIO\_SW\_MAJOR\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+S\+W\+\_\+\+M\+A\+J\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(1U)}
+
+\mbox{\Hypertarget{_dio_8h_a395a26e7ea6164ce53e27aec0d61af59}\label{_dio_8h_a395a26e7ea6164ce53e27aec0d61af59}} 
+\index{Dio.h@{Dio.h}!DIO\_SW\_MINOR\_VERSION@{DIO\_SW\_MINOR\_VERSION}}
+\index{DIO\_SW\_MINOR\_VERSION@{DIO\_SW\_MINOR\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_SW\_MINOR\_VERSION}{DIO\_SW\_MINOR\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+S\+W\+\_\+\+M\+I\+N\+O\+R\+\_\+\+V\+E\+R\+S\+I\+ON~(0U)}
+
+\mbox{\Hypertarget{_dio_8h_aa3a7ee780298097478a343541c872212}\label{_dio_8h_aa3a7ee780298097478a343541c872212}} 
+\index{Dio.h@{Dio.h}!DIO\_SW\_PATCH\_VERSION@{DIO\_SW\_PATCH\_VERSION}}
+\index{DIO\_SW\_PATCH\_VERSION@{DIO\_SW\_PATCH\_VERSION}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_SW\_PATCH\_VERSION}{DIO\_SW\_PATCH\_VERSION}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+S\+W\+\_\+\+P\+A\+T\+C\+H\+\_\+\+V\+E\+R\+S\+I\+ON~(0U)}
+
+\mbox{\Hypertarget{_dio_8h_adf19dc06bbae4a2fe9f16970bf415176}\label{_dio_8h_adf19dc06bbae4a2fe9f16970bf415176}} 
+\index{Dio.h@{Dio.h}!DIO\_VENDOR\_ID@{DIO\_VENDOR\_ID}}
+\index{DIO\_VENDOR\_ID@{DIO\_VENDOR\_ID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_VENDOR\_ID}{DIO\_VENDOR\_ID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+V\+E\+N\+D\+O\+R\+\_\+\+ID~(1024U)}
+
+\mbox{\Hypertarget{_dio_8h_afc1a760e0dd18d38db552958ded69521}\label{_dio_8h_afc1a760e0dd18d38db552958ded69521}} 
+\index{Dio.h@{Dio.h}!DIO\_WRITE\_CHANNEL\_GROUP\_SID@{DIO\_WRITE\_CHANNEL\_GROUP\_SID}}
+\index{DIO\_WRITE\_CHANNEL\_GROUP\_SID@{DIO\_WRITE\_CHANNEL\_GROUP\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_WRITE\_CHANNEL\_GROUP\_SID}{DIO\_WRITE\_CHANNEL\_GROUP\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+G\+R\+O\+U\+P\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x05}
+
+\mbox{\Hypertarget{_dio_8h_a5eaecc2279316a7e9d3969216687eb0b}\label{_dio_8h_a5eaecc2279316a7e9d3969216687eb0b}} 
+\index{Dio.h@{Dio.h}!DIO\_WRITE\_CHANNEL\_SID@{DIO\_WRITE\_CHANNEL\_SID}}
+\index{DIO\_WRITE\_CHANNEL\_SID@{DIO\_WRITE\_CHANNEL\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_WRITE\_CHANNEL\_SID}{DIO\_WRITE\_CHANNEL\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+C\+H\+A\+N\+N\+E\+L\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x01}
+
+\mbox{\Hypertarget{_dio_8h_a2371f93d36be9ac7c80e8574029cff8c}\label{_dio_8h_a2371f93d36be9ac7c80e8574029cff8c}} 
+\index{Dio.h@{Dio.h}!DIO\_WRITE\_PORT\_SID@{DIO\_WRITE\_PORT\_SID}}
+\index{DIO\_WRITE\_PORT\_SID@{DIO\_WRITE\_PORT\_SID}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{DIO\_WRITE\_PORT\_SID}{DIO\_WRITE\_PORT\_SID}}
+{\footnotesize\ttfamily \#define D\+I\+O\+\_\+\+W\+R\+I\+T\+E\+\_\+\+P\+O\+R\+T\+\_\+\+S\+ID~(\mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}})0x03}
+
+
+
+\doxysubsubsection{Typedef Documentation}
+\mbox{\Hypertarget{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}\label{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}} 
+\index{Dio.h@{Dio.h}!Dio\_ChannelType@{Dio\_ChannelType}}
+\index{Dio\_ChannelType@{Dio\_ChannelType}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_ChannelType}{Dio\_ChannelType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}
+
+\mbox{\Hypertarget{_dio_8h_a915738337c6a62bd2abe621358beb38b}\label{_dio_8h_a915738337c6a62bd2abe621358beb38b}} 
+\index{Dio.h@{Dio.h}!Dio\_ConfigType@{Dio\_ConfigType}}
+\index{Dio\_ConfigType@{Dio\_ConfigType}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_ConfigType}{Dio\_ConfigType}}
+{\footnotesize\ttfamily typedef struct \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}}  \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}}}
+
+\mbox{\Hypertarget{_dio_8h_a62c4a3121a6c6076d46164301eee4629}\label{_dio_8h_a62c4a3121a6c6076d46164301eee4629}} 
+\index{Dio.h@{Dio.h}!Dio\_LevelType@{Dio\_LevelType}}
+\index{Dio\_LevelType@{Dio\_LevelType}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_LevelType}{Dio\_LevelType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}}}
+
+\mbox{\Hypertarget{_dio_8h_a3a678f208215fe639c2408a1ea685e11}\label{_dio_8h_a3a678f208215fe639c2408a1ea685e11}} 
+\index{Dio.h@{Dio.h}!Dio\_PortLevelType@{Dio\_PortLevelType}}
+\index{Dio\_PortLevelType@{Dio\_PortLevelType}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_PortLevelType}{Dio\_PortLevelType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}}}
+
+\mbox{\Hypertarget{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}\label{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}} 
+\index{Dio.h@{Dio.h}!Dio\_PortType@{Dio\_PortType}}
+\index{Dio\_PortType@{Dio\_PortType}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_PortType}{Dio\_PortType}}
+{\footnotesize\ttfamily typedef \mbox{\hyperlink{_platform___types_8h_adde6aaee8457bee49c2a92621fe22b79}{uint8}} \mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}}}
+
+
+
+\doxysubsubsection{Function Documentation}
+\mbox{\Hypertarget{_dio_8h_a16650b42ff331c4df37e50a3c99c03e1}\label{_dio_8h_a16650b42ff331c4df37e50a3c99c03e1}} 
+\index{Dio.h@{Dio.h}!Dio\_FlipChannel@{Dio\_FlipChannel}}
+\index{Dio\_FlipChannel@{Dio\_FlipChannel}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_FlipChannel()}{Dio\_FlipChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Dio\+\_\+\+Flip\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=289pt]{_dio_8h_a16650b42ff331c4df37e50a3c99c03e1_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8h_a404b6f57d9f6192203a8ad1d211e4f74}\label{_dio_8h_a404b6f57d9f6192203a8ad1d211e4f74}} 
+\index{Dio.h@{Dio.h}!Dio\_GetVersionInfo@{Dio\_GetVersionInfo}}
+\index{Dio\_GetVersionInfo@{Dio\_GetVersionInfo}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_GetVersionInfo()}{Dio\_GetVersionInfo()}}
+{\footnotesize\ttfamily void Dio\+\_\+\+Get\+Version\+Info (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{struct_std___version_info_type}{Std\+\_\+\+Version\+Info\+Type}} $\ast$}]{versioninfo }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=302pt]{_dio_8h_a404b6f57d9f6192203a8ad1d211e4f74_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8h_aa5482dd0b4b8e3cd7c984cffbc423330}\label{_dio_8h_aa5482dd0b4b8e3cd7c984cffbc423330}} 
+\index{Dio.h@{Dio.h}!Dio\_ReadChannel@{Dio\_ReadChannel}}
+\index{Dio\_ReadChannel@{Dio\_ReadChannel}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_ReadChannel()}{Dio\_ReadChannel()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}} Dio\+\_\+\+Read\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=296pt]{_dio_8h_aa5482dd0b4b8e3cd7c984cffbc423330_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8h_a9d1cb52352ab6ced4a470b5b4e817c92}\label{_dio_8h_a9d1cb52352ab6ced4a470b5b4e817c92}} 
+\index{Dio.h@{Dio.h}!Dio\_ReadPort@{Dio\_ReadPort}}
+\index{Dio\_ReadPort@{Dio\_ReadPort}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_ReadPort()}{Dio\_ReadPort()}}
+{\footnotesize\ttfamily \mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}} Dio\+\_\+\+Read\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}}}]{Port\+Id }\end{DoxyParamCaption})}
+
+\mbox{\Hypertarget{_dio_8h_ab5069dd14692cf83b1a90d3f98faf158}\label{_dio_8h_ab5069dd14692cf83b1a90d3f98faf158}} 
+\index{Dio.h@{Dio.h}!Dio\_WriteChannel@{Dio\_WriteChannel}}
+\index{Dio\_WriteChannel@{Dio\_WriteChannel}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_WriteChannel()}{Dio\_WriteChannel()}}
+{\footnotesize\ttfamily void Dio\+\_\+\+Write\+Channel (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_adf1403b09d6bcfe79c72642393346e3f}{Dio\+\_\+\+Channel\+Type}}}]{Channel\+Id,  }\item[{\mbox{\hyperlink{_dio_8h_a62c4a3121a6c6076d46164301eee4629}{Dio\+\_\+\+Level\+Type}}}]{Level }\end{DoxyParamCaption})}
+
+Here is the call graph for this function\+:
+\nopagebreak
+\begin{figure}[H]
+\begin{center}
+\leavevmode
+\includegraphics[width=297pt]{_dio_8h_ab5069dd14692cf83b1a90d3f98faf158_cgraph}
+\end{center}
+\end{figure}
+\mbox{\Hypertarget{_dio_8h_a3f2328a3c8a1e4aab0ec3cd4ba1fd241}\label{_dio_8h_a3f2328a3c8a1e4aab0ec3cd4ba1fd241}} 
+\index{Dio.h@{Dio.h}!Dio\_WritePort@{Dio\_WritePort}}
+\index{Dio\_WritePort@{Dio\_WritePort}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_WritePort()}{Dio\_WritePort()}}
+{\footnotesize\ttfamily void Dio\+\_\+\+Write\+Port (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{_dio_8h_a75f9b1d280fb8b719fce25b7b470ad13}{Dio\+\_\+\+Port\+Type}}}]{Port\+Id,  }\item[{\mbox{\hyperlink{_dio_8h_a3a678f208215fe639c2408a1ea685e11}{Dio\+\_\+\+Port\+Level\+Type}}}]{Level }\end{DoxyParamCaption})}
+
+
+
+\doxysubsubsection{Variable Documentation}
+\mbox{\Hypertarget{_dio_8h_aab6baa4bef3f5f86ed2460eb112bb9ce}\label{_dio_8h_aab6baa4bef3f5f86ed2460eb112bb9ce}} 
+\index{Dio.h@{Dio.h}!Dio\_Configuration@{Dio\_Configuration}}
+\index{Dio\_Configuration@{Dio\_Configuration}!Dio.h@{Dio.h}}
+\doxyparagraph{\texorpdfstring{Dio\_Configuration}{Dio\_Configuration}}
+{\footnotesize\ttfamily const \mbox{\hyperlink{struct_dio___config_type}{Dio\+\_\+\+Config\+Type}} Dio\+\_\+\+Configuration}
+
