@@ -48,6 +48,7 @@ int main (void)
 	/* Variable used as Flag to check debouncing */
 	uint8 flag = 0;
 
+	uint8 test;
 	/* Initialize HW (Clocks, Clocks for GPIO Ports & USART Used) */
 	Hardware_Init();
 
