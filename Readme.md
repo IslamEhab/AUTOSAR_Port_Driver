@@ -17,9 +17,10 @@ This projects implements both Dio and Port Drivers for STM32F429 and STM32F407 u
 - API names and its parameters
 - How to use these APIs, structures and enums 
 
-**Note: AF Function & Ordinary GPIO works properly on STM32F429 **
+** Note: AF Function & Ordinary GPIO works properly on STM32F429 **
 
 =======
+
 **Note: This driver needs:**
 
 1. Testing on STM32F429 & STM32F407
