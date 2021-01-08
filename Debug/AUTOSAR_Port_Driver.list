@@ -23,23 +23,23 @@ Idx Name          Size      VMA       LMA       File off  Algn
                   ALLOC
   9 .ARM.attributes 00000030  00000000  00000000  00020018  2**0
                   CONTENTS, READONLY
- 10 .debug_info   00006247  00000000  00000000  00020048  2**0
+ 10 .debug_info   0000626a  00000000  00000000  00020048  2**0
                   CONTENTS, READONLY, DEBUGGING
- 11 .debug_abbrev 0000107e  00000000  00000000  0002628f  2**0
+ 11 .debug_abbrev 0000108b  00000000  00000000  000262b2  2**0
                   CONTENTS, READONLY, DEBUGGING
- 12 .debug_aranges 000004b0  00000000  00000000  00027310  2**3
+ 12 .debug_aranges 000004b0  00000000  00000000  00027340  2**3
                   CONTENTS, READONLY, DEBUGGING
- 13 .debug_ranges 000003b8  00000000  00000000  000277c0  2**3
+ 13 .debug_ranges 000003b8  00000000  00000000  000277f0  2**3
                   CONTENTS, READONLY, DEBUGGING
- 14 .debug_line   00002221  00000000  00000000  00027b78  2**0
+ 14 .debug_line   00002221  00000000  00000000  00027ba8  2**0
                   CONTENTS, READONLY, DEBUGGING
- 15 .debug_str    00006078  00000000  00000000  00029d99  2**0
+ 15 .debug_str    000060b3  00000000  00000000  00029dc9  2**0
                   CONTENTS, READONLY, DEBUGGING
- 16 .comment      0000007c  00000000  00000000  0002fe11  2**0
+ 16 .comment      0000007c  00000000  00000000  0002fe7c  2**0
                   CONTENTS, READONLY
- 17 .debug_frame  00001000  00000000  00000000  0002fe90  2**2
+ 17 .debug_frame  00001000  00000000  00000000  0002fef8  2**2
                   CONTENTS, READONLY, DEBUGGING
- 18 .stabstr      0000003f  00000000  00000000  00030e90  2**0
+ 18 .stabstr      0000003f  00000000  00000000  00030ef8  2**0
                   CONTENTS, READONLY, DEBUGGING
 
 Disassembly of section .text:
@@ -4051,6 +4051,7 @@ int main (void)
  80017fa:	2300      	movs	r3, #0
  80017fc:	71fb      	strb	r3, [r7, #7]
 
+	uint8 test;
 	/* Initialize HW (Clocks, Clocks for GPIO Ports & USART Used) */
 	Hardware_Init();
  80017fe:	f000 f833 	bl	8001868 <Hardware_Init>
@@ -4060,8 +4061,6 @@ int main (void)
  8001802:	4816      	ldr	r0, [pc, #88]	; (800185c <main+0x68>)
  8001804:	f7fe fed8 	bl	80005b8 <Port_Init>
 
-	//	/* Dio Initialization */
-	//	Dio_Init(&Dio_Configuration);
 	/* USARTS Initialization */
 	USART_Configuration();
  8001808:	f000 f87e 	bl	8001908 <USART_Configuration>
